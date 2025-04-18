@@ -1,0 +1,15 @@
+{
+    "type": "world:genesis_of_the_universe",
+    "generator": {
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "world:void_of_origin",
+            "lakes": false,
+            "features": false,
+            "layers": [
+                
+            ],
+            "structure_overrides": []
+        }
+    }
+}

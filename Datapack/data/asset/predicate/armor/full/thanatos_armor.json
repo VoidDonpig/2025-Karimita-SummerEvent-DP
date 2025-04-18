@@ -1,0 +1,28 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"thanatos_helmet\"}"
+          }
+        },
+        "chest": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"thanatos_chestplate\"}"
+          }
+        },
+        "legs": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"thanatos_leggings\"}"
+          }
+        },
+        "feet": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"thanatos_boots\"}"
+          }
+        }
+      }
+    }
+  }

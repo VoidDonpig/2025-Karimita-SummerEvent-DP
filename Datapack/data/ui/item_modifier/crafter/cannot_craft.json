@@ -1,0 +1,10 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "text": "材料が足りません！",
+            "color": "red",
+            "italic": false
+        }
+    }
+]

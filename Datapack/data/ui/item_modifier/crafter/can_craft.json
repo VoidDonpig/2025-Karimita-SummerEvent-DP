@@ -1,0 +1,11 @@
+[
+    {
+        "function": "set_name",
+        "name": {
+            "text": "クリックでクラフトする。",
+            "color": "green",
+            "bold": false,
+            "italic": false
+        }
+    }
+]

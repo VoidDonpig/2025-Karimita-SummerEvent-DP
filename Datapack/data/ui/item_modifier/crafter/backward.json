@@ -1,0 +1,15 @@
+[
+    {
+        "function": "set_custom_data",
+        "tag": "{ui:{type:\"backward\"}}"
+    },
+    {
+        "function": "set_name",
+        "name": {
+            "text": "←",
+            "color": "white",
+            "bold": true,
+            "italic": false
+        }
+    }
+]

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "archer": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "#minecraft:enchantable/bow"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "player:trigger/charging_bow"
+    }
+  }

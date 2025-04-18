@@ -1,0 +1,59 @@
+{
+    "criteria": {
+        "assassin": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "team": "class.assassin"
+                },
+                "entity": {
+                    "type": "#lib:mob"
+                }
+            }
+        },
+        "assassin1": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "team": "class.assassin_1"
+                },
+                "entity": {
+                    "type": "#lib:mob"
+                }
+            }
+        },
+        "assassin2": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "team": "class.assassin_2"
+                },
+                "entity": {
+                    "type": "#lib:mob"
+                }
+            }
+        },
+        "assassin3": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "team": "class.assassin_3"
+                },
+                "entity": {
+                    "type": "#lib:mob"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "assassin",
+            "assassin1",
+            "assassin2",
+            "assassin3"
+        ]
+    ],
+    "rewards": {
+        "function": "player:class/assassin/ability/bloodlust/"
+    }
+}

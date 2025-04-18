@@ -1,0 +1,28 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "head": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"artemis_helmet\"}"
+          }
+        },
+        "chest": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"artemis_chestplate\"}"
+          }
+        },
+        "legs": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"artemis_leggings\"}"
+          }
+        },
+        "feet": {
+          "predicates": {
+            "minecraft:custom_data": "{custom_item_id:\"artemis_boots\"}"
+          }
+        }
+      }
+    }
+  }
