@@ -1,0 +1,1 @@
+# 2025-Karimita-SummerEvent-DP
