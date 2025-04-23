@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "movement": {
+            "horizontal_speed": 0,
+            "vertical_speed": 0
+        }
+    }
+}

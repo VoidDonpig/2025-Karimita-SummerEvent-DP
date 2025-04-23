@@ -1,0 +1,175 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:unbreakable": {},
+                                "minecraft:dyed_color":1183512,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "attribute_modifiers",
+                                        "unbreakable",
+                                        "dyed_color"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "‣ ﾌﾙｾｯﾄﾎﾞｰﾅｽ: 影の一撃",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "敵を攻撃した時追加の一撃を与える。",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｽﾃｰﾀｽ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 防具: ",
+                                    "extra": [
+                                        {
+                                            "text": "+3",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 移動速度: ",
+                                    "extra": [
+                                        {
+                                            "text": "+0.03",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 攻撃力: ",
+                                    "extra": [
+                                        {
+                                            "text": "+25%",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 狂気: ",
+                                    "extra": [
+                                        {
+                                            "text": "+25",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 足防具（不可壊）",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪✪✪✪",
+                                                    "color": "gold",
+                                                    "extra": [
+                                                        {
+                                                            "text": "】",
+                                                            "color": "white"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "id": "thanatos_boots_armor",
+                                    "attribute": "minecraft:armor",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "id": "thanatos_boots_movement_speed",
+                                    "attribute": "minecraft:movement_speed",
+                                    "amount": 0.03,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "id": "thanatos_boots_attack_damage",
+                                    "attribute": "minecraft:attack_damage",
+                                    "amount": 0.25,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "feet"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"thanatos_boots\",slot:\"feet\",status:[{name:\"ferocity\",value:25}]}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "タナトスのブーツ",
+                                "color": "gold",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

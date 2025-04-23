@@ -1,0 +1,171 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:unbreakable": {},
+                                "minecraft:dyed_color": 1842204,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "attribute_modifiers",
+                                        "unbreakable",
+                                        "dyed_color"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｽﾃｰﾀｽ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 防具: ",
+                                    "extra": [
+                                        {
+                                            "text": "+3",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 移動速度: ",
+                                    "extra": [
+                                        {
+                                            "text": "+0.01",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 攻撃力: ",
+                                    "extra": [
+                                        {
+                                            "text": "+10%",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 狂気: ",
+                                    "extra": [
+                                        {
+                                            "text": "+10",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 頭防具（不可壊）",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪",
+                                                    "color": "green",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪✪✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "id": "shadow_wailing_helmet_armor",
+                                    "attribute": "minecraft:armor",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                },
+                                {
+                                    "id": "shadow_wailing_helmet_movement_speed",
+                                    "attribute": "minecraft:movement_speed",
+                                    "amount": 0.01,
+                                    "operation": "add_value",
+                                    "slot": "head"
+                                },
+                                {
+                                    "id": "shadow_wailing_helmet_attack_damage",
+                                    "attribute": "minecraft:attack_damage",
+                                    "amount": 0.1,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "head"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"shadow_wailing_helmet\",slot:\"head\",status:[{name:\"ferocity\",value:10}]}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "影哭のヘルメット",
+                                "color": "green",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "minecraft:netherite_block",
+  "base": "minecraft:netherite_boots",
+  "result": {
+    "count": 1,
+    "id": "minecraft:netherite_boots",
+    "components": {
+      "minecraft:unbreakable": {},
+      "minecraft:tooltip_display": {
+        "hidden_components": [
+          "attribute_modifiers",
+          "unbreakable"
+        ]
+      },
+      "minecraft:lore": [
+        {
+          "text": "         ",
+          "color": "dark_gray",
+          "strikethrough": true,
+          "italic": false,
+          "extra": [
+            {
+              "text": "ｽﾃｰﾀｽ",
+              "strikethrough": false,
+              "extra": [
+                {
+                  "text": "           ",
+                  "strikethrough": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "‣ 防具: ",
+          "extra": [
+            {
+              "text": "+3.5",
+              "color": "green"
+            }
+          ],
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "‣ 防具強度: ",
+          "extra": [
+            {
+              "text": "+3.5",
+              "color": "green"
+            }
+          ],
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "‣ ノックバック耐性: ",
+          "extra": [
+            {
+              "text": "+1",
+              "color": "green"
+            }
+          ],
+          "color": "white",
+          "italic": false
+        },
+        {
+          "text": "                         ",
+          "color": "dark_gray",
+          "strikethrough": true
+        },
+        {
+          "text": "‣ 足防具（不可壊）",
+          "extra": [
+            {
+              "text": "【",
+              "extra": [
+                {
+                  "text": "✪✪",
+                  "color": "green",
+                  "extra": [
+                    {
+                      "text": "✪✪✪",
+                      "color": "dark_gray",
+                      "extra": [
+                        {
+                          "text": "】",
+                          "color": "white"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "color": "white",
+          "italic": false
+        }
+      ],
+      "minecraft:attribute_modifiers": [
+        {
+          "id": "hardened_netherite_boots_armor",
+          "type": "minecraft:armor",
+          "amount": 3.5,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "id": "hardened_netherite_boots_armor_toughness",
+          "type": "minecraft:armor_toughness",
+          "amount": 3.5,
+          "operation": "add_value",
+          "slot": "feet"
+        },
+        {
+          "id": "hardened_netherite_boots_knockback_resistance",
+          "type": "minecraft:knockback_resistance",
+          "amount": 0.1,
+          "operation": "add_value",
+          "slot": "feet"
+        }
+      ],
+      "minecraft:custom_data": "{custom_item:1b,custom_item_id:\"hardened_netherite_boots\"}",
+      "minecraft:item_name": {
+        "text": "硬化ネザライトのブーツ",
+        "color": "green",
+        "italic": false
+      }
+    }
+  },
+  "template": "minecraft:netherite_upgrade_smithing_template"
+}

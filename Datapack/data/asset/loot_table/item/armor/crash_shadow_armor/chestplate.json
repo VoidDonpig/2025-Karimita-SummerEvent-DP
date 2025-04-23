@@ -1,0 +1,171 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:unbreakable": {},
+                                "minecraft:dyed_color": 2888253,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "attribute_modifiers",
+                                        "unbreakable",
+                                        "dyed_color"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｽﾃｰﾀｽ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 防具: ",
+                                    "extra": [
+                                        {
+                                            "text": "+8",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 移動速度: ",
+                                    "extra": [
+                                        {
+                                            "text": "+0.024",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 攻撃力: ",
+                                    "extra": [
+                                        {
+                                            "text": "+20%",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 狂気: ",
+                                    "extra": [
+                                        {
+                                            "text": "+20",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 胸防具（不可壊）",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪✪✪",
+                                                    "color": "dark_purple",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "id": "crash_shadow_chestplate_armor",
+                                    "attribute": "minecraft:armor",
+                                    "amount": 8,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "id": "crash_shadow_chestplate_movement_speed",
+                                    "attribute": "minecraft:movement_speed",
+                                    "amount": 0.024,
+                                    "operation": "add_value",
+                                    "slot": "chest"
+                                },
+                                {
+                                    "id": "crash_shadow_chestplate_attack_damage",
+                                    "attribute": "minecraft:attack_damage",
+                                    "amount": 0.2,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "chest"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"crash_shadow_chestplate\",slot:\"chest\",status:[{name:\"ferocity\",value:20}]}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "墜影のチェストプレート",
+                                "color": "dark_purple",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

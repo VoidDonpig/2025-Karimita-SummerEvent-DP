@@ -1,0 +1,147 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:leather_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:unbreakable": {},
+                                "minecraft:dyed_color": 4873298,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "attribute_modifiers",
+                                        "unbreakable",
+                                        "dyed_color"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "矢のダメージを10%増加する",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｽﾃｰﾀｽ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 防具: ",
+                                    "extra": [
+                                        {
+                                            "text": "+3",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 移動速度: ",
+                                    "extra": [
+                                        {
+                                            "text": "+0.01",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 足防具（不可壊）",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪✪✪",
+                                                    "color": "dark_purple",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "id": "azure_string_boots_armor",
+                                    "attribute": "minecraft:armor",
+                                    "amount": 3,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                },
+                                {
+                                    "id": "azure_string_boots_movement_speed",
+                                    "attribute": "minecraft:movement_speed",
+                                    "amount": 0.01,
+                                    "operation": "add_value",
+                                    "slot": "feet"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"azure_string_boots\",slot:\"feet\",status:[{name:\"arrow_damage_increase\",value:10}]}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "蒼弦のブーツ",
+                                "color": "dark_purple",
+                                "italic": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

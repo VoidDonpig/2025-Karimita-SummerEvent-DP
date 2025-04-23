@@ -1,0 +1,142 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cooked_chicken",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "          ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "効果",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 満腹度: ",
+                                    "extra": [
+                                        {
+                                            "text": "+6",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 栄養価: ",
+                                    "extra": [
+                                        {
+                                            "text": "+4",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 消費時間: ",
+                                    "extra": [
+                                        {
+                                            "text": "0.8s",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 食料",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪",
+                                                    "color": "white",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪✪✪✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"soild_chicken\",price:10,value:2,can_sell:1b,stackable:1b}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "固形チキン",
+                                "color": "white",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDNlMjBhMjZjYmI1NzQwYTE1OGRhOTkxZWY5NGRjZDMyZDQ0N2U5YWMwM2FhMGU4ZjgyOWE0OTgzMDYxOWExMCJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:item_model": "minecraft:player_head",
+                                "minecraft:max_stack_size": 64,
+                                "food": {
+                                    "nutrition": 4,
+                                    "saturation": 6
+                                },
+                                "consumable": {
+                                    "consume_seconds": 0.8
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

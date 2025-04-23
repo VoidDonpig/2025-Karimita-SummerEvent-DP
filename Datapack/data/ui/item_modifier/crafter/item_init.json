@@ -1,0 +1,22 @@
+[
+    {
+        "function": "set_custom_data",
+        "tag": "{ui:{type:\"blank\"}}"
+    },
+    {
+        "function": "set_name",
+        "entity": "this",
+        "name": [
+            {
+                "text": "",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "nbt": "entry_data.components.minecraft:item_name",
+                "storage": "ui:",
+                "interpret": true
+            }
+        ]
+    }
+]

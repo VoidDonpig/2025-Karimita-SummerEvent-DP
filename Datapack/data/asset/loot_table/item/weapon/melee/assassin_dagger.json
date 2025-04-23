@@ -1,0 +1,194 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｽﾃｰﾀｽ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 攻撃力: ",
+                                    "extra": [
+                                        {
+                                            "text": "+7",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 攻撃力: ",
+                                    "extra": [
+                                        {
+                                            "text": "+10%",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 移動速度: ",
+                                    "extra": [
+                                        {
+                                            "text": "+0.03",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 攻撃速度: ",
+                                    "extra": [
+                                        {
+                                            "text": "4.0",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 攻撃速度上昇: ",
+                                    "extra": [
+                                        {
+                                            "text": "+25",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 狂気: ",
+                                    "extra": [
+                                        {
+                                            "text": "+10",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 近接武器（不可壊）",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪",
+                                                    "color": "green",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪✪✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "id": "assassin_dagger_attack_damage_add_value",
+                                    "attribute": "minecraft:attack_damage",
+                                    "amount": 7,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "id": "assassin_dagger_attack_damage_add_multiploed_total",
+                                    "attribute": "minecraft:attack_damage",
+                                    "amount": 0.1,
+                                    "operation": "add_multiplied_base",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "id": "assassin_dagger_movement_speed_add_value",
+                                    "attribute": "minecraft:movement_speed",
+                                    "amount": 0.03,
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"assassin_dagger\",slot:\"mainhand\",status:[{name:\"attack_speed\",value:25},{name:\"ferocity\",value:10}]}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "暗殺者の短剣",
+                                "color": "green",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:unbreakable": {},
+                                "minecraft:damage_resistant": {
+                                    "types": "#is_fire"
+                                },
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:unbreakable",
+                                        "minecraft:attribute_modifiers"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+            "mob:": 1
+        }
+    },
+    {
+        "function": "minecraft:set_components",
+        "components": {
+            "minecraft:unbreakable": {}
+        }
+    }
+]

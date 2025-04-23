@@ -1,0 +1,168 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk3Zjg2OTBlZGQyZGY4MTAwYjdkMGQzOGQ0YTAzMjVkZTgzNDFiZTM5MGI4Y2RjMDIxYjI1MDJhMTU1MmE5NiJ9fX0="
+                                        }
+                                    ]
+                                },
+                                "minecraft:item_model": "minecraft:player_head",
+                                "minecraft:unbreakable": {},
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:unbreakable"
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{deployable_id:\"mending_orb\",custom_item:1b,custom_item_id:\"mending_orb\"}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "メンディングオーブ",
+                                "color": "blue",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "‣ ｱﾋﾞﾘﾃｨ: 設置",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 発動方法: 利き手で右クリック",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "オーブを30秒間設置し、半径20ブロック",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "以内のプレイヤーを強化する。",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "最大マナの50%を消費する。",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "1つの設置効果のみ適用される。",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "        ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "設置効果",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "        ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ ",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "再生能力",
+                                            "color": "#CD5CAB",
+                                            "extra": [
+                                                {
+                                                    "translate": "enchantment.level.2",
+                                                    "extra": [
+                                                        {
+                                                            "text": "（0:10）"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ マナ自然回復 ",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "+50%",
+                                            "color": "aqua"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ オーブ",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪✪",
+                                                    "color": "blue",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
