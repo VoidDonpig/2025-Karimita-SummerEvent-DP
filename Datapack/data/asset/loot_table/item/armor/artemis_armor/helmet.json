@@ -31,6 +31,21 @@
                                     "italic": false
                                 },
                                 {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ ﾌﾙｾｯﾄﾎﾞｰﾅｽ: 弓の達人",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "追加の矢を2本放つ。",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
                                     "text": "         ",
                                     "color": "dark_gray",
                                     "strikethrough": true,
