@@ -14,8 +14,6 @@
 {Slot:6b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"blank"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:7b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"blank"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:8b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"blank"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
-{Slot:9b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
-{Slot:17b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:18b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:19b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:20b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\

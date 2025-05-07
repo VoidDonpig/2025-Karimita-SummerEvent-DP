@@ -9,6 +9,9 @@
     data modify storage ui: entry_data.components set from entity @s Items[{Slot:4b}].components
     item modify entity @s container.4 ui:crafter/item_init
 
+# set graphic recipe
+    data modify entity @s Items append from storage ui:recipe grecipe[]
+
 # recipe checks
     execute on passengers run tag @s add craft_ok
     execute on passengers run function ui:crafter/page/weapon/craft/count_item with storage ui: entry_data.recipe_components[0]
