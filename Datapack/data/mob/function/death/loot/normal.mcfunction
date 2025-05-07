@@ -17,3 +17,4 @@
     execute as @a[tag=this] run tag @s remove this
     scoreboard players reset $exp_loot temporary
     scoreboard players reset $gold_loot temporary
+    tag @s add already_looted

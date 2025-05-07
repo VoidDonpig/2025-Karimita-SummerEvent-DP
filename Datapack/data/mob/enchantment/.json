@@ -141,13 +141,25 @@
           "type": "minecraft:run_function",
           "function": "mob:death/loot/"
         },
-        "requirements": {
-          "condition": "minecraft:entity_properties",
-          "entity": "this",
-          "predicate": {
-            "nbt": "{DeathTime:1s,data:{mob:{boss:0b}}}"
+        "requirements": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{DeathTime:0s}"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{data:{mob:{boss:0b}}}"
+            }
           }
-        }
+        ]
       },
       {
         "effect": {
