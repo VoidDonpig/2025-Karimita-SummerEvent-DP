@@ -16,5 +16,5 @@
     execute unless data storage ui: entry_data.recipe_components[0] run scoreboard players reset $needed_items temporary
     execute unless data storage ui: entry_data.recipe_components[0] run scoreboard players reset $custom temporary
     execute unless data storage ui: entry_data.recipe_components[0] run scoreboard players reset $count temporary
-    execute unless data storage ui: entry_data.recipe_components[0] run data remove entity @s data.crafting_item.recipe_components
+    execute unless data storage ui: entry_data.recipe_components[0] run data remove storage ui: entry_data.recipe_components
     execute if data storage ui: entry_data.recipe_components[0] run function ui:crafter/page/weapon/craft/count_item with storage ui: entry_data.recipe_components[0]

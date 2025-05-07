@@ -6,8 +6,8 @@
 
 # count item
     execute store result score $custom temporary run data get entity @s data.crafting_item.recipe_components[0].custom
-    $execute if score $custom temporary matches 0 on vehicle on vehicle on attacker store result score $count temporary run clear @s $(name)[!minecraft:custom_data~{custom_item:1b}] $(count)
-    $execute if score $custom temporary matches 1 on vehicle on vehicle on attacker store result score $count temporary run clear @s $(name)[minecraft:custom_data~$(custom_data)] $(count)
+    $execute if score $custom temporary matches 0 on vehicle on vehicle on attacker run clear @s $(name)[!minecraft:custom_data~{custom_item:1b}] $(count)
+    $execute if score $custom temporary matches 1 on vehicle on vehicle on attacker run clear @s $(name)[minecraft:custom_data~$(custom_data)] $(count)
 
 # repeat
     data remove entity @s data.crafting_item.recipe_components[0]

@@ -10,15 +10,15 @@
     item modify entity @s container.4 ui:crafter/item_init
 
 # set graphic recipe
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:9b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:10b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:11b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:12b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:13b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:14b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:15b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:16b}]
-    data modify entity @s Items append from storage ui:recipe grecipe[{Slot:17b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:9b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:10b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:11b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:12b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:13b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:14b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:15b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:16b}]
+    data modify entity @s Items append from storage ui: entry_data.grecipe[{Slot:17b}]
 
 # recipe checks
     execute on passengers run tag @s add craft_ok

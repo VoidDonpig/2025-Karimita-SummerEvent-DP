@@ -38,7 +38,7 @@
     execute if score @s ui_page matches 100..106 on vehicle run function ui:crafter/page/weapon/craft/init with storage ui: crafter_page
 
 # craft
-    execute if entity @s[tag=crafting] run function ui:crafter/page/weapon/craft/check
+    execute if entity @s[tag=crafting] run function ui:crafter/page/weapon/craft/check with storage ui: crafter_page
 
 # sound
     execute if entity @s[tag=tick_once] run playsound minecraft:ui.button.click master @p ~ ~ ~ 0.2 1.0 0.0
