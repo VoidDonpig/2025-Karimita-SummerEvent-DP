@@ -8,7 +8,7 @@
     scoreboard players add @s death_timer.1 1
 
 # kill
-    execute if score @s death_timer.1 matches 1 run kill @s
+    execute if score @s death_timer.1 matches 1.. run kill @s
 
 # kill nether star
     execute if score @s death_timer.1 matches 1 run kill @e[type=item,distance=..4,nbt={Item:{id:"minecraft:nether_star"}}]

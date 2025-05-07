@@ -19,6 +19,14 @@
     execute unless data storage ui: return_items[] run data remove storage ui: return_items
     execute if data storage ui: return_items[] run function ui:return_item/
 
+# move to other page
+    execute store result score $total_page temporary if data storage ui:recipe recipe.weapon[]
+    scoreboard players remove $total_page temporary 1
+    execute if score @s crafter_page < $total_page temporary unless data storage ui: items[{Slot:17b,components:{"minecraft:custom_data":{ui:{type:"forward"}}}}] run tag @s add forward
+    execute if score @s crafter_page matches 1.. unless data storage ui: items[{Slot:9b,components:{"minecraft:custom_data":{ui:{type:"backward"}}}}] run tag @s add backward
+    execute if entity @s[tag=backward] run scoreboard players remove @s crafter_page 1
+    execute if entity @s[tag=forward] run scoreboard players add @s crafter_page 1
+
 # move page
     execute unless data storage ui: items[{Slot:0b,components:{"minecraft:custom_data":{ui:{type:"blank"}}}}] run scoreboard players set @s ui_page 0
     execute unless data storage ui: items[{Slot:1b,components:{"minecraft:custom_data":{ui:{type:"blank"}}}}] run scoreboard players set @s ui_page 0
@@ -40,12 +48,10 @@
 # get page data
     execute store result storage ui: crafter_page.page int 1 run scoreboard players get @s crafter_page
 
-# craft item
-    execute if score @s ui_page matches 100..106 run function ui:crafter/page/weapon/craft/init with storage ui: crafter_page
-
 # update menu
     execute if score @s ui_page matches 0 on vehicle run function ui:crafter/page/init
     execute if score @s ui_page matches 1 on vehicle run function ui:crafter/page/weapon/init with storage ui: crafter_page
+    execute if score @s ui_page matches 100..106 on vehicle run function ui:crafter/page/weapon/craft/init with storage ui: crafter_page
 
 # sound
     execute if entity @s[tag=tick_once] run playsound minecraft:ui.button.click master @p ~ ~ ~ 0.2 1.0 0.0

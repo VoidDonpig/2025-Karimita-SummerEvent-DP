@@ -5,8 +5,8 @@
 # @within mob:init/
 
 # set enchantment
-    execute if entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s equipment set value {"body":{id:"dirt",count:1,components:{"minecraft:enchantments":{"mob:":1}}}}
-    execute unless entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s equipment set value {"feet":{id:"dirt",count:1,components:{"minecraft:enchantments":{"mob:":1}}}}
+    execute if entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s equipment.body set value {id:"dirt",count:1,components:{"minecraft:enchantments":{"mob:":1}}}
+    execute unless entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s equipment.feet set value {id:"dirt",count:1,components:{"minecraft:enchantments":{"mob:":1}}}
     data modify entity @s data.mob.id set from storage mob:init id
 
 # increase follow range

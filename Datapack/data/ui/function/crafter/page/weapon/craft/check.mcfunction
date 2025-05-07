@@ -2,7 +2,7 @@
 #
 # craft check and do
 #
-# @within ui:crafter/page/weapon/craft/init
+# @within ui:crafter/page/weapon/craft/changed
 
 # get crafting item data
     $execute in world:admin_area run loot replace block 0 0 0 container.0 loot asset:item/$(result)
@@ -10,16 +10,13 @@
 
 # count item
     tag @s add craft_ok
-    function ui:crafter/page/weapon/craft/count_item with entity @s data.crafting_item.recipe_components[0]
+    function ui:crafter/page/weapon/craft/count_item with storage ui: entry_data.recipe_components[0]
 
 # give item
     execute if entity @s[tag=craft_ok] run function ui:crafter/page/weapon/craft/
     execute unless entity @s[tag=craft_ok] run data remove storage ui: give_item
     execute unless entity @s[tag=craft_ok] on vehicle on vehicle on attacker run tellraw @s {"text":"材料が足りない！","color":"red"}
 
-# set page
-    scoreboard players set @s ui_page 1
-
 # reset
     tag @s remove craft_ok
-    data remove entity @s data.craftable_item
+    tag @s remove crafting

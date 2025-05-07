@@ -158,7 +158,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "nbt": "{data:{mob:{have_death_event:1b,boss:0b}}}"
+            "nbt": "{DeathTime:1s,data:{mob:{have_death_event:1b,boss:0b}}}"
           }
         }
       },
