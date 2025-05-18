@@ -1,11 +1,13 @@
 {
     "type": "minecraft:overworld",
     "generator": {
-        "type": "minecraft:noise",
-        "settings": "world:the_sky_land",
-        "biome_source": {
-            "type": "minecraft:fixed",
-            "biome": "world:the_sky_land"
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "world:the_sky_land",
+            "lakes": false,
+            "features": false,
+            "layers": [],
+            "structure_overrides": []
         }
     }
 }

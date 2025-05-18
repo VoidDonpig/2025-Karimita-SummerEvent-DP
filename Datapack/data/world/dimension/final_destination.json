@@ -1,11 +1,13 @@
 {
     "type": "world:final_destination",
     "generator": {
-        "type": "minecraft:noise",
-        "settings": "world:final_destination",
-        "biome_source": {
-            "type": "minecraft:fixed",
-            "biome": "world:final_destination"
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "world:final_destination",
+            "lakes": false,
+            "features": false,
+            "layers": [],
+            "structure_overrides": []
         }
     }
 }

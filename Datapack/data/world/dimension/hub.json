@@ -6,9 +6,7 @@
             "biome": "minecraft:the_void",
             "lakes": false,
             "features": false,
-            "layers": [
-                
-            ],
+            "layers": [],
             "structure_overrides": []
         }
     }

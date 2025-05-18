@@ -6,9 +6,7 @@
             "biome": "world:void_of_origin",
             "lakes": false,
             "features": false,
-            "layers": [
-                
-            ],
+            "layers": [],
             "structure_overrides": []
         }
     }

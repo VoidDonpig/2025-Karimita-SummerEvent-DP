@@ -1,24 +1,13 @@
 {
     "type": "world:remnants_of_cataclysm",
     "generator": {
-        "type": "minecraft:noise",
-        "settings": "world:remnants_of_cataclysm",
-        "biome_source": {
-            "type": "minecraft:multi_noise",
-            "biomes": [
-                {
-                    "biome": "world:devastated_land",
-                    "parameters": {
-                        "temperature": 0,
-                        "humidity": 0,
-                        "continentalness": 0,
-                        "erosion": 0,
-                        "weirdness": 0,
-                        "depth": 0,
-                        "offset": 0
-                    }
-                }
-            ]
+        "type": "minecraft:flat",
+        "settings": {
+            "biome": "world:devastated_land",
+            "lakes": false,
+            "features": false,
+            "layers": [],
+            "structure_overrides": []
         }
     }
 }
