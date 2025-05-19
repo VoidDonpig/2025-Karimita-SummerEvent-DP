@@ -168,20 +168,10 @@
         },
         "requirements": [
           {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "nbt": "{DeathTime:0s}"
-              }
-            }
-          },
-          {
             "condition": "minecraft:entity_properties",
             "entity": "this",
             "predicate": {
-              "nbt": "{data:{mob:{have_death_event:1b,boss:0b}}}"
+              "nbt": "{Health:0.0f,data:{mob:{have_death_event:1b,boss:0b}}}"
             }
           }
         ]

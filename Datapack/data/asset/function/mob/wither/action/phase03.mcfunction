@@ -40,11 +40,13 @@
 
 # vanish underling
     execute if score @s ai_timer.2 matches 900 if entity @e[type=wither,tag=wither_underling] run tag @s add this
+    execute if score @s ai_timer.2 matches 900 if entity @s[tag=this] run function health_display:update
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run scoreboard players add @n[tag=this] mob.health 100
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run particle flame ~ ~1.0 ~ 0.5 0.5 0.5 0.2 32 force @a[distance=..32]
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run playsound block.sculk_shrieker.shriek hostile @a ~ ~ ~ 2 0.5 0
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run tp @s ~ -1000 ~
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run tag @s add dead
     execute if score @s ai_timer.2 matches 900 if score @s mob.health matches 6751.. run scoreboard players set @s mob.health 6750
-    execute if score @s ai_timer.2 matches 900 if entity @s[tag=this] run function health_display:update
     execute if score @s ai_timer.2 matches 900 run tag @s remove this
 
 # summon underling

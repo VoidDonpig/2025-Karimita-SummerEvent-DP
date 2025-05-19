@@ -38,9 +38,9 @@
     #data modify storage mob:init data.AbsorptionAmount set value 2048.0
 
 # define whether have specific events
-    #data modify storage mob:init data.have_always_action set value 1b
+    data modify storage mob:init data.have_always_action set value 1b
     #data modify storage mob:init data.have_death_event set value 1b
-    #data modify storage mob:init data.have_hurt_event set value 1b
+    data modify storage mob:init data.have_hurt_event set value 1b
 
 # define loot
     data modify storage mob:init data.loot.combat_exp set value 300
@@ -48,3 +48,6 @@
 
 # define boss
     data modify storage mob:init data.boss set value 1b
+
+# remove ai
+    data modify entity @s DragonPhase set value 10

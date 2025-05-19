@@ -14,4 +14,4 @@
     scoreboard objectives setdisplay below_name health
     scoreboard objectives setdisplay list health
     scoreboard objectives modify health displayautoupdate true
-    scoreboard objectives modify health rendertype integer
+    scoreboard objectives modify health rendertype hearts

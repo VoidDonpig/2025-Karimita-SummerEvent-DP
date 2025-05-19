@@ -85,9 +85,8 @@
         scoreboard objectives add bloodlust_timer dummy
         scoreboard objectives add bloodlust_count dummy
         scoreboard objectives add bloodlust_attack_damage dummy
-        scoreboard objectives add assassin_leap_count dummy
-        scoreboard objectives add assassin_leap_timer dummy
-        scoreboard objectives add assassin_leap_charging dummy
+        scoreboard objectives add vicacious_ferocity_timer dummy
+        scoreboard objectives add vicacious_ferocity_cooltime dummy
 
 # mob
     scoreboard objectives add mob.id dummy

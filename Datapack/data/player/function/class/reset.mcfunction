@@ -11,9 +11,8 @@
     scoreboard players reset @s bloodlust_attack_damage
     scoreboard players reset @s bloodlust_count
     scoreboard players reset @s bloodlust_timer
-    scoreboard players reset @s assassin_leap_charging
-    scoreboard players reset @s assassin_leap_count
-    scoreboard players reset @s assassin_leap_timer
+    scoreboard players reset @s vicacious_ferocity_timer
+    scoreboard players reset @s vicacious_ferocity_cooltime
     scoreboard players reset @s healing_aura_timer
     scoreboard players reset @s healing_circle_timer
     scoreboard players reset @s wish_cooltime

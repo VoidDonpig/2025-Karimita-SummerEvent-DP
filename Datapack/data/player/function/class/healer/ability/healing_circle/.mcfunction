@@ -7,7 +7,7 @@
 # circle
     scoreboard players set $radius temporary 4
     scoreboard players operation $radius temporary *= @s class.healer.level
-    execute store result storage player: healing_circle.radius double 0.01 run scoreboard players add $radius temporary 400
+    execute store result storage player: healing_circle.radius double 0.01 run scoreboard players add $radius temporary 250
 
 # parcicle
     execute rotated 0 0 run function player:class/healer/ability/healing_circle/circle with storage player: healing_circle

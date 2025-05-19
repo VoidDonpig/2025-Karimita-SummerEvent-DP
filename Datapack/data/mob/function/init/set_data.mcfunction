@@ -38,6 +38,7 @@
 
 # set loot
     execute if data storage mob:init data.loot.combat_exp run data modify entity @s data.mob.loot.exp set from storage mob:init data.loot.combat_exp
+    execute if data storage mob:init data.loot.gold run data modify entity @s data.mob.loot.gold set from storage mob:init data.loot.gold
 
 # set boss
     data modify entity @s data.mob.boss set value 0b

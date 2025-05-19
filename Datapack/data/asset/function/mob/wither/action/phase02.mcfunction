@@ -60,10 +60,10 @@
 
 # curse of wither
     execute if score @s ai_timer.2 matches 600..800 run data modify entity @s Invul set value 2
-    execute if score @s ai_timer.2 matches 600..700 run particle large_smoke ~ ~4.0 ~ 0.4 0.2 0.4 0 32 force @a[distance=..64]
-    execute if score @s ai_timer.2 matches 600..700 run particle electric_spark ~ ~4.0 ~ 0.4 0.2 0.4 1 32 force @a[distance=..64]
-    execute if score @s ai_timer.2 matches 600..660 run scoreboard players operation $interval temporary = @s ai_timer.2
-    execute if score @s ai_timer.2 matches 600..660 run scoreboard players operation $interval temporary %= $2 constant
+    execute if score @s ai_timer.2 matches 600..800 run particle large_smoke ~ ~4.0 ~ 0.4 0.2 0.4 0 32 force @a[distance=..64]
+    execute if score @s ai_timer.2 matches 600..800 run particle electric_spark ~ ~4.0 ~ 0.4 0.2 0.4 1 32 force @a[distance=..64]
+    execute if score @s ai_timer.2 matches 600..760 run scoreboard players operation $interval temporary = @s ai_timer.2
+    execute if score @s ai_timer.2 matches 600..760 run scoreboard players operation $interval temporary %= $2 constant
     execute if score $interval temporary matches 0 run playsound block.bell.resonate hostile @a ~ ~5.0 ~ 16 1 0
     execute if score $interval temporary matches 0 run playsound block.beacon.activate hostile @a ~ ~5.0 ~ 16 0.5 0
     scoreboard players reset $interval temporary
