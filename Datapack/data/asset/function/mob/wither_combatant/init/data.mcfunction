@@ -17,9 +17,9 @@
     data modify storage mob:init data.equipment.mainhand set value {"id":"netherite_sword"}
     #data modify storage mob:init data.equipment.offhand set value {"id":"shield"}
 
-    #data modify storage mob:init data.DeathLootTable set value "entities/allay"
+    data modify storage mob:init data.DeathLootTable set value "asset:empty"
 
-    #data modify storage mob:init data.Slient set value 1b
+    #data modify storage mob:init data.Silent set value 1b
 
     data modify storage mob:init PersistenceRequired set value 0b
 

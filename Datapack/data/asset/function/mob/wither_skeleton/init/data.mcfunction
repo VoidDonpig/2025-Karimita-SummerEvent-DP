@@ -21,7 +21,7 @@
 
     #data modify storage mob:init data.DeathLootTable set value "entities/allay"
 
-    #data modify storage mob:init data.Slient set value 1b
+    #data modify storage mob:init data.Silent set value 1b
 
     #data modify storage mob:init PersistenceRequired set value 1b
 

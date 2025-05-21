@@ -6,7 +6,7 @@
 
 # set data
     data modify storage mob:init data.CustomName set value {"text":"✪ Divine Creation ✪","color":"white","bold":true}
-    data modify storage mob:init data.CustomNameVisible set value 1b
+    #data modify storage mob:init data.CustomNameVisible set value 1b
 
     data modify storage mob:init data.active_effects set value [{id:"resistance",duration:-1,"amplifier":3,"show_particles":false},{id:"regeneration",duration:-1,"amplifier":1,"show_particles":false},{id:"fire_resistance",duration:-1,"amplifier":0,"show_particles":false}]
 
@@ -17,9 +17,9 @@
     data modify storage mob:init data.equipment.mainhand set value {"id":"netherite_sword","components":{"minecraft:enchantment_glint_override":true}}
     data modify storage mob:init data.equipment.offhand set value {"id":"netherite_sword","components":{"minecraft:enchantment_glint_override":true}}
 
-    #data modify storage mob:init data.DeathLootTable set value "entities/allay"
+    data modify storage mob:init data.DeathLootTable set value "asset:empty"
 
-    data modify storage mob:init data.Slient set value 1b
+    data modify storage mob:init data.Silent set value 1b
 
     data modify storage mob:init PersistenceRequired set value 1b
 

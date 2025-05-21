@@ -19,5 +19,3 @@
     playsound entity.ghast.scream player @a ~ ~ ~ 1 1.1 0
     playsound entity.ghast.scream player @a ~ ~ ~ 1 1.0 0
     playsound entity.zombie_villager.cure player @a ~ ~ ~ 1 2 0
-    execute anchored eyes run particle trial_spawner_detection_ominous ^ ^ ^ 0.4 0.4 0.4 0 16 force @a[distance=..32]
-    
