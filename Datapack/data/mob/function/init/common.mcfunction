@@ -13,8 +13,7 @@
     attribute @s minecraft:follow_range modifier add mob:init/common-follow_range 2.0 add_multiplied_base
 
 # prevent drop
-    execute if entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s drop_chances set value {"body":0.0}
-    execute unless entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s drop_chances set value {"feet":0.0}
+    data modify entity @s drop_chances set value {"body":0.0f,"chest":0.0f,"feet":0.0f,head:0.0f,legs:0.0f,mainhand:0.0f,offhand:0.0f,saddle:0.0f}
     data modify entity @s CanPickUpLoot set value 0b
 
 # mob id

@@ -7,6 +7,7 @@
 # death event
     scoreboard players add @s death_timer.1 1
     execute if score @s death_timer.1 matches 1 run data modify entity @s NoAI set value 1b
+    execute if score @s death_timer.1 matches 1 run data modify entity @s Invulnerable set value 1b
     execute if score @s death_timer.1 matches 1 run playsound entity.ender_dragon.death hostile @a ~ ~ ~ 16 1 1
 
     execute if score @s death_timer.1 matches 1..179 if predicate lib:periodic/5 run particle flash ~ ~ ~ 4.0 2.0 4.0 0 16 force @a

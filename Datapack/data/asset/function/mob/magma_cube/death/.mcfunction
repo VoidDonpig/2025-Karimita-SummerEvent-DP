@@ -4,8 +4,11 @@
 #
 # @within mob:death/run
 
+# timer
+    scoreboard players add @s death_timer.1 1
+
 # loot
-    execute if data entity @s {DeathTime:1s} run loot spawn ~ ~ ~ loot entities/magma_cube
+    execute if score @s death_timer.1 matches 1 run loot spawn ~ ~ ~ loot entities/magma_cube
 
 # vanish
-    execute if data entity @s {DeathTime:19s} run tp @s ~ -1000 ~
+    execute if score @s death_timer.1 matches 19 run function lib:vanish/

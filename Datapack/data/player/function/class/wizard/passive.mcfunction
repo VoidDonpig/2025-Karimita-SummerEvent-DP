@@ -14,3 +14,7 @@
 # apply
     scoreboard players operation @s max_health += $max_health temporary
     scoreboard players operation @s max_mana += $max_mana temporary
+
+# reset
+    scoreboard players reset $max_health temporary
+    scoreboard players reset $max_mana temporary

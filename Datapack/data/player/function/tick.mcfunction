@@ -11,6 +11,10 @@
     tag @s remove player.exception
     tag @s[gamemode=!survival,gamemode=!adventure] add player.exception
 
+# set gamemode
+    execute if entity @s[tag=!admin,predicate=world:adventure_dimension] run gamemode adventure
+    execute if entity @s[tag=!admin,predicate=!world:adventure_dimension] run gamemode survival
+
 # death event
     execute if score @s death matches 1.. run function player:trigger/died/
     execute if entity @s[advancements={player:trigger/died=true}] run function player:trigger/died/

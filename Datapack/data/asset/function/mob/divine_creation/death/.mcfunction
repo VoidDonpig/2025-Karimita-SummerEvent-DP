@@ -5,4 +5,7 @@
 # @within mob:death/run
 
 # death event
-    playsound entity.zombie.death hostile @a ~ ~ ~ 1 0.5 0
+    execute unless entity @s[tag=already_dead] run playsound entity.zombie.death hostile @a ~ ~ ~ 2 0.5 0
+
+# add tag
+    tag @s add already_dead

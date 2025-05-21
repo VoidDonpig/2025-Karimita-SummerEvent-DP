@@ -1,0 +1,68 @@
+{
+	"condition": "minecraft:any_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:deep_cavern"
+				}
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:final_destination"
+				}
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:genesis_of_the_universe"
+				}
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:hell"
+				}
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:hub"
+				}
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:remnants_of_cataclysm"
+				}
+			}
+		},
+        {
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"location": {
+					"dimension": "world:the_sky_land"
+				}
+			}
+		}
+	]
+}

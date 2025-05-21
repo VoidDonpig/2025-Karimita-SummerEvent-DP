@@ -7,8 +7,8 @@
 # calculation
     scoreboard players set $max_health temporary 10
     scoreboard players set $attack_damage temporary 4
-    execute if predicate asset:weapon/melee/daggers run scoreboard players set $attack_damage temporary 8
-    scoreboard players set $movement_speed temporary 3
+    execute if predicate asset:weapon/melee/daggers run scoreboard players set $attack_damage temporary 5
+    scoreboard players set $movement_speed temporary 1
     scoreboard players set $attack_speed temporary 1
     scoreboard players set $ferocity temporary 1
     scoreboard players set $safe_fall_distance temporary 40
@@ -33,3 +33,12 @@
     scoreboard players operation @s ferocity += $ferocity temporary
     scoreboard players operation @s safe_fall_distance += $safe_fall_distance temporary
     scoreboard players operation @s attack_range += $attack_range temporary
+
+# reset
+    scoreboard players reset $max_health temporary
+    scoreboard players reset $attack_damage temporary
+    scoreboard players reset $movement_speed temporary
+    scoreboard players reset $attack_speed temporary
+    scoreboard players reset $ferocity temporary
+    scoreboard players reset $safe_fall_distance temporary
+    scoreboard players reset $attack_range temporary

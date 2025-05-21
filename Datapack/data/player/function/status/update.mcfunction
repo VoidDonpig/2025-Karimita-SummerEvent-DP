@@ -33,6 +33,11 @@
     scoreboard players operation @s attack_speed += $bonus_attack_speed temporary
     scoreboard players operation @s ferocity += $bonus_ferocity temporary
     scoreboard players operation @s arrow_damage_increase += $bonus_arrow_damage_increase temporary
+    # reset
+        scoreboard players reset $bonus_max_mana temporary
+        scoreboard players reset $bonus_attack_speed temporary
+        scoreboard players reset $bonus_ferocity temporary
+        scoreboard players reset $bonus_arrow_damage_increase temporary
 
 # enchantment
     execute store result score $wisdom_head temporary run data get entity @s equipment.head.components."minecraft:enchantments"."asset:wisdom"
@@ -49,6 +54,11 @@
     scoreboard players operation @s max_mana += $wisdom_chest temporary
     scoreboard players operation @s max_mana += $wisdom_legs temporary
     scoreboard players operation @s max_mana += $wisdom_feet temporary
+    # reset
+        scoreboard players reset $wisdom_head temporary
+        scoreboard players reset $wisdom_chest temporary
+        scoreboard players reset $wisdom_legs temporary
+        scoreboard players reset $wisdom_feet temporary
 
 
 # active passive
@@ -77,24 +87,3 @@
 
 # remove flag tag
     tag @s remove statusupdate
-
-# reset
-    scoreboard players reset $bonus_max_mana temporary
-    scoreboard players reset $bonus_attack_speed temporary
-    scoreboard players reset $bonus_ferocity temporary
-    scoreboard players reset $bonus_arrow_damage_increase temporary
-
-    scoreboard players reset $wisdom_head temporary
-    scoreboard players reset $wisdom_chest temporary
-    scoreboard players reset $wisdom_legs temporary
-    scoreboard players reset $wisdom_feet temporary
-
-    scoreboard players reset $max_health temporary
-    scoreboard players reset $max_mana temporary
-    scoreboard players reset $knockback_resistance temporary
-    scoreboard players reset $attack_range temporary
-    scoreboard players reset $attack_damage temporary
-    scoreboard players reset $movement_speed temporary
-    scoreboard players reset $attack_speed temporary
-    scoreboard players reset $ferocity temporary
-    scoreboard players reset $safe_fall_distance temporary

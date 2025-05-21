@@ -5,7 +5,7 @@
 # @within player:class/assassin/
 
 # charge
-    execute if predicate player:is_sneaking unless score @s vicacious_ferocity_cooltime matches 1.. run function player:class/assassin/ability/vicacious_ferocity/health_check
+    execute if predicate player:is_sneaking if predicate asset:weapon/melee/daggers unless score @s vicacious_ferocity_cooltime matches 1.. run function player:class/assassin/ability/vicacious_ferocity/health_check
 
 # timer
     execute if score @s vicacious_ferocity_cooltime matches 1.. run scoreboard players remove @s vicacious_ferocity_cooltime 1

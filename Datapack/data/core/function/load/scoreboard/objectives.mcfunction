@@ -101,6 +101,7 @@
         scoreboard objectives add ai_timer.5 dummy
         scoreboard objectives add ai_timer.6 dummy
         scoreboard objectives add ai_timer.7 dummy
+        scoreboard objectives add movement_timer.1 dummy
         scoreboard objectives add death_timer.1 dummy
         scoreboard objectives add death_timer.2 dummy
         scoreboard objectives add ai_counter.1 dummy

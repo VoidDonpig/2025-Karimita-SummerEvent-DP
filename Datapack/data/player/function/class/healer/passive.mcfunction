@@ -11,3 +11,6 @@
 
 # apply
     scoreboard players operation @s max_health += $max_health temporary
+
+# reset
+    scoreboard players reset $max_health

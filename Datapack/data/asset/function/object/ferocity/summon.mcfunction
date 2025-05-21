@@ -10,11 +10,11 @@
 
 # roll
     scoreboard players operation $ferocity_count_roll temporary = @p[tag=player.attacker] ferocity
-    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..}] run scoreboard players set $vicacious_ferocity temporary 100
-    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..}] run scoreboard players set $vicacious_ferocity_addition temporary 4
-    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..}] run scoreboard players operation $vicacious_ferocity_addition temporary *= @p[tag=player.attacker] class.assassin.level
-    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..}] run scoreboard players operation $vicacious_ferocity temporary += $vicacious_ferocity_addition temporary
-    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..}] run scoreboard players operation $ferocity_count_roll temporary += $vicacious_ferocity temporary
+    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..},predicate=asset:weapon/melee/daggers] run scoreboard players set $vicacious_ferocity temporary 100
+    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..},predicate=asset:weapon/melee/daggers] run scoreboard players set $vicacious_ferocity_addition temporary 4
+    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..},predicate=asset:weapon/melee/daggers] run scoreboard players operation $vicacious_ferocity_addition temporary *= @p[tag=player.attacker] class.assassin.level
+    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..},predicate=asset:weapon/melee/daggers] run scoreboard players operation $vicacious_ferocity temporary += $vicacious_ferocity_addition temporary
+    execute if entity @p[tag=player.attacker,predicate=player:team/class.assassin,scores={vicacious_ferocity_timer=1..},predicate=asset:weapon/melee/daggers] run scoreboard players operation $ferocity_count_roll temporary += $vicacious_ferocity temporary
 
 
     scoreboard players operation $ferocity_count_certainly temporary = $ferocity_count_roll temporary

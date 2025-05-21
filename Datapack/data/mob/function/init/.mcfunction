@@ -51,7 +51,7 @@
     execute if entity @s[type=minecraft:wither,tag=special_mob,tag=wither_underling] run data modify storage mob:init id set value wither_underling
     execute if entity @s[type=minecraft:wither_skeleton,tag=special_mob,tag=wither_combatant] run data modify storage mob:init id set value wither_combatant
     #execute if entity @s[type=minecraft:vex,tag=special_mob,tag=blowing_spirit] run data modify storage mob:init id set value blowing_spirit
-    #execute if entity @s[type=minecraft:zombie,tag=special_mob,tag=dragon_knight] run data modify storage mob:init id set value dragon_knight
+    execute if entity @s[type=minecraft:zombie,tag=special_mob,tag=dragon_knight] run data modify storage mob:init id set value dragon_knight
     #execute if entity @s[type=minecraft:giant,tag=special_mob,tag=revival_giant] run data modify storage mob:init id set value revival_giant
     execute if entity @s[type=minecraft:giant,tag=special_mob,tag=divine_creation] run data modify storage mob:init id set value divine_creation
     #execute if entity @s[type=minecraft:wither,tag=special_mob,tag=demiurge] run data modify storage mob:init id set value demiurge
