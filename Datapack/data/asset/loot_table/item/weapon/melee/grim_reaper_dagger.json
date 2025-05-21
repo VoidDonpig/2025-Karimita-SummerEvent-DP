@@ -55,7 +55,7 @@
                                     "text": "‣ 移動速度: ",
                                     "extra": [
                                         {
-                                            "text": "+0.1",
+                                            "text": "+0.05",
                                             "color": "green"
                                         }
                                     ],
@@ -145,7 +145,7 @@
                                 {
                                     "id": "grim_reaper_dagger_movement_speed_add_value",
                                     "attribute": "minecraft:movement_speed",
-                                    "amount": 0.1,
+                                    "amount": 0.05,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 }

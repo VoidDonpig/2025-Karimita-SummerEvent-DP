@@ -58,7 +58,7 @@
                                     "text": "‣ 移動速度: ",
                                     "extra": [
                                         {
-                                            "text": "+0.024",
+                                            "text": "+0.015",
                                             "color": "green"
                                         }
                                     ],
@@ -136,7 +136,7 @@
                                 {
                                     "id": "crash_shadow_helmet_movement_speed",
                                     "attribute": "minecraft:movement_speed",
-                                    "amount": 0.024,
+                                    "amount": 0.015,
                                     "operation": "add_value",
                                     "slot": "head"
                                 },

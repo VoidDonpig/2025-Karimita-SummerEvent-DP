@@ -55,7 +55,7 @@
                                     "text": "‣ 移動速度: ",
                                     "extra": [
                                         {
-                                            "text": "+0.05",
+                                            "text": "+0.02",
                                             "color": "green"
                                         }
                                     ],
@@ -151,7 +151,7 @@
                                 {
                                     "id": "hit_man_dagger_movement_speed_add_value",
                                     "attribute": "minecraft:movement_speed",
-                                    "amount": 0.05,
+                                    "amount": 0.02,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 }

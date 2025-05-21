@@ -58,7 +58,7 @@
                                     "text": "‣ 基礎ダメージ: ",
                                     "extra": [
                                         {
-                                            "text": "10",
+                                            "text": "5.5",
                                             "color": "green"
                                         }
                                     ],
@@ -130,7 +130,7 @@
                                 "enchantment_glint_override": true,
                                 "minecraft:item_model": "minecraft:bow",
                                 "enchantments": {
-                                    "power": 17
+                                    "power": 7
                                 },
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [

@@ -55,7 +55,7 @@
                                     "text": "‣ 移動速度: ",
                                     "extra": [
                                         {
-                                            "text": "+0.075",
+                                            "text": "+0.035",
                                             "color": "green"
                                         }
                                     ],
@@ -151,7 +151,7 @@
                                 {
                                     "id": "perfect_killer_dagger_movement_speed_add_value",
                                     "attribute": "minecraft:movement_speed",
-                                    "amount": 0.075,
+                                    "amount": 0.035,
                                     "operation": "add_value",
                                     "slot": "mainhand"
                                 }

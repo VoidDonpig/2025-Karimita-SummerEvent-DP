@@ -58,7 +58,7 @@
                                     "text": "‣ 移動速度: ",
                                     "extra": [
                                         {
-                                            "text": "+0.018",
+                                            "text": "+0.01",
                                             "color": "green"
                                         }
                                     ],
@@ -136,7 +136,7 @@
                                 {
                                     "id": "shadow_eater_leggings_movement_speed",
                                     "attribute": "minecraft:movement_speed",
-                                    "amount": 0.018,
+                                    "amount": 0.01,
                                     "operation": "add_value",
                                     "slot": "legs"
                                 },

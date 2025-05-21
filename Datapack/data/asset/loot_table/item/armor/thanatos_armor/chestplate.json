@@ -68,7 +68,7 @@
                                     "text": "‣ 移動速度: ",
                                     "extra": [
                                         {
-                                            "text": "+0.03",
+                                            "text": "+0.02",
                                             "color": "green"
                                         }
                                     ],
@@ -140,7 +140,7 @@
                                 {
                                     "id": "thanatos_chestplate_movement_speed",
                                     "attribute": "minecraft:movement_speed",
-                                    "amount": 0.03,
+                                    "amount": 0.02,
                                     "operation": "add_value",
                                     "slot": "chest"
                                 },
