@@ -14,12 +14,19 @@
     execute if predicate player:team/class.archer run function player:class/archer/when_shot
 
 # damage increase
-    execute if score @s arrow_damage_increase matches 1.. anchored eyes positioned ^ ^ ^ as @e[type=minecraft:arrow,distance=..2,tag=!already_arrow_damage_increase] run function player:arrow_damage_increase
+    execute if score @s arrow_damage_increase matches 1.. anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=!already_arrow_damage_increase] run function player:arrow_damage_increase
 
 # reduce artemis armor damage
-    execute anchored eyes positioned ^ ^ ^ as @e[type=minecraft:arrow,distance=..2,tag=artemis_armor_arrow,tag=!already_artemis_armor_arrow_damage_decrease] run function asset:item/artemis_armor/damage_decrease
+    execute anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=artemis_armor_arrow,tag=!already_artemis_armor_arrow_damage_decrease] run function asset:item/artemis_armor/damage_decrease
+
+# dragon tracer
+    execute if predicate asset:enchantment/dragon_tracer if score @s charging_bow matches 20.. anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=!already_init] run function asset:enchantment/dragon_tracer/
+
+# init complete
+     execute anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=artemis_armor_arrow,tag=!already_init] run tag @s add already_init
 
 # reset
     scoreboard players reset @s bow_used
     scoreboard players reset @s crossbow_used
+    scoreboard players reset @s charging_bow
     tag @s remove arrow_shot

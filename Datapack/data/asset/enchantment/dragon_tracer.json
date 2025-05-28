@@ -1,7 +1,7 @@
 {
     "anvil_cost": 1,
     "description": {
-        "text": "知恵"
+        "text": "ドラゴンの追跡者"
     },
     "max_cost": {
         "base": 16,
@@ -13,6 +13,6 @@
         "per_level_above_first": 10
     },
     "slots": [],
-    "supported_items": "#minecraft:enchantable/armor",
+    "supported_items": "#minecraft:enchantable/bow",
     "weight": 1
 }

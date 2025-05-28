@@ -17,6 +17,5 @@
     execute if entity @e[type=minecraft:arrow,tag=already_sharp_shot,tag=!archer_arrow_all_init] as @e[type=minecraft:arrow,tag=already_sharp_shot,tag=!archer_arrow_all_init] run tag @s add archer_arrow_all_init
 
 # reset
-    scoreboard players reset @s charging_bow
     tag @s remove left_shot
     tag @s remove right_shot

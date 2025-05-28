@@ -7,6 +7,9 @@
 # movement
     execute unless entity @s[tag=stop_moving] run function asset:mob/ender_dragon/base_move_01
 
+# atomspilit
+    function asset:mob/ender_dragon/action/atomspilit/
+
 # base timer
     scoreboard players add @s ai_timer.1 1
 
