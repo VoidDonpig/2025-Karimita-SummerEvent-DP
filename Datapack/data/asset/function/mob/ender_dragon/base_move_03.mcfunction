@@ -7,10 +7,10 @@
 # movement
     scoreboard players add @s movement_timer.1 1
     
-    execute if score @s movement_timer.1 matches 1..60 on vehicle facing 0 90 -65 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.8 ~ ~
-    execute if score @s movement_timer.1 matches 61..120 on vehicle facing -65 90 0 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.8 ~ ~
-    execute if score @s movement_timer.1 matches 121..180 on vehicle facing 65 90 0 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.8 ~ ~
-    execute if score @s movement_timer.1 matches 181..240 on vehicle facing 0 90 65 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.8 ~ ~
+    execute if score @s movement_timer.1 matches 1..60 on vehicle facing 0 90 -65 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.6 ~ ~
+    execute if score @s movement_timer.1 matches 61..120 on vehicle facing -65 90 0 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.6 ~ ~
+    execute if score @s movement_timer.1 matches 121..180 on vehicle facing 65 90 0 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.6 ~ ~
+    execute if score @s movement_timer.1 matches 181..240 on vehicle facing 0 90 65 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^4 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^1.6 ~ ~
 
     execute if score @s movement_timer.1 matches 1..60 facing 0 90 -65 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^0.1 facing entity @s feet facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
     execute if score @s movement_timer.1 matches 61..120 facing -65 90 0 rotated ~ ~ positioned ^ ^ ^0.5 rotated as @s positioned ^ ^ ^0.1 facing entity @s feet facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~

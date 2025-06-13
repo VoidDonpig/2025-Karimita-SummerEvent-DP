@@ -10,7 +10,7 @@
     gamerule disableElytraMovementCheck true
     gamerule disablePlayerMovementCheck
     gamerule keepInventory true
-    gamerule doImmediateRespawn true
+    gamerule doImmediateRespawn false
     gamerule forgiveDeadPlayers true
     gamerule spawnChunkRadius 0
     gamerule spawnRadius 0

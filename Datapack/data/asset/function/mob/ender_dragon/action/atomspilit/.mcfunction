@@ -6,7 +6,7 @@
 
 # aoe
     tag @s add this
-    execute as @a[distance=..14.5] run damage @s 11.5 mob_attack by @n[type=ender_dragon,tag=this]
+    execute as @a[distance=..14.5] run damage @s 20 mob_attack by @n[tag=this]
 
 # sfx
     particle witch ~ ~ ~ 8 8 8 0 64 force @a

@@ -12,5 +12,5 @@
     particle minecraft:dust{color:[0.0, 0.0, 0.0], scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0 4 force
     particle minecraft:dust{color:[0.949,0.251,1.000],scale:2.0} ~ ~ ~ 0.1 0.1 0.1 0 4 force
     scoreboard players add @s repeat_time 1
-    execute if entity @s[tag=!hitted] unless score @s repeat_time matches 8.. positioned as @s run function asset:object/ender_flame/teleport
+    execute if entity @s[tag=!hitted] unless score @s repeat_time matches 4.. positioned as @s run function asset:object/ender_flame/teleport
     scoreboard players reset @s repeat_time

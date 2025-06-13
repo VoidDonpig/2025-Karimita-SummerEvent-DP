@@ -38,7 +38,7 @@
     #data modify storage mob:init data.AbsorptionAmount set value 2048.0
 
 # define whether have specific events
-    #data modify storage mob:init data.have_always_action set value 1b
+    data modify storage mob:init data.have_always_action set value 1b
     #data modify storage mob:init data.have_death_event set value 1b
     #data modify storage mob:init data.have_hurt_event set value 1b
 

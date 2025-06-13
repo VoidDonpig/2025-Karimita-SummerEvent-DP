@@ -5,4 +5,4 @@
 # @within mob:hurt/run
 
 # sfx
-    playsound entity.ender_dragon.hurt hostile @a ~ ~ ~ 2 1.2 0
+    playsound entity.ender_dragon.hurt hostile @a[distance=..32] ~ ~ ~ 2 1.2 0

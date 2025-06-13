@@ -9,7 +9,7 @@
 
     particle dragon_breath ^ ^ ^4 ^ ^10000000 ^ 0.0000005 0 force @a
 
-    execute unless score @s repeat_time matches 360.. rotated ~1 ~ run function asset:object/void_apocalypse_marker/repeat_1
+    execute unless score @s repeat_time matches 45.. rotated ~8 ~ run function asset:object/void_apocalypse_marker/repeat_1
 
 # reset
     scoreboard players reset @s repeat_time

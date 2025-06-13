@@ -27,6 +27,11 @@
                                     "italic": false
                                 },
                                 {
+                                    "text": "矢はエンダードラゴンを追尾する。",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
                                     "text": "発射時に手持ちの矢を消費しない。",
                                     "color": "gray",
                                     "italic": false
@@ -125,7 +130,8 @@
                                 "enchantment_glint_override": false,
                                 "minecraft:item_model": "minecraft:bow",
                                 "enchantments": {
-                                    "power": 5
+                                    "power": 5,
+                                    "asset:dragon_tracer": 5
                                 },
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
