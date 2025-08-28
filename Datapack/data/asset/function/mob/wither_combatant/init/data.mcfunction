@@ -21,7 +21,7 @@
 
     #data modify storage mob:init data.Silent set value 1b
 
-    data modify storage mob:init PersistenceRequired set value 0b
+    data modify storage mob:init data.PersistenceRequired set value 0b
 
     #data modify storage mob:init data.NoAI set value 1b
 

@@ -5,16 +5,18 @@
 # @within asset:mob/ender_dragon/action
 
 # movement
-    execute unless entity @s[tag=stop_moving] run function asset:mob/ender_dragon/base_move_02
+    execute unless entity @s[tag=stop_moving] unless entity @s[tag=moving_to_0_0] run function asset:mob/ender_dragon/base_move_02
+    execute if entity @s[tag=moving_to_0_0] run function asset:mob/ender_dragon/move_to_0_0
 
 # atomspilit
     execute if predicate lib:periodic/20 run function asset:mob/ender_dragon/action/atomspilit/
 
 # base timer
     scoreboard players add @s ai_timer.1 1
+    execute if score @s ai_timer.2 matches 1.. run scoreboard players reset @s ai_timer.1
 
 # ender flame
-    execute if predicate lib:periodic/35 positioned ^ ^ ^-5 as @a[distance=..128,tag=!player.exception] run function asset:mob/ender_dragon/action/ender_flame/
+    execute unless score @s ai_counter.1 matches 4 if predicate lib:periodic/35 positioned ^ ^ ^-5 as @a[distance=..128,tag=!player.exception] run function asset:mob/ender_dragon/action/ender_flame/
 
 # lightning strike
     # action
@@ -39,6 +41,27 @@
 # dimensional singularity
     execute if score @s ai_timer.1 matches 400 if score @s ai_counter.1 matches 3 run function asset:mob/ender_dragon/action/dimensional_singularity/
 
+# spawning egg
+    # move to 0 0
+        execute if score @s ai_timer.1 matches 400 if score @s ai_counter.1 matches 4 run tag @s add moving_to_0_0
+    # add score if reach 0 0
+        execute positioned 0 100 0 if entity @s[tag=moving_to_0_0,distance=..4] run scoreboard players add @s ai_timer.2 1
+    # manage tag
+        execute if score @s ai_timer.2 matches 1 run tag @s add stop_moving
+        execute if score @s ai_timer.2 matches 1 run tag @s remove moving_to_0_0
+    # keep adding score
+        execute if score @s ai_timer.2 matches 1.. run scoreboard players add @s ai_timer.2 1
+    # particle line
+        execute if score @s ai_timer.2 matches 1.. positioned ^4.0 ^ ^4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^-4.0 ^ ^4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^4.0 ^ ^-4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^-4.0 ^ ^-4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+    # add damage
+        execute if score @s ai_timer.2 matches 100 positioned 0 66 0 run function asset:mob/ender_dragon/action/spawning_egg/lay
+    # remove tag
+        execute if score @s ai_timer.2 matches 100 run tag @s remove stop_moving
+
 # reset
     scoreboard players reset @s[scores={ai_timer.1=400..}] ai_timer.1
-    scoreboard players reset @s[scores={ai_counter.1=3..}] ai_counter.1
+    scoreboard players reset @s[scores={ai_counter.1=4..,ai_timer.2=100..}] ai_counter.1
+    scoreboard players reset @s[scores={ai_timer.2=100..}] ai_timer.2

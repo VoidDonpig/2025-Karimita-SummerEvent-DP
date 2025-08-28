@@ -9,4 +9,4 @@
 #       needed health for ability
 
 # check health
-    execute unless score @s health >= $needed_health temporary run tag @s remove health_ok
+    execute unless score @s health > $needed_health temporary run tag @s remove health_ok

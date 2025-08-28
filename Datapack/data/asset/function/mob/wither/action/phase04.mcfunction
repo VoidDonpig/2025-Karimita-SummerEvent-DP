@@ -40,6 +40,10 @@
 
 # rapid wither skull
     execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 run function asset:mob/wither/action/empowered_skull_shot/
+    execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
 
 # wither frenzy
     execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/10 run function asset:mob/wither/action/wither_frenzy/
@@ -59,6 +63,16 @@
 # nuclear explosion
     execute if score @s ai_timer.2 matches 700 run scoreboard players set @s ai_counter.2 250
     execute if score @s ai_timer.2 matches 700..1879 if predicate lib:periodic/5 run function asset:mob/wither/action/nuclear_explosion/
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 700..1879 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    # sfx
+        execute if score @s ai_timer.2 matches 700..1879 anchored eyes run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 2 1 0
 
 # hit count
     execute if score @s ai_counter.2 matches ..0 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "グッ...！なかなかやるな。","color": "red"}]
@@ -83,12 +97,46 @@
 
 # lightning wither head + catastrophic lightning + empower skull shot
     execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/20 run function asset:mob/wither/action/lightning_wither_head/
-    execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:monster,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
+    execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
     execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/5 run function asset:mob/wither/action/empowered_skull_shot/
 
 # skull rush
     execute if score @s ai_timer.2 matches 3080 run tag @s add stop_moving
     execute if score @s ai_timer.2 matches 3080.. if predicate lib:periodic/5 run function asset:mob/wither/action/empowered_skull_shot/
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
+    # sfx
+        execute if score @s ai_timer.2 matches 3080.. anchored eyes run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 2 1 0
 
 # withered aura
     execute if predicate lib:periodic/5 run function asset:mob/wither/action/withered_aura/

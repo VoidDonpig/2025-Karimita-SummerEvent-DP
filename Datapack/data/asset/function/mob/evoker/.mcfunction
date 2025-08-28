@@ -32,7 +32,7 @@
     # keep adding timer
         execute if score @s ai_timer.3 matches 0.. run scoreboard players add @s ai_timer.3 1
     # make evoker sit down
-        execute if score @s ai_timer.3 matches 1 run summon armor_stand ~ ~0.2 ~ {Tags:["defensive_fang_sit_armor_stand","not_init"],Invisible:1b,Marker:1b,Silent:1b}
+        execute if score @s ai_timer.3 matches 1 run summon armor_stand ~ ~0.2 ~ {Tags:["defensive_fang_sit_armor_stand","not_init","autokill","no_passenger_kill"],Invisible:1b,Marker:1b,Silent:1b}
         execute if score @s ai_timer.3 matches 1 run ride @s mount @n[type=armor_stand,tag=defensive_fang_sit_armor_stand,tag=not_init]
         execute if score @s ai_timer.3 matches 1 on vehicle run tag @s remove not_init
     # summon fang

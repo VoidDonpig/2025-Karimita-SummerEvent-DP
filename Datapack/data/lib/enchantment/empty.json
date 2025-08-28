@@ -1,0 +1,16 @@
+{
+    "description": "",
+    "supported_items": "dirt",
+    "weight": 255,
+    "max_level": 1,
+    "min_cost": {
+        "base": 255,
+        "per_level_above_first": 255
+    },
+    "max_cost": {
+        "base": 255,
+        "per_level_above_first": 255
+    },
+    "anvil_cost": 255,
+    "slots": []
+}

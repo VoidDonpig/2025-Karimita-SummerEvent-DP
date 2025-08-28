@@ -1,4 +1,4 @@
-# asset:mob/divine_creation/hurt/
+# asset:mob/dragon_knight/hurt/
 #
 # hurt event
 #

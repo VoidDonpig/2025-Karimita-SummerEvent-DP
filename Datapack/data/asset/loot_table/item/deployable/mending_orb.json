@@ -98,7 +98,7 @@
                                     "italic": false,
                                     "extra": [
                                         {
-                                            "text": "再生能力",
+                                            "translate": "effect.minecraft.regeneration",
                                             "color": "#CD5CAB",
                                             "extra": [
                                                 {

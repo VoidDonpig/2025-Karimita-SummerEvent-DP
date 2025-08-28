@@ -6,7 +6,7 @@
 
 # set data
     execute in world:admin_area run summon marker 0 0 0 {Tags:["ferocity","asset","not_init"],data:{asset:{id:ferocity}}}
-    execute if entity @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}}] run function asset:object/ferocity/get_melee
+    execute if entity @p[tag=player.attacker] run function asset:object/ferocity/get_melee
 
 # roll
     scoreboard players operation $ferocity_count_roll temporary = @p[tag=player.attacker] ferocity

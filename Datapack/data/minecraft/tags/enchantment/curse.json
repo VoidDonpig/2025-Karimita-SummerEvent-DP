@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:binding_curse",
+    "minecraft:vanishing_curse",
+    "asset:pre/range/damage",
+    "asset:pre/range/effect/fiend_bow",
+    "asset:pre/range/effect/monster_bow",
+    "asset:pre/range/effect/monster_buster_bow"
+  ]
+}

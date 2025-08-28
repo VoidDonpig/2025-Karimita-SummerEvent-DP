@@ -8,7 +8,7 @@
     execute on target run tag @s add target
 
 # remove skull
-    kill @e[type=minecraft:wither_skull,tag=!rapid_wither_skull_shot,distance=..5]
+    kill @e[type=minecraft:wither_skull,tag=!rapid_wither_skull_shot,tag=!nuclear_frenzy_wither_skull,distance=..5]
 
 # phase
     execute if score @s mob.health matches 10126.. run function asset:mob/wither/action/phase01

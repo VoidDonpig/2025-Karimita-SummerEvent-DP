@@ -1,0 +1,192 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {
+                                    "text": "‣ ｱﾋﾞﾘﾃｨ: モンスターキラー",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "‣ 発動方法: 矢をモンスターにヒットさせる。",
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "矢がヒットしたモンスターにエフェクトを与える。",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｱﾋﾞﾘﾃｨ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "          ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ ",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "effect.minecraft.slowness",
+                                            "color": "#8BAFE0",
+                                            "extra": [
+                                                {
+                                                    "translate": "potion.potency.2",
+                                                    "extra": [
+                                                        {
+                                                            "text": "（0:10）"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ ",
+                                    "color": "white",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "effect.minecraft.wither",
+                                            "color": "#736156",
+                                            "extra": [
+                                                {
+                                                    "translate": "potion.potency.2",
+                                                    "extra": [
+                                                        {
+                                                            "text": "（0:10）"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true,
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "text": "ｽﾃｰﾀｽ",
+                                            "strikethrough": false,
+                                            "extra": [
+                                                {
+                                                    "text": "           ",
+                                                    "strikethrough": true
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "text": "‣ 基礎ダメージ: ",
+                                    "extra": [
+                                        {
+                                            "text": "6.0",
+                                            "color": "green"
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "                         ",
+                                    "color": "dark_gray",
+                                    "strikethrough": true
+                                },
+                                {
+                                    "text": "‣ 弓",
+                                    "extra": [
+                                        {
+                                            "text": "【",
+                                            "extra": [
+                                                {
+                                                    "text": "✪✪✪✪",
+                                                    "color": "dark_purple",
+                                                    "extra": [
+                                                        {
+                                                            "text": "✪",
+                                                            "color": "dark_gray",
+                                                            "extra": [
+                                                                {
+                                                                    "text": "】",
+                                                                    "color": "white"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": "{custom_item:1b,custom_item_id:\"fiend_bow\",type:\"bow\"}"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "target": "item_name",
+                            "name": {
+                                "text": "悪鬼の弓",
+                                "color": "dark_purple",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:unbreakable": {},
+                                "minecraft:damage_resistant": {
+                                    "types": "#is_fire"
+                                },
+                                "enchantment_glint_override": false,
+                                "enchantments": {
+                                    "asset:pre/range/damage": 10,
+                                    "asset:pre/range/effect/fiend_bow": 1
+                                },
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:unbreakable"
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

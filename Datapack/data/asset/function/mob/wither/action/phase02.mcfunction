@@ -40,7 +40,7 @@
 
 # rapid wither skull
     execute if score @s ai_timer.2 matches 1..299 if predicate lib:periodic/10 run function asset:mob/wither/action/rapid_skull_shot/
-    execute if score @s ai_timer.2 matches 800..1200 if predicate lib:periodic/5 run function asset:mob/wither/action/rapid_skull_shot/
+    execute if score @s ai_timer.2 matches 840..1200 if predicate lib:periodic/5 run function asset:mob/wither/action/rapid_skull_shot/
 
 # lightning wither head
     execute if score @s ai_timer.2 matches 300 run tag @s add stop_moving
@@ -56,7 +56,7 @@
     execute if score @s ai_timer.2 matches 400 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "雷よ、奴を滅せよ！","color": "red"}]
     execute if score @s ai_timer.2 matches 400 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "私のエネルギーはこの程度ではない。","color": "red"}]
     execute if score @s ai_timer.2 matches 400 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "早々に諦めた方が楽に死ねるぞ。","color": "red"}]
-    execute if score @s ai_timer.2 matches 400..600 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:monster,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
+    execute if score @s ai_timer.2 matches 400..600 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
 
 # curse of wither
     execute if score @s ai_timer.2 matches 600..800 run data modify entity @s Invul set value 2
@@ -70,24 +70,34 @@
     execute if score @s ai_timer.2 matches 600 run function asset:mob/wither/action/curse_of_wither/
     execute if score @s ai_timer.2 matches 600 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 600 run title @a title {"text":"10","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 600 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 620 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 620 run title @a title {"text":"9","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 620 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 640 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 640 run title @a title {"text":"8","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 640 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 660 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 660 run title @a title {"text":"7","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 660 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 680 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 680 run title @a title {"text":"6","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 680 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 700 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 700 run title @a title {"text":"5","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 700 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 720 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 720 run title @a title {"text":"4","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 720 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 740 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 740 run title @a title {"text":"3","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 740 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 760 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 760 run title @a title {"text":"2","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 760 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 780 run title @a times 0 20 0
     execute if score @s ai_timer.2 matches 780 run title @a title {"text":"1","color":"dark_red"}
+    execute if score @s ai_timer.2 matches 780 run title @a subtitle {"text":"オーブに触れて呪いを浄化せよ！","color":"red"}
     execute if score @s ai_timer.2 matches 800 as @a[tag=wither_cursed] at @s run function asset:mob/wither/action/curse_of_wither/kill
     execute if score @s ai_timer.2 matches 800 run playsound entity.lightning_bolt.thunder hostile @a ~ ~ ~ 16 2 0
     execute if score @s ai_timer.2 matches 800 run playsound entity.zombie.break_wooden_door hostile @a ~ ~ ~ 16 0.5 0

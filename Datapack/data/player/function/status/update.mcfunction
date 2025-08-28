@@ -40,25 +40,27 @@
         scoreboard players reset $bonus_arrow_damage_increase temporary
 
 # enchantment
-    execute store result score $wisdom_head temporary run data get entity @s equipment.head.components."minecraft:enchantments"."asset:wisdom"
-    execute store result score $wisdom_chest temporary run data get entity @s equipment.chest.components."minecraft:enchantments"."asset:wisdom"
-    execute store result score $wisdom_legs temporary run data get entity @s equipment.legs.components."minecraft:enchantments"."asset:wisdom"
-    execute store result score $wisdom_feet temporary run data get entity @s equipment.feet.components."minecraft:enchantments"."asset:wisdom"
+    # wisdom
+        # calc
+            execute store result score $wisdom_head temporary run data get entity @s equipment.head.components."minecraft:enchantments"."asset:wisdom"
+            execute store result score $wisdom_chest temporary run data get entity @s equipment.chest.components."minecraft:enchantments"."asset:wisdom"
+            execute store result score $wisdom_legs temporary run data get entity @s equipment.legs.components."minecraft:enchantments"."asset:wisdom"
+            execute store result score $wisdom_feet temporary run data get entity @s equipment.feet.components."minecraft:enchantments"."asset:wisdom"
 
-    scoreboard players operation $wisdom_head temporary *= $20 constant
-    scoreboard players operation $wisdom_chest temporary *= $20 constant
-    scoreboard players operation $wisdom_legs temporary *= $20 constant
-    scoreboard players operation $wisdom_feet temporary *= $20 constant
+            scoreboard players operation $wisdom_head temporary *= $20 constant
+            scoreboard players operation $wisdom_chest temporary *= $20 constant
+            scoreboard players operation $wisdom_legs temporary *= $20 constant
+            scoreboard players operation $wisdom_feet temporary *= $20 constant
 
-    scoreboard players operation @s max_mana += $wisdom_head temporary
-    scoreboard players operation @s max_mana += $wisdom_chest temporary
-    scoreboard players operation @s max_mana += $wisdom_legs temporary
-    scoreboard players operation @s max_mana += $wisdom_feet temporary
-    # reset
-        scoreboard players reset $wisdom_head temporary
-        scoreboard players reset $wisdom_chest temporary
-        scoreboard players reset $wisdom_legs temporary
-        scoreboard players reset $wisdom_feet temporary
+            scoreboard players operation @s max_mana += $wisdom_head temporary
+            scoreboard players operation @s max_mana += $wisdom_chest temporary
+            scoreboard players operation @s max_mana += $wisdom_legs temporary
+            scoreboard players operation @s max_mana += $wisdom_feet temporary
+        # reset
+            scoreboard players reset $wisdom_head temporary
+            scoreboard players reset $wisdom_chest temporary
+            scoreboard players reset $wisdom_legs temporary
+            scoreboard players reset $wisdom_feet temporary
 
 
 # active passive

@@ -20,6 +20,7 @@
     execute if data storage mob:init data.damage run function mob:init/attribute/damage with storage mob:init data
     execute if data storage mob:init data.attack_knockback run function mob:init/attribute/attack_knockback with storage mob:init data
     execute if data storage mob:init data.knockback_resistance run function mob:init/attribute/knockback_resistance with storage mob:init data
+    execute if data storage mob:init data.explosion_knockback_resistance run function mob:init/attribute/explosion_knockback_resistance with storage mob:init data
     execute if data storage mob:init data.movement_speed run function mob:init/attribute/movement_speed with storage mob:init data
     execute if data storage mob:init data.movement_efficiency run function mob:init/attribute/movement_efficiency with storage mob:init data
     execute if data storage mob:init data.water_movement_efficiency run function mob:init/attribute/water_movement_efficiency with storage mob:init data

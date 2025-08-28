@@ -51,7 +51,7 @@
     # move to 0 0
         execute if score @s ai_timer.1 matches 400 if score @s ai_counter.1 matches 4 run tag @s add moving_to_0_0
     # add score if reach 0 0
-        execute positioned 0 128 0 if entity @s[tag=moving_to_0_0,distance=..4] run scoreboard players add @s ai_timer.2 1
+        execute positioned 0 100 0 if entity @s[tag=moving_to_0_0,distance=..4] run scoreboard players add @s ai_timer.2 1
     # manage tag
         execute if score @s ai_timer.2 matches 1 run tag @s add stop_moving
         execute if score @s ai_timer.2 matches 1 run tag @s remove moving_to_0_0
