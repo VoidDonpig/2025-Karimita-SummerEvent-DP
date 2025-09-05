@@ -5,7 +5,7 @@
 # @within asset:obkect/withering_soul/
 
 # teleport
-    tp @s ^ ^ ^0.5
+    tp @s ^ ^ ^1.0
 
 # hit detection
     execute on passengers at @s unless block ~ ~0.5 ~ #lib:not_solid run tag @s add hit

@@ -1,21 +1,21 @@
 #> player:class/knight/ability/powerful_slash/damage
 #
-# normal slash
+# damage
 #
 # @within player:class/knight/ability/powerful_slash/do
-#         player:class/knight/ability/powerful_slash/damage
+
+# enchantment
+    tag @s add this
+    scoreboard players operation $powerful_slash_damage temporary = $damage temporary
+    execute as @p[tag=player.attacker] run function player:class/knight/ability/powerful_slash/enchantment
+    execute if entity @p[tag=player.attacker,predicate=lib:is_falling] run scoreboard players operation $powerful_slash_damage temporary *= $3 constant
+    execute if entity @p[tag=player.attacker,predicate=lib:is_falling] run scoreboard players operation $powerful_slash_damage temporary /= $2 constant
+    execute store result storage player: powerful_slash.damage float 1.0 run scoreboard players get $powerful_slash_damage temporary
 
 # damage
-    particle minecraft:dust{color:[1.000,1.000,1.000],scale:0.75} ~ ~ ~
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:mob,dx=1] run tag @s add hitted
-    
-# repeat
-    $execute positioned ^ ^ ^0.2 if entity @s[distance=..$(range)] run function player:class/knight/ability/powerful_slash/damage with storage player: powerful_slash
+    function player:class/knight/ability/powerful_slash/apply with storage player: powerful_slash
 
-# rotate
-    $execute positioned ^ ^ ^0.2 unless entity @s[distance=..$(range)] run scoreboard players add @s repeat_time 1
-    $execute positioned ^ ^ ^0.2 unless entity @s[distance=..$(range)] unless score @s repeat_time matches 30.. positioned as @s positioned ~ ~1 ~ rotated ~5 0 positioned ^ ^ ^0.2 run function player:class/knight/ability/powerful_slash/damage with storage player: powerful_slash
-    $execute positioned ^ ^ ^0.2 unless entity @s[distance=..$(range)] if score @s repeat_time matches 30.. run scoreboard players reset @s repeat_time
-
-# cooltime
-    scoreboard players set @s powerful_slash_cooltime 14
+# reset
+    tag @s remove this
+    tag @s remove hitted
+    scoreboard players reset $powerful_slash_damage temporary

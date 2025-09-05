@@ -64,6 +64,14 @@
         execute if score @s ai_timer.2 matches 60 as @a[distance=..256] at @s run function asset:mob/ender_dragon/action/mega_impact/
     # remove tag
         execute if score @s ai_timer.2 matches 120 run tag @s remove stop_moving
+# spawning egg
+    # particle line
+        execute if score @s ai_timer.2 matches 1.. positioned ^4.0 ^ ^4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^-4.0 ^ ^4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^4.0 ^ ^-4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^-4.0 ^ ^-4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+    # summon egg
+        execute if score @s ai_timer.2 matches 100 positioned 0 66 0 run function asset:mob/ender_dragon/action/spawning_egg/lay
 
 # frenzy
     execute if score @s ai_counter.1 matches 4 if predicate lib:y_above_80 run function asset:mob/ender_dragon/action/dragonic_frenzy/

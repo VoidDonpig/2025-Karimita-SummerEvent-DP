@@ -119,22 +119,6 @@
     execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
     execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
     execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
-    execute if score @s ai_timer.2 matches 3080.. anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head
     # sfx
         execute if score @s ai_timer.2 matches 3080.. anchored eyes run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 2 1 0
 

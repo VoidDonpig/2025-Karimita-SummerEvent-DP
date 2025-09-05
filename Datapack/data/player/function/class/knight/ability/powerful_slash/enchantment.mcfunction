@@ -1,8 +1,8 @@
-#> asset:object/ferocity/enchantment
+#> player:class/knight/ability/powerful_slash/enchantment
 #
 # increase damage including enchantments
 #
-# @within asset:object/ferocity/get_melee
+# @within player:class/knight/ability/powerful_slash/damage
 
 # enchantment
     # sharpness
@@ -128,15 +128,15 @@
 
 # add damage
     scoreboard players operation $enchantments_damage temporary /= $10 constant
-    scoreboard players operation $ferocity_damage temporary += $enchantments_damage temporary
+    scoreboard players operation $powerful_slash_damage temporary += $enchantments_damage temporary
 
 # boss destroyer
-    scoreboard players operation $boss_destroyer_damage temporary = $ferocity_damage temporary
+    scoreboard players operation $boss_destroyer_damage temporary = $powerful_slash_damage temporary
     execute store result score $boss_destroyer_level temporary run data get entity @s SelectedItem.components.minecraft:enchantments."asset:boss_destroyer"
     scoreboard players operation $boss_destroyer_level temporary *= $5 constant
     scoreboard players operation $boss_destroyer_damage temporary *= $boss_destroyer_level temporary
     scoreboard players operation $boss_destroyer_damage temporary /= $100 constant
-    execute if entity @n[tag=this,nbt={data:{mob:{boss:1b}}}] run scoreboard players operation $ferocity_damage temporary += $boss_destroyer_damage temporary
+    execute if entity @n[tag=this,nbt={data:{mob:{boss:1b}}}] run scoreboard players operation $powerful_slash_damage temporary += $boss_destroyer_damage temporary
     # reset
         scoreboard players reset $boss_destroyer_damage temporary
         scoreboard players reset $boss_destroyer_level temporary

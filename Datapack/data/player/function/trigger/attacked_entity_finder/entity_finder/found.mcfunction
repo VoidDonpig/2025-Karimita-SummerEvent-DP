@@ -10,6 +10,9 @@
 # set cooltime
     scoreboard players set @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}}] attack_cooltime 1000
 
+# hit sound
+    execute as @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-projectile=true}}] at @s run playsound entity.experience_orb.pickup player @s ~ ~ ~ 0.5 0.8 0.5
+
 # ferocity
     execute if entity @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}}] run function asset:object/ferocity/summon
 

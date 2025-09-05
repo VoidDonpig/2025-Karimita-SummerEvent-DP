@@ -61,7 +61,15 @@
         execute if score @s ai_timer.2 matches 60 as @a[distance=..256] at @s run function asset:mob/ender_dragon/action/mega_impact/
     # remove tag
         execute if score @s ai_timer.2 matches 120 run tag @s remove stop_moving
-
+# spawning egg
+    # particle line
+        execute if score @s ai_timer.2 matches 1.. positioned ^4.0 ^ ^4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^-4.0 ^ ^4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^4.0 ^ ^-4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+        execute if score @s ai_timer.2 matches 1.. positioned ^-4.0 ^ ^-4.0 run function asset:mob/ender_dragon/action/spawning_egg/particle_line
+    # summon egg
+        execute if score @s ai_timer.2 matches 100 positioned 0 66 0 run function asset:mob/ender_dragon/action/spawning_egg/lay
+        
 # reset
     scoreboard players reset @s[scores={ai_timer.1=400..}] ai_timer.1
     scoreboard players reset @s[scores={ai_counter.1=4..,ai_timer.2=120..}] ai_counter.1

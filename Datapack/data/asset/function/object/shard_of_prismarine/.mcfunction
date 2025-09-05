@@ -1,4 +1,8 @@
 #> asset:object/shard_of_prismarine/
+#
+# tick
+#
+# @within asset:
 
 # act
     function asset:object/shard_of_prismarine/teleport

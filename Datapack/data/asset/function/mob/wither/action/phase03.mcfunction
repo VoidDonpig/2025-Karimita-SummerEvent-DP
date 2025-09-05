@@ -38,16 +38,17 @@
 # insta kill
     execute if score @s ai_timer.1 matches 1 run function asset:mob/wither/action/insta_kill/
 
+# death lay
+    execute if score @s ai_timer.2 matches 600 run function asset:mob/wither/action/death_ray/summon_1
+    execute if score @s ai_timer.2 matches 610 run function asset:mob/wither/action/death_ray/summon_2
+    execute if score @s ai_timer.2 matches 620 run function asset:mob/wither/action/death_ray/summon_3
+
 # vanish underling
-    execute if score @s ai_timer.2 matches 900 if entity @e[type=wither,tag=wither_underling] run tag @s add this
-    execute if score @s ai_timer.2 matches 900 if entity @s[tag=this] run function health_display:update
-    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run scoreboard players add @n[tag=this] mob.health 100
-    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run particle flame ~ ~1.0 ~ 0.5 0.5 0.5 0.2 32 force @a[distance=..32]
-    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run playsound block.sculk_shrieker.shriek hostile @a ~ ~ ~ 2 0.5 0
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run summon marker ~ ~1.5 ~ {Tags:["asset","wither_healing_soul"],data:{asset:{id:wither_healing_soul}}}
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run particle flame ~ ~1.0 ~ 0.5 0.5 0.5 0.2 32 force @a
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run playsound block.sculk_shrieker.shriek hostile @a ~ ~ ~ 2 0.5 1
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run tp @s ~ -1000 ~
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run tag @s add dead
-    execute if score @s ai_timer.2 matches 900 if score @s mob.health matches 6751.. run scoreboard players set @s mob.health 6750
-    execute if score @s ai_timer.2 matches 900 run tag @s remove this
 
 # summon underling
     execute if score @s ai_timer.2 matches 900 run function asset:mob/wither/action/call_underling/

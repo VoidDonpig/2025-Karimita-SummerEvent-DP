@@ -5,7 +5,7 @@
 # @within asset:
 
 # attack detection
-    execute if data entity @s attack run function asset:object/withering_soul/attacked
+    execute if data entity @s[tag=!asset.withering_soul.attacked] attack run function asset:object/withering_soul/attacked
 
 # teleport
     execute if entity @s[tag=asset.withering_soul.attacked] on vehicle at @s run function asset:object/withering_soul/teleport

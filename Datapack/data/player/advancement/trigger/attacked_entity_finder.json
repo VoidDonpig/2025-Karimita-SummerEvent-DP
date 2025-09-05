@@ -616,7 +616,24 @@
                     }
                 }
             }
-        }
+        },
+        "sword": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"type": {
+						"source_entity": {
+							"equipment": {
+								"mainhand": {
+									"items": "#minecraft:swords"
+								}
+							}
+						},
+						"is_direct": true
+					}
+				}
+			}
+		}
     },
     "requirements": [
         [
@@ -754,7 +771,8 @@
             "weapon-mace",
             "weapon-trident",
             "exception",
-            "ferocity"
+            "ferocity",
+            "sword"
         ]
     ],
     "rewards": {
