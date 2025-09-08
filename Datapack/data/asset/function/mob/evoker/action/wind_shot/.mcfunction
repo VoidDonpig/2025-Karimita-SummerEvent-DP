@@ -19,7 +19,6 @@
     tag @s remove attacker
 
 # end init
-    damage @n[type=wind_charge,tag=blazing_flame_wind_charge,tag=not_init] 0.0
     tag @n[type=wind_charge,tag=blazing_flame_wind_charge,tag=not_init] remove not_init
 
 # playsound

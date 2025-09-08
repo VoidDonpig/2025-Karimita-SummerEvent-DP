@@ -6,7 +6,7 @@
 
 # calculation
     scoreboard players set $max_health temporary 10
-    scoreboard players set $max_mana temporary 10
+    scoreboard players set $max_mana temporary 20
 
     scoreboard players operation $max_health temporary *= @s class.wizard.level
     scoreboard players operation $max_mana temporary *= @s class.wizard.level

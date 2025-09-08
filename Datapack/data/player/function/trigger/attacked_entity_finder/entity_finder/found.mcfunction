@@ -10,14 +10,14 @@
 # set cooltime
     scoreboard players set @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}}] attack_cooltime 1000
 
-# hit sound
-    execute as @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-projectile=true}}] at @s run playsound entity.experience_orb.pickup player @s ~ ~ ~ 0.5 0.8 0.5
+# assassination
+    execute if items entity @p[tag=player.attacker] weapon.mainhand *[enchantments~[{"enchantments":"asset:assassination"}]] unless data entity @s {data:{mob:{boss:1b}}} as @p[tag=player.attacker] run function asset:enchantment/assassination/
 
 # ferocity
     execute if entity @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}}] run function asset:object/ferocity/summon
 
 # shadow strike
-    execute if entity @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}},predicate=asset:armor/full/thanatos_armor] run function asset:object/shadow_strike/summon
+    execute if entity @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true,shadow_strike=false}},predicate=asset:armor/full/thanatos_armor] run function asset:object/shadow_strike/summon
 
 # remove tag
     tag @s remove mob.victim

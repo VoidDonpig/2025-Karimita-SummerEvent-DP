@@ -25,7 +25,6 @@
     tag @s remove attacker
 
 # end init
-    damage @n[type=fireball,tag=dragonic_frenzy_fireball,tag=not_init] 0.0
     tag @n[type=fireball,tag=dragonic_frenzy_fireball,tag=not_init] remove not_init
 
 # sfx

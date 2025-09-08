@@ -18,9 +18,6 @@
     data remove entity @s weapon.components."minecraft:enchantments"."minecraft:power"
     data remove entity @s weapon.components."minecraft:enchantments"."asset:pre/range/damage"
 
-# tag
-    tag @s add already_convert_power_into_damage
-
 # reset
     scoreboard players reset $damage temporary
     scoreboard players reset $power temporary

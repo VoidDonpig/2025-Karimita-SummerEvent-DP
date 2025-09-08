@@ -26,7 +26,6 @@
     tag @s remove attacker
 
 # end init
-    damage @n[type=wither_skull,tag=nuclear_frenzy_wither_skull,tag=not_init] 0.0
     tag @n[type=wither_skull,tag=nuclear_frenzy_wither_skull,tag=not_init] remove not_init
 
 # reset

@@ -30,7 +30,6 @@
     tag @s remove attacker
 
 # end init
-    damage @n[type=small_fireball,tag=burning_lay_fireball,tag=not_init] 0.0
     tag @n[type=small_fireball,tag=burning_lay_fireball,tag=not_init] remove not_init
 
 # sfx

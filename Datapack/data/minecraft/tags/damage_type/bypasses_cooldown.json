@@ -29,6 +29,7 @@
         "minecraft:wind_charge",
         "minecraft:wither_skull",
         "lib:bypasses_player_attack",
-        "lib:ferocity"
+        "lib:ferocity",
+        "lib:shadow_strike"
     ]
 }

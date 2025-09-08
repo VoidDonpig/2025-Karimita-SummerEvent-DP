@@ -5,10 +5,10 @@
 # @within asset:mob/ancestral_dragon/init/
 
 # set data
-    data modify storage mob:init data.CustomName set value {"text":"Ancestral Dragon","bold":true,"color":"red"}
+    data modify storage mob:init data.CustomName set value ["",{"text":"a","obfuscated":true,"bold":true,"color":"red"},{"text":"THE ANCESTRAL DRAGON","bold":true,"color":"red"},{"text":"a","obfuscated":true,"bold":true,"color":"red"}]
     data modify storage mob:init data.CustomNameVisible set value 1b
 
-    data modify storage mob:init data.active_effects set value [{id:"resistance",duration:-1,"amplifier":1,"show_particles":false}]
+    data modify storage mob:init data.active_effects set value [{id:"resistance",duration:-1,"amplifier":3,"show_particles":false}]
 
     #data modify storage mob:init data.equipment.head set value {"id":"diamond_helmet"}
     #data modify storage mob:init data.equipment.chest set value {"id":"diamond_chestplate"}
@@ -27,9 +27,10 @@
 
 # define attribute
     data modify storage mob:init data.health set value 300000
-    data modify storage mob:init data.damage set value 400.0
+    #data modify storage mob:init data.damage set value 400.0
     data modify storage mob:init data.attack_knockback set value 4.0
     data modify storage mob:init data.knockback_resistance set value 1.0
+    data modify storage mob:init data.explosion_knockback_resistance set value 1.0
     #data modify storage mob:init data.movement_speed set value 1024.0
     #data modify storage mob:init data.movement_efficiency set value 1.0
     #data modify storage mob:init data.water_movement_efficiency set value 1.0
@@ -38,9 +39,9 @@
     #data modify storage mob:init data.AbsorptionAmount set value 2048.0
 
 # define whether have specific events
-    #data modify storage mob:init data.have_always_action set value 1b
+    data modify storage mob:init data.have_always_action set value 1b
     #data modify storage mob:init data.have_death_event set value 1b
-    #data modify storage mob:init data.have_hurt_event set value 1b
+    data modify storage mob:init data.have_hurt_event set value 1b
 
 # define loot
     data modify storage mob:init data.loot.combat_exp set value 120000
@@ -48,3 +49,6 @@
 
 # define boss
     data modify storage mob:init data.boss set value 1b
+
+# remove ai
+    data modify entity @s DragonPhase set value 10

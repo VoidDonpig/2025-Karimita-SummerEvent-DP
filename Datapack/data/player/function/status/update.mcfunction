@@ -17,6 +17,7 @@
     scoreboard players set @s attack_speed 100
     scoreboard players set @s ferocity 0
     scoreboard players set @s arrow_damage_increase 0
+    scoreboard players set @s arrow_speed_increase 0
     scoreboard players set @s safe_fall_distance 300
 
 # bonus status
@@ -33,11 +34,13 @@
     scoreboard players operation @s attack_speed += $bonus_attack_speed temporary
     scoreboard players operation @s ferocity += $bonus_ferocity temporary
     scoreboard players operation @s arrow_damage_increase += $bonus_arrow_damage_increase temporary
+    scoreboard players operation @s arrow_speed_increase += $bonus_arrow_speed_increase temporary
     # reset
         scoreboard players reset $bonus_max_mana temporary
         scoreboard players reset $bonus_attack_speed temporary
         scoreboard players reset $bonus_ferocity temporary
         scoreboard players reset $bonus_arrow_damage_increase temporary
+        scoreboard players reset $bonus_arrow_speed_increase temporary
 
 # enchantment
     # wisdom
@@ -69,6 +72,9 @@
     execute if predicate player:team/class.assassin run function player:class/assassin/passive
     execute if predicate player:team/class.wizard run function player:class/wizard/passive
     execute if predicate player:team/class.healer run function player:class/healer/passive
+
+# permanent bonus
+    function player:status/permanent
 
 # bloodlust
     execute if predicate player:team/class.assassin run scoreboard players operation @s attack_damage += @s bloodlust_attack_damage

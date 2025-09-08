@@ -1,4 +1,4 @@
-#> asset:mob/ender_dragon/death/
+#> asset:mob/the_ancestral_dragon/death/
 #
 # death event
 #

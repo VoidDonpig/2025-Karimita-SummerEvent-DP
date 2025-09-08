@@ -7,7 +7,7 @@
 
 # slash
     particle minecraft:dust{color:[1.000,1.000,1.000],scale:0.75} ~ ~ ~
-    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:mob,dx=1] run tag @s add hitted
+    execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#lib:mob,dx=0] run tag @s add hitted
     
 # repeat
     $execute positioned ^ ^ ^0.2 if entity @s[distance=..$(range)] run function player:class/knight/ability/powerful_slash/slash with storage player: powerful_slash

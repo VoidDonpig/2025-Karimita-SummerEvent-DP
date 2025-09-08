@@ -8,5 +8,5 @@
 
 # deal damage
     tag @s add this
-    $execute as @e[type=#lib:mob,distance=..5] run damage @s $(damage) mace_smash
+    $execute as @e[type=#lib:mob,distance=..6] run damage @s $(damage) mace_smash
     tag @s remove this

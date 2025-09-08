@@ -19,7 +19,6 @@
     tag @s remove attacker
 
 # end init
-    damage @n[type=small_fireball,tag=purgatory_flare_small_fireball,tag=not_init] 0.0
     tag @n[type=small_fireball,tag=purgatory_flare_small_fireball,tag=not_init] remove not_init
 
 # repeat

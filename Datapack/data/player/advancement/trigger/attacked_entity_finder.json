@@ -617,6 +617,21 @@
                 }
             }
         },
+         "shadow_strike": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "lib:is_shadow_strike",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         "sword": {
 			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
@@ -772,6 +787,7 @@
             "weapon-trident",
             "exception",
             "ferocity",
+            "shadow_strike",
             "sword"
         ]
     ],

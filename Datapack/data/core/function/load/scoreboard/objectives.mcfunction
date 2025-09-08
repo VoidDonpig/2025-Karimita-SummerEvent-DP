@@ -23,6 +23,7 @@
     scoreboard objectives add autokill_timer dummy
     scoreboard objectives add death deathCount
     scoreboard objectives add arrow_damage_increase dummy
+    scoreboard objectives add arrow_speed_increase dummy
     scoreboard objectives add safe_fall_distance dummy
     scoreboard objectives add cosmetic dummy
     scoreboard objectives add cosmetic_timer dummy

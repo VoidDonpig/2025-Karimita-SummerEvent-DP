@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#lib:is_ferocity",
+    "#lib:is_shadow_strike",
+    "#lib:is_explosion",
+    "#lib:is_projectile"
+  ]
+}

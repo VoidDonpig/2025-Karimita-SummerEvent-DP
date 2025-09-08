@@ -8,6 +8,11 @@
     scoreboard players add @s arrow_damage_increase 50
     scoreboard players operation @s arrow_damage_increase += @s class.archer.level
 
+    scoreboard players add @s arrow_speed_increase 5
+    scoreboard players operation $arrow_speed_increase temporary += @s class.archer.level
+    scoreboard players operation $arrow_speed_increase temporary /= $2 constant
+    scoreboard players operation @s arrow_speed_increase += $arrow_speed_increase temporary
+
     scoreboard players set $max_health temporary 10
     #scoreboard players set $movement_speed temporary 2
 
@@ -20,3 +25,4 @@
 
 # reset
     scoreboard players reset $max_health temporary
+    scoreboard players reset $arrow_speed_increase temporary

@@ -30,6 +30,7 @@
     #data modify storage mob:init data.damage set value 1024.0
     data modify storage mob:init data.attack_knockback set value 4.0
     data modify storage mob:init data.knockback_resistance set value 1.0
+    data modify storage mob:init data.explosion_knockback_resistance set value 1.0
     #data modify storage mob:init data.movement_speed set value 1024.0
     #data modify storage mob:init data.movement_efficiency set value 1.0
     #data modify storage mob:init data.water_movement_efficiency set value 1.0

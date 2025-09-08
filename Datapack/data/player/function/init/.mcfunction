@@ -17,9 +17,6 @@
 # join knight
     function player:class/knight/join
 
-# tag status update
-    tag @s add statusupdate
-
 # teleport to hub
     execute in world:hub run tp @s 0 63 0
 

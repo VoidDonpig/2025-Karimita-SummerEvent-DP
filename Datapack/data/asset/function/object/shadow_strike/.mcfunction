@@ -19,7 +19,9 @@
 
     execute as @n[tag=shadow_strike.victim] at @s run function asset:object/shadow_strike/damage with storage asset: __temp__
 
-    kill @s
+    scoreboard players remove @s shadow_strike_count 1
+
+    execute if score @s shadow_strike_count matches ..0 run kill @s
 
 # reset
     data remove storage asset: __temp__

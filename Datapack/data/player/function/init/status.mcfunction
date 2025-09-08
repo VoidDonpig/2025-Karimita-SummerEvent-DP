@@ -6,17 +6,7 @@
 
 # set status
     scoreboard players set @s health 200
-    scoreboard players set @s max_health 200
     scoreboard players set @s mana 100
-    scoreboard players set @s max_mana 100
-    scoreboard players set @s armor 0
-    scoreboard players set @s armor_toughness 0
-    scoreboard players set @s movement_speed 100
-    scoreboard players set @s attack_damage 10
-    scoreboard players set @s attack_range 300
-    scoreboard players set @s luck 0
-    scoreboard players set @s knockback_resistance 0
-    scoreboard players set @s attack_speed 100
     scoreboard players set @s gold 0
 
 # set levels
@@ -43,3 +33,6 @@
     scoreboard players set @s class.assassin.next_exp 100
     scoreboard players set @s class.wizard.next_exp 100
     scoreboard players set @s class.healer.next_exp 100
+
+# tag status update
+    tag @s add statusupdate
