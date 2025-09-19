@@ -6,3 +6,4 @@
 
 # init
     $function asset:mob/$(id)/init/
+    $tag @s add $(id)

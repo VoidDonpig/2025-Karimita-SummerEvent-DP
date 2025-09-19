@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:golden_carrot",
+                    "name": "minecraft:stick",
                     "functions": [
                         {
                             "function": "minecraft:set_lore",

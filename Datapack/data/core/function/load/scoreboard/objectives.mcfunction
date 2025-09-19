@@ -29,6 +29,13 @@
     scoreboard objectives add cosmetic_timer dummy
     scoreboard objectives add gold dummy
     scoreboard objectives add gold_queue dummy
+    scoreboard objectives add belowname_display dummy
+    scoreboard objectives add belowname dummy
+
+    scoreboard objectives add new_health dummy
+    scoreboard objectives add old_health dummy
+    scoreboard objectives add health_updated dummy
+    scoreboard objectives add health_update_timer dummy
 
     # status
         scoreboard objectives add health health {"text": "❤","color": "red"}
@@ -116,11 +123,14 @@
 
 # asset
     scoreboard objectives add asset_timer.1 dummy
+    scoreboard objectives add spawner_timer dummy
+    scoreboard objectives add spawner_health dummy
     # cooltime
         scoreboard objectives add flame_wand_cooltime dummy
         scoreboard objectives add flost_wand_cooltime dummy
         scoreboard objectives add lightning_wand_cooltime dummy
         scoreboard objectives add healing_wand_cooltime dummy
+        scoreboard objectives add eternal_carrot_cooltime dummy
 
 # ui
     scoreboard objectives add ui_page dummy

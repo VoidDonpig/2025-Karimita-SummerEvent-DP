@@ -1,0 +1,41 @@
+{
+    "fallback": "empty",
+    "elements": [
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1_archived/fallback_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1_archived/fallback_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1_archived/fallback_3",
+                "processors": "empty"
+            }
+        },
+                {
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1_archived/fallback_4",
+                "processors": "empty"
+            }
+        }
+    ]
+}

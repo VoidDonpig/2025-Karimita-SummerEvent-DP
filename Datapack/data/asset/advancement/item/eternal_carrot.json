@@ -1,0 +1,18 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"player": {},
+				"item": {
+					"predicates": {
+						"minecraft:custom_data": "{custom_item_id:\"eternal_carrot\"}"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "asset:item/eternal_carrot/"
+	}
+}

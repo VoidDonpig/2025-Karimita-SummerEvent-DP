@@ -7,7 +7,6 @@
 # set enchantment
     execute if entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s equipment.body set value {id:"dirt",count:1,components:{"minecraft:enchantments":{"mob:":1}}}
     execute unless entity @s[type=!horse,type=!donkey,type=!mule,type=!llama] run data modify entity @s equipment.feet set value {id:"dirt",count:1,components:{"minecraft:enchantments":{"mob:":1}}}
-    data modify entity @s data.mob.id set from storage mob:init id
 
 # increase follow range
     attribute @s minecraft:follow_range modifier add mob:init/common-follow_range 2.0 add_multiplied_base

@@ -26,10 +26,10 @@
     #data modify storage mob:init data.NoAI set value 1b
 
 # define attribute
-    data modify storage mob:init data.health set value 100000
-    data modify storage mob:init data.damage set value 150
+    data modify storage mob:init data.health set value 666666
+    data modify storage mob:init data.damage set value 1024
     data modify storage mob:init data.attack_knockback set value 4.0
-    #data modify storage mob:init data.knockback_resistance set value 1.0
+    data modify storage mob:init data.knockback_resistance set value 1.0
     #data modify storage mob:init data.movement_speed set value 1024.0
     data modify storage mob:init data.movement_efficiency set value 1.0
     data modify storage mob:init data.water_movement_efficiency set value 1.0

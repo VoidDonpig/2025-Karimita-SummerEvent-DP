@@ -8,6 +8,9 @@
     scoreboard players add $total_joined_player world 1
     scoreboard players operation @s player.id = $total_joined_player world
 
+# set scoreboard
+    scoreboard players display numberformat @s belowname_display blank
+
 # set gamemode
     gamemode adventure @s
 
@@ -25,7 +28,7 @@
 
 # welcome message
     tellraw @s ["",{"text":"-----------------------------------------------------",strikethrough:true},"\n",\
-    {"text":"Karimita Event Server in summer 2025 にようこそ!"},"\n",\
+    {"text":"Karimita Event Server in Winter 2025 にようこそ!"},"\n",\
     "\n",\
     {"text":"この世界では新たな敵や装備、職業などがあります。"},"\n",\
     "\n",\
@@ -33,4 +36,4 @@
     {"text":"職業は ベイリー に話しかけることでいつでも変えることができます。"},"\n",\
     "\n",\
     {"text":"さあ、この世界を遊びつくしましょう！"},"\n",\
-    {"text":"-----------------------------------------------------",strikethrough:true}]
+    {"text":"------------------------------------------------------",strikethrough:true}]

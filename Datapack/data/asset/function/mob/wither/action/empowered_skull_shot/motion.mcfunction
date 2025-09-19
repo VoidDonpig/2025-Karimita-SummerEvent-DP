@@ -7,7 +7,7 @@
 # set data
     rotate @s facing entity @n[tag=target] eyes
 
-    execute in world:admin_area rotated as @s positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^ ^ ^0.8
+    execute in world:admin_area rotated as @s positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^ ^ ^1.2
     data modify storage asset:mob __temp__.Motion set from entity 83a-51-1-0-0 Pos
     data modify storage asset:mob __temp__.Owner set from entity @n[tag=this] UUID
     data modify storage asset:mob __temp__.Tags set value ["not_init","autokill","rapid_wither_skull_shot"]

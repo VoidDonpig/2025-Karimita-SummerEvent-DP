@@ -43,8 +43,8 @@
     data modify storage mob:init data.have_hurt_event set value 1b
 
 # define loot
-    data modify storage mob:init data.loot.combat_exp set value 50000
-    data modify storage mob:init data.loot.gold set value 10000
+    data modify storage mob:init data.loot.combat_exp set value 9999999
+    data modify storage mob:init data.loot.gold set value 99999
 
 # define boss
     data modify storage mob:init data.boss set value 1b

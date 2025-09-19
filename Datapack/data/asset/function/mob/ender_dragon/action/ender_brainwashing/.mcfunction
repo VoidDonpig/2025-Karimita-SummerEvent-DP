@@ -15,6 +15,11 @@
 # set name
     data modify entity @s CustomName set value {text:"Dragonic Fanatic",color:"dark_purple"}
 
+# set data
+    data modify entity @s data.mob.id set value dragonic_fanatic
+    tag @s add special_mob
+    tag @s add dragonic_fanatic
+
 # set speed
     attribute @s movement_speed base set 0.1
     attribute @s attack_damage base set 5
@@ -26,6 +31,4 @@
 
 # autokill
     tag @s add autokill
-    tag @s add special_mob
-    tag @s add dragonic_fanatic
     scoreboard players set @s autokill_timer 1200
