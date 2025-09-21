@@ -7,9 +7,6 @@
 # add tag
     tag @s add mob.victim
 
-# set cooltime
-    scoreboard players set @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-melee=true}}] attack_cooltime 1000
-
 # assassination
     execute if items entity @p[tag=player.attacker] weapon.mainhand *[enchantments~[{"enchantments":"asset:assassination"}]] unless data entity @s {data:{mob:{boss:1b}}} as @p[tag=player.attacker] run function asset:enchantment/assassination/
 

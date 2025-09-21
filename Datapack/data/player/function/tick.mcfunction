@@ -7,10 +7,6 @@
 # init
     execute unless score @s player.id matches 1.. run function player:init/
 
-# add tag
-    tag @s remove player.exception
-    tag @s[gamemode=!survival,gamemode=!adventure] add player.exception
-
 # set gamemode
     execute if entity @s[tag=!admin,predicate=world:adventure_dimension] run gamemode adventure
     execute if entity @s[tag=!admin,predicate=!world:adventure_dimension] run gamemode survival

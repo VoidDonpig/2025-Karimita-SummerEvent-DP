@@ -9,7 +9,7 @@
     function ui:
 
 # player
-    execute as @a at @s run function player:tick
+    execute as @a[tag=!player.sent_to_afk_room] at @s run function player:tick
 
 # mob
     execute as @e[type=#lib:mob,tag=!asset,tag=!dead,tag=!already_init] at @s run function mob:init/

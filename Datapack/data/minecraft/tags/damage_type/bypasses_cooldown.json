@@ -30,6 +30,7 @@
         "minecraft:wither_skull",
         "lib:bypasses_player_attack",
         "lib:ferocity",
-        "lib:shadow_strike"
+        "lib:shadow_strike",
+        "lib:magic"
     ]
 }

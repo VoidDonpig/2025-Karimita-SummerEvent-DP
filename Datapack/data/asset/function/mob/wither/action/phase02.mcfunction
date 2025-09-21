@@ -56,7 +56,7 @@
     execute if score @s ai_timer.2 matches 400 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "雷よ、奴を滅せよ！","color": "red"}]
     execute if score @s ai_timer.2 matches 400 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "私のエネルギーはこの程度ではない。","color": "red"}]
     execute if score @s ai_timer.2 matches 400 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "早々に諦めた方が楽に死ねるぞ。","color": "red"}]
-    execute if score @s ai_timer.2 matches 400..600 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
+    execute if score @s ai_timer.2 matches 400..600 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,predicate=!player:is_player_exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
 
 # curse of wither
     execute if score @s ai_timer.2 matches 600..800 run data modify entity @s Invul set value 2

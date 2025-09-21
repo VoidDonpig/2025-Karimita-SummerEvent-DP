@@ -632,6 +632,21 @@
                 }
             }
         },
+        "magic": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "id": "lib:is_magic",
+                                "expected": true
+                            }
+                        ]
+                    }
+                }
+            }
+        },
         "sword": {
 			"trigger": "minecraft:player_hurt_entity",
 			"conditions": {
@@ -788,6 +803,7 @@
             "exception",
             "ferocity",
             "shadow_strike",
+            "magic",
             "sword"
         ]
     ],

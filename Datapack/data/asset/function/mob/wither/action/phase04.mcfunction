@@ -97,7 +97,7 @@
 
 # lightning wither head + catastrophic lightning + empower skull shot
     execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/20 run function asset:mob/wither/action/lightning_wither_head/
-    execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
+    execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,predicate=!player:is_player_exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
     execute if score @s ai_timer.2 matches 1980..3079 if predicate lib:periodic/5 run function asset:mob/wither/action/empowered_skull_shot/
 
 # skull rush

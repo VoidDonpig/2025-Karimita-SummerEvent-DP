@@ -5,4 +5,4 @@
 # @context need "this" tag for player used magic
 
 # damage
-    $damage @s $(damage) magic by @p[tag=this]
+    $damage @s $(damage) lib:magic by @p[tag=this]

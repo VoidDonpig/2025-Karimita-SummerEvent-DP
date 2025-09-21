@@ -5,7 +5,7 @@
 # @within asset:object/dimensional_singularity/
 
 # kill player
-    execute as @a[distance=..256,tag=!player.exception] run kill @s
+    execute as @a[distance=..256,predicate=!player:is_player_exception] run kill @s
     summon minecraft:lightning_bolt ~ ~ ~
     playsound minecraft:entity.zombie.break_wooden_door hostile @a ~ ~ ~ 16 0.5 0
     playsound minecraft:entity.wither.death hostile @a ~ ~ ~ 16 0.5 0

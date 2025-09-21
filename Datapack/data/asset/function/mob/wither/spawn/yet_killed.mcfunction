@@ -14,7 +14,7 @@
     execute if score @s dialogue_timer.1 matches 200 run tag @s add already_spawned
 
 # lightning
-    execute if score @s dialogue_timer.1 matches 100..140 if predicate lib:periodic/4 as @e[type=#lib:all,type=!#lib:undead,distance=..128,tag=!player.exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
+    execute if score @s dialogue_timer.1 matches 100..140 if predicate lib:periodic/4 as @e[type=#lib:all,type=!#lib:undead,distance=..128,predicate=!player:is_player_exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
 
 # playsound
     execute if score @s dialogue_timer.1 matches 1 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0

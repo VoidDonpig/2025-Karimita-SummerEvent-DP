@@ -27,6 +27,8 @@
     "minecraft:outside_border",
     "minecraft:generic_kill",
     "minecraft:campfire",
-    "lib:ferocity"
+    "lib:ferocity",
+    "lib:shadow_strike",
+    "lib:magic"
   ]
 }

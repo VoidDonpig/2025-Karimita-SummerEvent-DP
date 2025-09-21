@@ -5,4 +5,4 @@
 # @within world:spawner/main
 
 # detect player
-    $execute if entity @p[tag=!player.exception,distance=..$(required_player_range)] run tag @s add player_is_near
+    $execute if entity @p[predicate=!player:is_player_exception,distance=..$(required_player_range)] run tag @s add player_is_near

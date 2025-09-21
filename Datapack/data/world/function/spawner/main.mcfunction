@@ -10,7 +10,7 @@
     execute if data entity @s data.asset{type:boss} run function world:spawner/particle/boss
 
 # detect player
-    execute if entity @p[tag=!player.exception,distance=..32] run function world:spawner/player_check with entity @s data.asset
+    execute if entity @p[predicate=!player:is_player_exception,distance=..32] run function world:spawner/player_check with entity @s data.asset
 
 # manage timer
     execute if entity @s[tag=player_is_near] run scoreboard players remove @s spawner_timer 1

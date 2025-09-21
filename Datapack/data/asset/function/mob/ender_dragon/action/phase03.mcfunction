@@ -16,7 +16,7 @@
     execute if score @s ai_timer.2 matches 1.. run scoreboard players reset @s ai_timer.1
 
 # ender flame
-    execute unless score @s ai_counter.1 matches 4 if predicate lib:periodic/30 positioned ^ ^ ^-5 as @a[distance=..128,tag=!player.exception] run function asset:mob/ender_dragon/action/ender_flame/
+    execute unless score @s ai_counter.1 matches 4 if predicate lib:periodic/30 positioned ^ ^ ^-5 as @a[distance=..128,predicate=!player:is_player_exception] run function asset:mob/ender_dragon/action/ender_flame/
 
 # lightning strike
     # action

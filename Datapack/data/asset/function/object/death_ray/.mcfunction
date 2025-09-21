@@ -8,7 +8,7 @@
     scoreboard players add @s asset_timer.1 1
 
 # facing entity
-    execute if score @s asset_timer.1 matches ..39 run rotate @s facing entity @n[type=#lib:all,type=!#lib:undead,tag=!player.exception]
+    execute if score @s asset_timer.1 matches ..39 run rotate @s facing entity @n[type=#lib:all,type=!#lib:undead,predicate=!player:is_player_exception]
 
 # sfx
     execute if predicate lib:periodic/4 run playsound block.fire.ambient hostile @a ~ ~ ~ 2 0.5 1

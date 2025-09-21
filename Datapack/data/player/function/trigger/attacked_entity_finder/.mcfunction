@@ -7,11 +7,14 @@
 # tag this
     tag @s add player.attacker
 
+# set cooltime
+    scoreboard players set @s[advancements={player:trigger/attacked_entity_finder={type-melee=true}}] attack_cooltime 1000
+
 # powerful slash
     execute if entity @s[predicate=player:team/class.knight,advancements={player:trigger/attacked_entity_finder={sword=true}}] unless score @s powerful_slash_cooltime matches 1.. run function player:class/knight/ability/powerful_slash/do
 
 # mana regen in dungeon
-    execute if entity @s[advancements={player:trigger/attacked_entity_finder={type-melee=true}}] run function player:status/mana/regen/
+    execute if entity @s[advancements={player:trigger/attacked_entity_finder={type-melee=true}},predicate=world:is_in_dungeon] run function player:status/mana/regen/
 
 # hit sound
     execute as @p[tag=player.attacker,advancements={player:trigger/attacked_entity_finder={type-projectile=true}}] at @s run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 0.8 1
