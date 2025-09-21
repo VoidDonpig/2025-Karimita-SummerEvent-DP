@@ -8,7 +8,7 @@
     scoreboard players operation @s mana -= $needed_mana temporary
 
 # cooltime
-    scoreboard players set @s lightning_wand_cooltime 200
+    scoreboard players set @s lightning_wand_cooltime 60
 
 # damage
     scoreboard players set $damage temporary 10

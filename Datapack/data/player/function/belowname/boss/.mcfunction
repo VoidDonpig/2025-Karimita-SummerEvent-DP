@@ -2,7 +2,7 @@
 #
 # default
 #
-# @within player:belowname/default/
+# @within player:belowname/
 
 # set
     scoreboard players display numberformat @s belowname_display fixed ["",{"text":"﴾ ","color":"gold",bold:false},{score:{name:"@s",objective:"health"}}," ",{text:"❤",color:"red"},{"text":" ﴿","color":"gold",bold:false}]

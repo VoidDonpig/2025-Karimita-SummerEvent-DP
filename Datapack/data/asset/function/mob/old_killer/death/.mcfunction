@@ -7,4 +7,8 @@
 # death
     scoreboard players add @s death_timer.1 1
     execute if score @s death_timer.1 matches 1 run kill @s
-    execute if score @s death_timer.1 matches 1 run playsound entity.zombie.death hostile @a ~ ~ ~ 1 0.5 0
+    execute if score @s death_timer.1 matches 1 run playsound entity.zombie.death hostile @a ~ ~ ~ 2 0.5 0
+    execute if score @s death_timer.1 matches 1 run playsound entity.husk.death hostile @a ~ ~ ~ 2 0.5 0
+    execute if score @s death_timer.1 matches 1 run playsound entity.drowned.death hostile @a ~ ~ ~ 2 0.5 0
+    execute if score @s death_timer.1 matches 1 run playsound entity.zombified_piglin.death hostile @a ~ ~ ~ 2 0.5 0
+    execute if score @s death_timer.1 matches 1 run playsound entity.wither.death hostile @a ~ ~ ~ 2 1.5 0

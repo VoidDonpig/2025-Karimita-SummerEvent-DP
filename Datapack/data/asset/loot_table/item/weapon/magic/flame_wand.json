@@ -145,7 +145,7 @@
                                     "text": "‣ クールタイム: ",
                                     "extra": [
                                         {
-                                            "text": "3s",
+                                            "text": "0.5s",
                                             "color": "green"
                                         }
                                     ],

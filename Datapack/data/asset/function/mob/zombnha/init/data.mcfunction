@@ -5,7 +5,7 @@
 # @within asset:mob/bloodthirster/init/
 
 # set data
-    data modify storage mob:init data.CustomName set value {"text": "ゾビニア","color": "dark_gray"}
+    data modify storage mob:init data.CustomName set value {"text": "Zombnha","color": "dark_gray"}
     #data modify storage mob:init data.CustomNameVisible set value 1b
 
     data modify storage mob:init data.active_effects set value [{id:"invisibility",duration:-1,"amplifier":1,"show_particles":false}]
@@ -19,9 +19,9 @@
 
     #data modify storage mob:init data.DeathLootTable set value "entities/allay"
 
-    #data modify storage mob:init data.Silent set value 1b
+    data modify storage mob:init data.Silent set value 1b
 
-    #data modify storage mob:init data.PersistenceRequired set value 1b
+    data modify storage mob:init data.PersistenceRequired set value 1b
 
     #data modify storage mob:init data.NoAI set value 1b
 
@@ -41,8 +41,8 @@
 
 # define whether have specific events
     data modify storage mob:init data.have_always_action set value 1b
-    #data modify storage mob:init data.have_death_event set value 1b
-    #data modify storage mob:init data.have_hurt_event set value 1b
+    data modify storage mob:init data.have_death_event set value 1b
+    data modify storage mob:init data.have_hurt_event set value 1b
 
 # define loot
     data modify storage mob:init data.loot.combat_exp set value 2400

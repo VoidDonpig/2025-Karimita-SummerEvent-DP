@@ -9,6 +9,7 @@
     scoreboard objectives add constant dummy
     scoreboard objectives add temporary dummy
     scoreboard objectives add repeat_time dummy
+    scoreboard objectives add generic_timer.1 dummy
 
 # player
     scoreboard objectives add player.id dummy
@@ -31,7 +32,9 @@
     scoreboard objectives add gold_queue dummy
     scoreboard objectives add belowname_display dummy
     scoreboard objectives add belowname dummy
-
+    scoreboard objectives add afk_timer dummy
+    scoreboard objectives add old_rotation_x dummy
+    scoreboard objectives add old_rotation_y dummy
     scoreboard objectives add new_health dummy
     scoreboard objectives add old_health dummy
     scoreboard objectives add health_updated dummy

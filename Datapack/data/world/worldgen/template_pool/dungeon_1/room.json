@@ -3,38 +3,20 @@
     "fallback": "world:dungeon_1/fallback",
     "elements": [
         {
-            "weight": 8,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/room_1",
+                "location": "world:dungeon_1/branched_1",
                 "processors": "empty"
             }
         },
         {
-            "weight": 10,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/room_2",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 6,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/room_3",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 6,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/miniboss_1",
+                "location": "world:dungeon_1/branched_2",
                 "processors": "empty"
             }
         },
@@ -43,7 +25,142 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/miniboss_2",
+                "location": "world:dungeon_1/broken_bridge_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/broken_bridge_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/broken_bridge_3",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/dining_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/drip_stone_parkour_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/gravel_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/library_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/miniboss_battle_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/miniboss_corner_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/miniboss_corner_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/miniboss_old_killer_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/miniboss_old_killer_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_cross_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_cross_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_ladder_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 4,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_lshape_1",
                 "processors": "empty"
             }
         },
@@ -52,21 +169,84 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/miniboss_3",
+                "location": "world:dungeon_1/path_snake_1",
                 "processors": "empty"
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/parkour_1",
+                "location": "world:dungeon_1/path_snake_2",
                 "processors": "empty"
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_snake_3",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_stair_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_stair_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_straight_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 5,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_straight_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 2,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/path_tshape_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/pillar_parkour_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -75,74 +255,11 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/path_1",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 4,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_2",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 2,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_3",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 4,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_4",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 4,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_5",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 4,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_6",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 4,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_7",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 4,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
-                "location": "world:dungeon_1/path_8",
+                "location": "world:dungeon_1/scaffolding_1",
                 "processors": "empty"
             }
         },
@@ -151,7 +268,34 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/path_9",
+                "location": "world:dungeon_1/scaffolding_2",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/tree_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 1,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/water_1",
+                "processors": "empty"
+            }
+        },
+        {
+            "weight": 3,
+            "element": {
+                "element_type": "single_pool_element",
+                "projection": "rigid",
+                "location": "world:dungeon_1/web_1",
                 "processors": "empty"
             }
         }

@@ -4,7 +4,7 @@
 #
 # @within
 
-# 検索用のタグ
+# add tag
     tag @s add spawn_marker
 
 # select spawn coords
@@ -23,7 +23,7 @@
     execute store result storage asset: spawn_position[2] double 1 run scoreboard players get $pos_z temporary
     data modify entity @s Pos set from storage asset: spawn_position
 
-# リセット
+# reset
     data remove storage asset: spawn_position
     scoreboard players reset $spread_x
     scoreboard players reset $spread_y

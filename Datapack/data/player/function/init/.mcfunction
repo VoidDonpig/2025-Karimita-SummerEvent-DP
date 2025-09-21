@@ -10,6 +10,7 @@
 
 # set scoreboard
     scoreboard players display numberformat @s belowname_display blank
+    scoreboard players set @s belowname 0
 
 # set gamemode
     gamemode adventure @s

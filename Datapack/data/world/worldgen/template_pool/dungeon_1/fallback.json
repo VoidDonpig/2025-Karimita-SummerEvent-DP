@@ -2,11 +2,11 @@
     "fallback": "empty",
     "elements": [
         {
-            "weight": 7,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/fallback_1",
+                "location": "world:dungeon_1/fallback_thick_chest_1",
                 "processors": "empty"
             }
         },
@@ -15,25 +15,25 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/fallback_2",
+                "location": "world:dungeon_1/fallback_thick_trap_1",
                 "processors": "empty"
             }
         },
         {
-            "weight": 7,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/fallback_3",
+                "location": "world:dungeon_1/fallback_thin_1",
                 "processors": "empty"
             }
         },
                 {
-            "weight": 7,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/fallback_4",
+                "location": "world:dungeon_1/fallback_thin_2",
                 "processors": "empty"
             }
         }

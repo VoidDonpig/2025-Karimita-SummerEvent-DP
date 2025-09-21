@@ -8,7 +8,7 @@
     scoreboard players operation @s mana -= $needed_mana temporary
 
 # cooltime
-    scoreboard players set @s flost_wand_cooltime 60
+    scoreboard players set @s flost_wand_cooltime 40
 
 # damage
     scoreboard players set $damage temporary 4

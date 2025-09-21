@@ -21,7 +21,7 @@
 
     #data modify storage mob:init data.Silent set value 1b
 
-    #data modify storage mob:init data.PersistenceRequired set value 1b
+    data modify storage mob:init data.PersistenceRequired set value 1b
 
     #data modify storage mob:init data.NoAI set value 1b
 
@@ -48,6 +48,3 @@
 
 # define boss
     #data modify storage mob:init data.boss set value 1b
-
-# other
-    data modify entity @s DrownedConversionTime set value 2147483647

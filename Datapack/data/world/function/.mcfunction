@@ -9,3 +9,7 @@
 
 # spawner
     execute as @e[type=marker,tag=spawner] at @s run function world:spawner/
+
+# dungeon
+    # exit
+        execute as @e[type=marker,tag=dungeon_exit] at @s run function world:dungeon/exit/check

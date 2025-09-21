@@ -10,10 +10,7 @@
     execute if data entity @s data.asset{type:boss} run function world:spawner/particle/boss
 
 # detect player
-    execute store result score $required_player_range temporary run data get entity @s data.asset.required_player_range 10
-    scoreboard players operation $required_player_range temporary *= $required_player_range temporary
-    execute as @p[tag=!player.exception,distance=..32] run function world:spawner/player_check
-    scoreboard players reset $required_player_range temporary
+    execute if entity @p[tag=!player.exception,distance=..32] run function world:spawner/player_check with entity @s data.asset
 
 # manage timer
     execute if entity @s[tag=player_is_near] run scoreboard players remove @s spawner_timer 1

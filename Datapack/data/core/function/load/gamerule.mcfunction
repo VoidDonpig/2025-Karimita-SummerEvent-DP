@@ -5,7 +5,7 @@
 # @within core:load/
 
 # change gamemode
-    gamerule pvp false
+    #gamerule pvp false
     gamerule universalAnger true
     gamerule disableElytraMovementCheck true
     gamerule disablePlayerMovementCheck

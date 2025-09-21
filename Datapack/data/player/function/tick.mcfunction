@@ -33,6 +33,13 @@
     execute if score @s exp_queue.combat matches 1.. run function player:trigger/gained_exp.combat/
     execute if score @s gold_queue matches 1.. run function player:trigger/gained_gold/
 
+    execute if predicate player:is_afk run function player:trigger/afk/check
+    scoreboard players reset @s[tag=!player.is_afk] afk_timer
+    tag @s[tag=player.is_afk] remove player.is_afk
+
+# dungeon compass
+    execute if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_compass"}] if entity @n[tag=dungeon_exit,distance=..256] run function asset:item/dungeon_compass/
+
 # full set bonus
     execute if predicate asset:armor/full/palladion_armor run function asset:item/palladion_armor/
 

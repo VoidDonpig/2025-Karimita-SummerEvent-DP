@@ -5,10 +5,13 @@
 # @within player:advancement_tick
 
 # default
-    function player:belowname/default/
+    execute if score @s belowname matches 0 run function player:belowname/default/
 
 # boss
     execute if score @s belowname matches 1 run function player:belowname/boss/
+
+# afk
+    execute if score @s afk_timer matches 12000.. run function player:belowname/afk/
 
 # remove timer
     execute if score @s health_update_timer matches 1.. run scoreboard players remove @s health_update_timer 1
