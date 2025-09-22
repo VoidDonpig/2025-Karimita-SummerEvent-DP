@@ -5,9 +5,9 @@
 # @within player:class/knight/
 
 # act
-    execute if score @s class.knight.level matches 1..14 run function player:class/knight/ability/stone_castle/lv1
-    execute if score @s class.knight.level matches 15..29 run function player:class/knight/ability/stone_castle/lv2
-    execute if score @s class.knight.level matches 30.. run function player:class/knight/ability/stone_castle/lv3
+    execute if score @s class.knight.level matches 1..29 run function player:class/knight/ability/stone_castle/lv1
+    execute if score @s class.knight.level matches 30..39 run function player:class/knight/ability/stone_castle/lv2
+    execute if score @s class.knight.level matches 40.. run function player:class/knight/ability/stone_castle/lv3
 
 # sfx
     particle minecraft:wax_off ~ ~1.0 ~ 1.0 1.0 1.0 0 16 force @a[distance=..32]

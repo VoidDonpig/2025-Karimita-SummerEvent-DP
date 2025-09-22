@@ -15,24 +15,28 @@
     scoreboard players set @s class.assassin.level 1
     scoreboard players set @s class.wizard.level 1
     scoreboard players set @s class.healer.level 1
+    scoreboard players set @s expertise.dungeon.exp 1
 
     scoreboard players set @s class.knight.exp 0
     scoreboard players set @s class.archer.exp 0
     scoreboard players set @s class.assassin.exp 0
     scoreboard players set @s class.wizard.exp 0
     scoreboard players set @s class.healer.exp 0
+    scoreboard players set @s expertise.dungeon.exp 0
 
     scoreboard players set @s class.knight.total_exp 0
     scoreboard players set @s class.archer.total_exp 0
     scoreboard players set @s class.assassin.total_exp 0
     scoreboard players set @s class.wizard.total_exp 0
     scoreboard players set @s class.healer.total_exp 0
+    scoreboard players set @s expertise.dungeon.total_exp 0
 
     scoreboard players set @s class.knight.next_exp 100
     scoreboard players set @s class.archer.next_exp 100
     scoreboard players set @s class.assassin.next_exp 100
     scoreboard players set @s class.wizard.next_exp 100
     scoreboard players set @s class.healer.next_exp 100
+    scoreboard players set @s expertise.dungeon.next_exp 100
 
 # tag status update
     tag @s add statusupdate

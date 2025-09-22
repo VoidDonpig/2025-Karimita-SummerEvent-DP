@@ -13,3 +13,6 @@
 # dungeon
     # exit
         execute as @e[type=marker,tag=dungeon_exit] at @s run function world:dungeon/exit/check
+
+# afk
+    execute if entity @a[predicate=world:is_in_afk] as @a[predicate=world:is_in_afk] run function world:afk/

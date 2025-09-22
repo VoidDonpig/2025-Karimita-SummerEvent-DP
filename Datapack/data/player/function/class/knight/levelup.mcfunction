@@ -23,7 +23,7 @@
     tellraw @s [{"text": "   +","color": "gray"},{"text": "0.06 ","color": "green"},{"text": "攻撃距離","color": "white"}]
     tellraw @s [{"text": "   +","color": "gray"},{"text": "1% ","color": "green"},{"text": "パワフルスラッシュ","color": "white"}]
     tellraw @s [{"text": "   +","color": "gray"},{"text": "1 ","color": "green"},{"text": "難攻不落ダメージ","color": "white"}]
-    tellraw @s[scores={class.knight.level=20}] [{"text": "   +","color": "gray"},{"text": "5 ","color": "green"},{"text": "不屈の魂効果レベル","color": "white"}]
+    tellraw @s[scores={class.knight.level=30}] [{"text": "   +","color": "gray"},{"text": "5 ","color": "green"},{"text": "不屈の魂効果レベル","color": "white"}]
     tellraw @s[scores={class.knight.level=40}] [{"text": "   +","color": "gray"},{"text": "5 ","color": "green"},{"text": "不屈の魂効果レベル","color": "white"}]
     tellraw @s {"text": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬","color": "dark_aqua"}
 

@@ -21,6 +21,9 @@
     scoreboard players operation @s old_rotation_x = $new_rotation_x temporary
     scoreboard players operation @s old_rotation_y = $new_rotation_y temporary
 
+# tp to afk
+    execute if score @s afk_timer matches 12000 in world:afk run tp @s 0 63 0 0 0
+
 # reset
     scoreboard players reset $new_rotation_x temporary
     scoreboard players reset $new_rotation_y temporary

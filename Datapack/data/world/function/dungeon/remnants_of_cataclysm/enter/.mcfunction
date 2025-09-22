@@ -8,10 +8,11 @@
     $execute positioned 0 128 $(id)000 positioned as @n[type=marker,tag=dungeon_entrance] run tp @s ~ ~ ~
 
 # full regen
+    effect clear @s
     effect give @s resistance 5 9 true
-    effect give @s instant_health 1 14 true
-    effect give @s saturation 1 14 true
-    effect give @s blindness 2 1 true
+    effect give @s instant_health 5 14 true
+    effect give @s saturation 5 14 true
+    effect give @s blindness 5 1 true
 
 # sfx
     title @s times 40 40 20

@@ -4,12 +4,12 @@
 #
 # @within world:dungeon/exit/check
 
-# timer
-    scoreboard players add @s generic_timer.1 1
-
 # sfx
-    execute if score @s generic_timer.1 matches 1 run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.4 1.5
+    execute if entity @s[tag=!world.exit_opened] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.4 1.5
     particle reverse_portal ~ ~ ~ 1 1 1 0.03 36 force
+
+# add tag
+    tag @s add world.exit_opened
 
 # exit
     title @a[distance=..3] times 0 4 0

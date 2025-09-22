@@ -18,6 +18,8 @@
     scoreboard players operation $archer_arrow_damage_increase temporary /= $2 constant
     scoreboard players set $wizard_max_mana temporary 5
     scoreboard players operation $wizard_max_mana temporary *= @s class.wizard.level
+    scoreboard players set $wizard_ability_damage temporary 1
+    scoreboard players operation $wizard_ability_damage temporary *= @s class.wizard.level
     scoreboard players set $healer_max_mana temporary 1
     scoreboard players operation $healer_max_mana temporary *= @s class.healer.level
     scoreboard players set $healer_luck temporary 1
@@ -30,6 +32,7 @@
     scoreboard players operation @s movement_speed += $assassin_movement_speed temporary
     scoreboard players operation @s arrow_damage_increase += $archer_arrow_damage_increase temporary
     scoreboard players operation @s max_mana += $wizard_max_mana temporary
+    scoreboard players operation @s ability_damage += $wizard_ability_damage temporary
     scoreboard players operation @s max_mana += $healer_max_mana temporary
     scoreboard players operation @s luck += $healer_luck temporary
 
@@ -40,5 +43,6 @@
     scoreboard players reset $assassin_movement_speed temporary
     scoreboard players reset $archer_arrow_damage_increase temporary
     scoreboard players reset $wizard_max_mana temporary
+    scoreboard players reset $wizard_ability_damage temporary
     scoreboard players reset $healer_max_mana temporary
     scoreboard players reset $healer_luck temporary

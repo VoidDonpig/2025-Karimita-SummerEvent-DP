@@ -11,6 +11,7 @@
     scoreboard players set @s armor_toughness 0
     scoreboard players set @s movement_speed 100
     scoreboard players set @s attack_damage 10
+    scoreboard players set @s ability_damage 0
     scoreboard players set @s attack_range 300
     scoreboard players set @s luck 0
     scoreboard players set @s knockback_resistance 0
@@ -31,12 +32,14 @@
     execute if data storage player: bonus_status[] run function player:status/bonus with storage player: bonus_status[0]
 
     scoreboard players operation @s max_mana += $bonus_max_mana temporary
+    scoreboard players operation @s ability_damage += $bonus_ability_damage temporary
     scoreboard players operation @s attack_speed += $bonus_attack_speed temporary
     scoreboard players operation @s ferocity += $bonus_ferocity temporary
     scoreboard players operation @s arrow_damage_increase += $bonus_arrow_damage_increase temporary
     scoreboard players operation @s arrow_speed_increase += $bonus_arrow_speed_increase temporary
     # reset
         scoreboard players reset $bonus_max_mana temporary
+        scoreboard players reset $bonus_ability_damage temporary
         scoreboard players reset $bonus_attack_speed temporary
         scoreboard players reset $bonus_ferocity temporary
         scoreboard players reset $bonus_arrow_damage_increase temporary
@@ -65,7 +68,6 @@
             scoreboard players reset $wisdom_legs temporary
             scoreboard players reset $wisdom_feet temporary
 
-
 # active passive
     execute if predicate player:team/class.knight run function player:class/knight/passive
     execute if predicate player:team/class.archer run function player:class/archer/passive
@@ -79,6 +81,21 @@
 # bloodlust
     execute if predicate player:team/class.assassin run scoreboard players operation @s attack_damage += @s bloodlust_attack_damage
 
+# dungeon status increase
+    # reset
+        attribute @s max_health modifier remove player:dungeon.max_health
+        attribute @s attack_damage modifier remove player:dungeon.attack_damage
+    # apply
+        execute if predicate world:is_in_dungeon run function player:status/dungeon/
+
+# cap
+    # base
+        scoreboard players set @s max_cap.attack_range 1500
+        scoreboard players set @s max_cap.ferocity 500
+    # capped status
+        scoreboard players operation @s attack_range < @s max_cap.attack_range
+        scoreboard players operation @s ferocity < @s max_cap.ferocity
+        
 # apply attributes
     function player:status/max_health/update/
     function player:status/armor/update/

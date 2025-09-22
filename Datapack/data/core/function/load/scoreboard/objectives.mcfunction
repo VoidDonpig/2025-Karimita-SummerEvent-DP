@@ -49,6 +49,7 @@
         scoreboard objectives add armor_toughness dummy
         scoreboard objectives add movement_speed dummy
         scoreboard objectives add attack_damage dummy
+        scoreboard objectives add ability_damage dummy
         scoreboard objectives add attack_range dummy
         scoreboard objectives add luck dummy
         scoreboard objectives add knockback_resistance dummy
@@ -57,9 +58,14 @@
         scoreboard objectives add ferocity_count dummy
         scoreboard objectives add shadow_strike_damage dummy
         scoreboard objectives add shadow_strike_count dummy
+        # cap
+            # max
+                scoreboard objectives add max_cap.attack_range dummy
+                scoreboard objectives add max_cap.ferocity dummy
     # level
         # exp_queue
             scoreboard objectives add exp_queue.combat dummy
+            scoreboard objectives add exp_queue.dungeon dummy
     # class
         # level
             scoreboard objectives add class.knight.level dummy
@@ -85,6 +91,12 @@
             scoreboard objectives add class.assassin.next_exp dummy
             scoreboard objectives add class.wizard.next_exp dummy
             scoreboard objectives add class.healer.next_exp dummy
+    # expertise
+        # dungeon
+            scoreboard objectives add expertise.dungeon.level dummy
+            scoreboard objectives add expertise.dungeon.exp dummy
+            scoreboard objectives add expertise.dungeon.total_exp dummy
+            scoreboard objectives add expertise.dungeon.next_exp dummy
     # class
         scoreboard objectives add charging_bow dummy
         scoreboard objectives add indominatable_spirit_timer dummy

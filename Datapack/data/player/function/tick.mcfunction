@@ -27,6 +27,7 @@
     execute if entity @s[tag=arrow_shot] run function player:trigger/shot_arrow/
     execute if score @s rclick matches 1.. run function player:trigger/rclicked/
     execute if score @s exp_queue.combat matches 1.. run function player:trigger/gained_exp.combat/
+    execute if score @s exp_queue.dungeon matches 1.. run function player:trigger/gained_exp.dungeon/
     execute if score @s gold_queue matches 1.. run function player:trigger/gained_gold/
 
     execute if predicate player:is_afk run function player:trigger/afk/check
