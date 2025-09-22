@@ -38,9 +38,11 @@
         scoreboard players reset $dungeon_max_mana temporary
 
 # trim
+    data modify storage player: __temp__.max_health set string storage player: __temp__.max_health 0 -1
+    data modify storage player: __temp__.attack_damage set string storage player: __temp__.attack_damage 0 -1
 
 # apply
-    function player:status/dungeon/apply
+    function player:status/dungeon/apply with storage player: __temp__
 
 # reset
     data remove storage player: __temp__
