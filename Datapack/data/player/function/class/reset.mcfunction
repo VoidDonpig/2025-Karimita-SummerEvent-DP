@@ -13,6 +13,8 @@
     scoreboard players reset @s bloodlust_timer
     scoreboard players reset @s vicacious_ferocity_timer
     scoreboard players reset @s vicacious_ferocity_cooltime
+    scoreboard players reset @s shadow_step_cooltime
+    scoreboard players reset @s shadow_step_unavailable_timer
     scoreboard players reset @s healing_aura_timer
     scoreboard players reset @s healing_circle_timer
     scoreboard players reset @s wish_cooltime

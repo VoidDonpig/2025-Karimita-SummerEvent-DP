@@ -26,8 +26,8 @@
     scoreboard objectives add arrow_damage_increase dummy
     scoreboard objectives add arrow_speed_increase dummy
     scoreboard objectives add safe_fall_distance dummy
-    scoreboard objectives add cosmetic dummy
-    scoreboard objectives add cosmetic_timer dummy
+    scoreboard objectives add cosmetic_particle dummy
+    scoreboard objectives add cosmetic_particle_timer dummy
     scoreboard objectives add gold dummy
     scoreboard objectives add gold_queue dummy
     scoreboard objectives add belowname_display dummy
@@ -39,6 +39,8 @@
     scoreboard objectives add old_health dummy
     scoreboard objectives add health_updated dummy
     scoreboard objectives add health_update_timer dummy
+    scoreboard objectives add player.motion dummy
+    scoreboard objectives add player.class dummy
 
     # status
         scoreboard objectives add health health {"text": "❤","color": "red"}
@@ -110,6 +112,8 @@
         scoreboard objectives add bloodlust_attack_damage dummy
         scoreboard objectives add vicacious_ferocity_timer dummy
         scoreboard objectives add vicacious_ferocity_cooltime dummy
+        scoreboard objectives add shadow_step_cooltime dummy
+        scoreboard objectives add shadow_step_unavailable_timer dummy
 
 # mob
     scoreboard objectives add mob.id dummy

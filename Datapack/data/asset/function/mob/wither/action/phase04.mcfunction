@@ -38,6 +38,11 @@
     # move
         execute if entity @s[tag=charging,tag=!stop_moving] run function asset:mob/wither/action/charge/
 
+# wither aspiration
+    tag @s add this
+    execute unless score @s ai_timer.2 matches 600..700 as @a[distance=..32] run function asset:mob/wither/action/wither_aspiration/
+    tag @s remove this
+
 # rapid wither skull
     execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 run function asset:mob/wither/action/empowered_skull_shot/
     execute if score @s ai_timer.2 matches 1..599 if predicate lib:periodic/20 anchored eyes run function asset:mob/wither/action/nuclear_explosion/summon_head

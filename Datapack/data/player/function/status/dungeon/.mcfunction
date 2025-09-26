@@ -25,10 +25,8 @@
     # arrow damage increase
         scoreboard players set $dungeon_arrow_damage_increase temporary 4
         scoreboard players operation $dungeon_arrow_damage_increase temporary *= @s expertise.dungeon.level
-        scoreboard players operation $dungeon_arrow_damage_increase temporary *= @s arrow_damage_increase
-        scoreboard players operation $dungeon_arrow_damage_increase temporary /= $100 constant
         scoreboard players operation @s arrow_damage_increase += $dungeon_arrow_damage_increase temporary
-        scoreboard players reset $dungeon_arrow_damage_increasee temporary
+        scoreboard players reset $dungeon_arrow_damage_increase temporary
     # max mana
         scoreboard players set $dungeon_max_mana temporary 4
         scoreboard players operation $dungeon_max_mana temporary *= @s expertise.dungeon.level

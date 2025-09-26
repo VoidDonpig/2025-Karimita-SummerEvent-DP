@@ -16,3 +16,6 @@
 
 # afk
     execute if entity @a[predicate=world:is_in_afk] as @a[predicate=world:is_in_afk] run function world:afk/
+
+# motion armor stand
+    kill @e[tag=motion_armor_stand]

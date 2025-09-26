@@ -34,8 +34,13 @@
     scoreboard players reset @s[tag=!player.is_afk] afk_timer
     tag @s[tag=player.is_afk] remove player.is_afk
 
-# dungeon compass
-    execute if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_compass"}] if entity @n[tag=dungeon_exit,distance=..256] run function asset:item/dungeon_compass/
+# jumping
+    execute if predicate player:is_jumping run tag @s add add_jumping_tag
+    execute if predicate lib:is_on_ground if predicate player:team/class.assassin run scoreboard players set @s shadow_step_unavailable_timer 3
+    execute if predicate player:is_jumping run function player:trigger/is_jumping
+    execute unless entity @s[tag=add_jumping_tag] run tag @s remove jumping
+    execute if entity @s[tag=add_jumping_tag] run tag @s add jumping
+    tag @s remove add_jumping_tag
 
 # full set bonus
     execute if predicate asset:armor/full/palladion_armor run function asset:item/palladion_armor/
@@ -58,7 +63,7 @@
     function player:status/actionbar
 
 # cosmetic
-    execute if score @s cosmetic matches 1.. run function player:cosmetic/
+    execute if score @s cosmetic_particle matches 1.. run function player:cosmetic/particle/
 
 # remove cooltime
     function player:status/cooltime/remove

@@ -26,10 +26,8 @@
     tellraw @s [{"text": "   +","color": "gray"},{"text": "0.32 ブロック ","color": "green"},{"text": "祈り範囲","color": "white"}]
     tellraw @s {"text": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬","color": "dark_aqua"}
 
-# change team
-    execute if score @s class.healer.level matches 30 run team join class.healer_1 @s
-    execute if score @s class.healer.level matches 50 run team join class.healer_2 @s
-    execute if score @s class.knight.level matches 50 if score @s class.archer.level matches 50 if score @s class.assassin.level matches 50 if score @s class.wizard.level matches 50 if score @s class.healer.level matches 50 run team join class.healer_3 @s
+# change suffix
+    function player:class/healer/suffix/
 
 # loop THIS
     execute if score @s class.healer.level matches ..49 if score @s class.healer.exp >= @s class.healer.next_exp run function player:class/healer/levelup

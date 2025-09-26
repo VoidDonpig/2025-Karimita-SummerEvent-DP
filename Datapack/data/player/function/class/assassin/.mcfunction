@@ -9,3 +9,13 @@
 
 # vicacious ferocity
     function player:class/assassin/ability/vicacious_ferocity/
+
+# shadow step
+    # reset tag
+        execute if predicate lib:is_on_ground run tag @s[tag=player.assassin.shadow_step.doing] remove player.assassin.shadow_step.doing
+
+# cooltime
+    execute if score @s shadow_step_unavailable_timer matches 1.. run scoreboard players remove @s shadow_step_unavailable_timer 1
+    execute if score @s shadow_step_unavailable_timer matches 0 run scoreboard players reset @s shadow_step_unavailable_timer
+    execute if score @s shadow_step_cooltime matches 1.. run scoreboard players remove @s shadow_step_cooltime 1
+    execute if score @s shadow_step_cooltime matches 0 run scoreboard players reset @s shadow_step_cooltime

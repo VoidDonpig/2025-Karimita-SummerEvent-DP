@@ -5,6 +5,7 @@
 # @within core:load/scoreboard/
 
 # constant
+    scoreboard players set $-1 constant -1
     scoreboard players set $1 constant 1
     scoreboard players set $2 constant 2
     scoreboard players set $3 constant 3

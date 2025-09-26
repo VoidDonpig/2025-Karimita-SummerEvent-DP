@@ -24,10 +24,8 @@
     tellraw @s[scores={class.archer.level=40}] [{"text": "   +","color": "gray"},{"text": "5 ","color": "green"},{"text": "貫通レベル","color": "white"}]
     tellraw @s {"text": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬","color": "dark_aqua"}
 
-# change team
-    execute if score @s class.archer.level matches 30 run team join class.archer_1 @s
-    execute if score @s class.archer.level matches 50 run team join class.archer_2 @s
-    execute if score @s class.knight.level matches 50 if score @s class.archer.level matches 50 if score @s class.assassin.level matches 50 if score @s class.wizard.level matches 50 if score @s class.healer.level matches 50 run team join class.archer_3 @s
+# change suffix
+    function player:class/archer/suffix/
 
 # loop THIS
     execute if score @s class.archer.level matches ..49 if score @s class.archer.exp >= @s class.archer.next_exp run function player:class/archer/levelup

@@ -21,10 +21,8 @@
     tellraw @s [{"text": "   +","color": "gray"},{"text": "10 ","color": "green"},{"text": "マナ","color": "white"}]
     tellraw @s {"text": "▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬","color": "dark_aqua"}
 
-# change team
-    execute if score @s class.wizard.level matches 30 run team join class.wizard_1 @s
-    execute if score @s class.wizard.level matches 50 run team join class.wizard_2 @s
-    execute if score @s class.knight.level matches 50 if score @s class.archer.level matches 50 if score @s class.assassin.level matches 50 if score @s class.wizard.level matches 50 if score @s class.healer.level matches 50 run team join class.wizard_3 @s
+# change suffix
+    function player:class/wizard/suffix/
 
 # loop THIS
     execute if score @s class.wizard.level matches ..49 if score @s class.wizard.exp >= @s class.wizard.next_exp run function player:class/wizard/levelup

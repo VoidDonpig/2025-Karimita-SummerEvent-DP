@@ -17,3 +17,6 @@
 
 # add attacked tag
     tag @s add asset.withering_soul.attacked
+
+# set timer
+    execute on vehicle run scoreboard players set @s autokill_timer 100

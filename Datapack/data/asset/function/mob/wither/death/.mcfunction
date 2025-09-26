@@ -19,7 +19,7 @@
     execute if score @s death_timer.1 matches 160 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "我が主よ... お許しください...","color": "red"}]
 
     execute unless score @s death_timer.1 matches 200.. if score @s death_timer.2 matches 1 run playsound entity.wither.hurt hostile @a ~ ~ ~ 16 1 0
-    execute unless score @s death_timer.1 matches 200.. if score @s death_timer.2 matches 1 run tp @s ~ ~ ~ ~45 ~
+    execute unless score @s death_timer.1 matches 200.. run tp @s ~ ~ ~ ~45 ~
 
     execute unless score @s death_timer.1 matches 200.. if score @s death_timer.2 matches 1 store result storage asset: __temp__.x int 1 run random value -2..2
     execute unless score @s death_timer.1 matches 200.. if score @s death_timer.2 matches 1 store result storage asset: __temp__.y int 1 run random value -2..2

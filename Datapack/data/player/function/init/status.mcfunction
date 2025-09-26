@@ -15,7 +15,7 @@
     scoreboard players set @s class.assassin.level 1
     scoreboard players set @s class.wizard.level 1
     scoreboard players set @s class.healer.level 1
-    scoreboard players set @s expertise.dungeon.exp 1
+    scoreboard players set @s expertise.dungeon.level 1
 
     scoreboard players set @s class.knight.exp 0
     scoreboard players set @s class.archer.exp 0

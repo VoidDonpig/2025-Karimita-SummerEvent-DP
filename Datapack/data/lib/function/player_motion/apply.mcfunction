@@ -1,0 +1,19 @@
+#> lib:player_motion/apply
+#
+# apply motion
+#
+# @within lib:player_motion/score
+
+# apply motion
+    # x
+        $execute if score $x player.motion matches 0.. run summon minecraft:armor_stand ~-0.0001 ~ ~ {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(x10000),"lib:player_motion/xz100":$(x100),"lib:player_motion/xz":$(x)}}}},Tags:["xz10000_$(x10000)","xz100_$(x100)","xz_$(x)","positive","motion_armor_stand"]}
+        $execute if score $x player.motion matches 0.. run summon minecraft:armor_stand ~0.0001 ~ ~ {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(x10000),"lib:player_motion/xz100":$(x100),"lib:player_motion/xz":$(x)}}}},Tags:["xz10000_$(x10000)","xz100_$(x100)","xz_$(x)","negative","motion_armor_stand"]}
+        $execute if score $x player.motion matches ..-1 run summon minecraft:armor_stand ~0.0001 ~ ~ {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(x10000),"lib:player_motion/xz100":$(x100),"lib:player_motion/xz":$(x)}}}},Tags:["xz10000_$(x10000)","xz100_$(x100)","xz_$(x)","positive","motion_armor_stand"]}
+        $execute if score $x player.motion matches ..-1 run summon minecraft:armor_stand ~-0.0001 ~ ~ {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(x10000),"lib:player_motion/xz100":$(x100),"lib:player_motion/xz":$(x)}}}},Tags:["xz10000_$(x10000)","xz100_$(x100)","xz_$(x)","negative","motion_armor_stand"]}
+    # y
+        $summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/y10000":$(y10000),"lib:player_motion/y100":$(y100),"lib:player_motion/y":$(y)}}}},Tags:["y10000_$(y10000)","y100_$(y100)","y_$(y)","motion_armor_stand","$(ysign)"]}
+    # z
+        $execute if score $z player.motion matches 0.. run summon minecraft:armor_stand ~ ~ ~-0.0001 {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(z10000),"lib:player_motion/xz100":$(z100),"lib:player_motion/xz":$(z)}}}},Tags:["xz10000_$(z10000)","xz100_$(z100)","xz_$(z)","positive","motion_armor_stand"]}
+        $execute if score $z player.motion matches 0.. run summon minecraft:armor_stand ~ ~ ~0.0001 {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(z10000),"lib:player_motion/xz100":$(z100),"lib:player_motion/xz":$(z)}}}},Tags:["xz10000_$(z10000)","xz100_$(z100)","xz_$(z)","negative","motion_armor_stand"]}
+        $execute if score $z player.motion matches ..-1 run summon minecraft:armor_stand ~ ~ ~0.0001 {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(z10000),"lib:player_motion/xz100":$(z100),"lib:player_motion/xz":$(z)}}}},Tags:["xz10000_$(z10000)","xz100_$(z100)","xz_$(z)","positive","motion_armor_stand"]}
+        $execute if score $z player.motion matches ..-1 run summon minecraft:armor_stand ~ ~ ~-0.0001 {Marker:1b,Invisible:1b,Silent:1b,Small:1b,equipment:{chest:{id:stone_button,components:{enchantments:{"lib:player_motion/xz10000":$(z10000),"lib:player_motion/xz100":$(z100),"lib:player_motion/xz":$(z)}}}},Tags:["xz10000_$(z10000)","xz100_$(z100)","xz_$(z)","negative","motion_armor_stand"]}
