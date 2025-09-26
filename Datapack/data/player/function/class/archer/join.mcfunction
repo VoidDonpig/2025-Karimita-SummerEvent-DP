@@ -20,7 +20,7 @@
 
 # send message
     execute if score @s class.archer.level matches ..49 run playsound item.crossbow.shoot player @s ~ ~ ~ 1 1.2 0
-    execute if score @s class.archer.level matches 50.. run playsound entity.wind_charge.wind_burst player @s ~ ~ ~ 1 1.2 0
+    execute if score @s class.archer.level matches 50.. run playsound entity.wind_charge.wind_burst player @s ~ ~ ~ 1 1.1 0
     execute if score @s class.archer.level matches ..29 run tellraw @s [{"text": "射手","color": "white"},{"text": " ➶","color": "gray"},{"text": " に転職した！","color": "white"}]
     execute if score @s class.archer.level matches 30..49 run tellraw @s [{"text": "射手","color": "white"},{"text": " ➶","color": "gold"},{"text": " に転職した！","color": "white"}]
     execute if score @s class.archer.level matches 50 run tellraw @s [{"text": "射手","color": "white"},{"text": " ➶","color": "aqua"},{"text": " に転職した！","color": "white"}]

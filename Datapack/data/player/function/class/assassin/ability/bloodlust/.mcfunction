@@ -21,6 +21,3 @@
 
 # add flag tag
     tag @s add statusupdate
-
-# reset
-    advancement revoke @s only player:class/assassin/bloodlust

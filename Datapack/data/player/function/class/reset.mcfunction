@@ -21,3 +21,6 @@
 
 # add flag tag
     tag @s add statusupdate
+
+# full health
+    effect give @s instant_health 1 14 true

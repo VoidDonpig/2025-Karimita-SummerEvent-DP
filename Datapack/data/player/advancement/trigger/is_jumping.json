@@ -13,8 +13,5 @@
 				}
 			}
 		}
-	},
-	"rewards": {
-		"function": "player:trigger/is_jumping"
 	}
 }

@@ -2,14 +2,11 @@
 #
 # serum process
 #
-# @handles player:class/assassin/serum
+# @within player:trigger/consumed_food
 
 # claer debuff
     function lib:clear_debuff/
 
 # sfx
-    playsound minecraft:entity.player.levelup player @s ~ ~ ~ 1.0 1.6 0.0
-    particle minecraft:happy_villager ~ ~1.0 ~ 0.2 0.4 0.2 0 16 force @a
-
-# reset
-    advancement revoke @s only player:class/assassin/serum
+    playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.6 1.6 0.0
+    particle minecraft:happy_villager ~ ~1.0 ~ 0.3 0.4 0.3 0 12 force @a

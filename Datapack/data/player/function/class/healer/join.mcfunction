@@ -19,8 +19,8 @@
     function player:class/healer/suffix/
 
 # send message
-    execute if score @s class.knight.level matches ..49 run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1.2 0
-    execute if score @s class.knight.level matches 50.. run playsound entity.player.levelup player @s ~ ~ ~ 1 1.3 0
+    execute if score @s class.healer.level matches ..49 run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1.2 0
+    execute if score @s class.healer.level matches 50.. run playsound entity.player.levelup player @s ~ ~ ~ 1 1.3 0
     execute if score @s class.healer.level matches ..29 run tellraw @s [{"text": "回復師","color": "white"},{"text": " ⚚","color": "gray"},{"text": " に転職した！","color": "white"}]
     execute if score @s class.healer.level matches 30..49 run tellraw @s [{"text": "回復師","color": "white"},{"text": " ⚚","color": "gold"},{"text": " に転職した！","color": "white"}]
     execute if score @s class.healer.level matches 50 run tellraw @s [{"text": "回復師","color": "white"},{"text": " ⚚","color": "aqua"},{"text": " に転職した！","color": "white"}]

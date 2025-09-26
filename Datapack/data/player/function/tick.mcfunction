@@ -21,6 +21,7 @@
 
 # trigger
     function player:trigger/slot_changed/check
+    execute if entity @s[advancements={player:trigger/is_jumping=true}] run function player:trigger/is_jumping
 
     tag @s add arrow_shot
     execute unless score @s bow_used = @s bow_used unless score @s crossbow_used = @s crossbow_used run tag @s remove arrow_shot
@@ -65,11 +66,14 @@
     execute if entity @s[tag=add_clicking_tag] run tag @s add clicking
     tag @s remove add_clicking_tag
 
+# jumping
+    execute unless entity @s[tag=add_jumping_tag] run tag @s remove jumping
+    execute if entity @s[tag=add_jumping_tag] run tag @s add jumping
+    tag @s remove add_jumping_tag
+
 # reset
     scoreboard players reset @s bow_used
     scoreboard players reset @s crossbow_used
     scoreboard players reset @s rclick
     execute if entity @s[advancements={player:trigger/charging_bow=false}] if score @s charging_bow = @s charging_bow run scoreboard players reset @s charging_bow
     execute if entity @s[advancements={player:trigger/charging_bow=true}] run advancement revoke @s only player:trigger/charging_bow
-    execute if entity @s[advancements={player:trigger/is_jumping=false}] if score @s is_jumping = @s is_jumping run scoreboard players reset @s is_jumping
-    execute if entity @s[advancements={player:trigger/is_jumping=true}] run advancement revoke @s only player:trigger/is_jumping
