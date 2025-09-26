@@ -11,6 +11,7 @@
     function player:class/assassin/ability/vicacious_ferocity/
 
 # shadow step
+    execute if predicate lib:is_on_ground if predicate player:team/class.assassin run scoreboard players set @s shadow_step_unavailable_timer 3
     # reset tag
         execute if predicate lib:is_on_ground run tag @s[tag=player.assassin.shadow_step.doing] remove player.assassin.shadow_step.doing
 

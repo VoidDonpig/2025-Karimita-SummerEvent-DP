@@ -5,7 +5,7 @@
 # @within core:main
 
 # init
-    execute unless score @s player.id matches 1.. run function player:init/
+    execute unless score @s player.id = @s player.id run function player:init/
 
 # set gamemode
     execute if entity @s[tag=!admin,predicate=world:adventure_dimension] run gamemode adventure
@@ -23,7 +23,7 @@
     function player:trigger/slot_changed/check
 
     tag @s add arrow_shot
-    execute unless score @s bow_used matches -2147483648..2147483647 unless score @s crossbow_used matches -2147483648..2147483647 run tag @s remove arrow_shot
+    execute unless score @s bow_used = @s bow_used unless score @s crossbow_used = @s crossbow_used run tag @s remove arrow_shot
     execute if entity @s[tag=arrow_shot] run function player:trigger/shot_arrow/
     execute if score @s rclick matches 1.. run function player:trigger/rclicked/
     execute if score @s exp_queue.combat matches 1.. run function player:trigger/gained_exp.combat/
@@ -33,14 +33,6 @@
     execute if predicate player:is_afk run function player:trigger/afk/check
     scoreboard players reset @s[tag=!player.is_afk] afk_timer
     tag @s[tag=player.is_afk] remove player.is_afk
-
-# jumping
-    execute if predicate player:is_jumping run tag @s add add_jumping_tag
-    execute if predicate lib:is_on_ground if predicate player:team/class.assassin run scoreboard players set @s shadow_step_unavailable_timer 3
-    execute if predicate player:is_jumping run function player:trigger/is_jumping
-    execute unless entity @s[tag=add_jumping_tag] run tag @s remove jumping
-    execute if entity @s[tag=add_jumping_tag] run tag @s add jumping
-    tag @s remove add_jumping_tag
 
 # full set bonus
     execute if predicate asset:armor/full/palladion_armor run function asset:item/palladion_armor/
@@ -54,7 +46,7 @@
     execute if entity @s[tag=statusupdate] run function player:status/update
 
 # attack cooltime
-    execute if score @s attack_cooltime matches -2147483648..2147483647 run function player:attack_cooltime
+    execute if score @s attack_cooltime = @s attack_cooltime run function player:attack_cooltime
 
 # regen mana
     execute if predicate lib:periodic/20 run function player:status/mana/regen/
@@ -77,5 +69,7 @@
     scoreboard players reset @s bow_used
     scoreboard players reset @s crossbow_used
     scoreboard players reset @s rclick
-    execute if entity @s[advancements={player:trigger/charging_bow=false}] if score @s charging_bow matches -2147483648..2147483647 run scoreboard players reset @s charging_bow
+    execute if entity @s[advancements={player:trigger/charging_bow=false}] if score @s charging_bow = @s charging_bow run scoreboard players reset @s charging_bow
     execute if entity @s[advancements={player:trigger/charging_bow=true}] run advancement revoke @s only player:trigger/charging_bow
+    execute if entity @s[advancements={player:trigger/is_jumping=false}] if score @s is_jumping = @s is_jumping run scoreboard players reset @s is_jumping
+    execute if entity @s[advancements={player:trigger/is_jumping=true}] run advancement revoke @s only player:trigger/is_jumping

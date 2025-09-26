@@ -17,6 +17,7 @@
     execute unless data storage ui: items[{Slot:13b,components:{"minecraft:custom_data":{ui:{type:"blank"}}}}] as @p at @s run function player:class/archer/join
     execute unless data storage ui: items[{Slot:14b,components:{"minecraft:custom_data":{ui:{type:"blank"}}}}] as @p at @s run function player:class/wizard/join
     execute unless data storage ui: items[{Slot:15b,components:{"minecraft:custom_data":{ui:{type:"blank"}}}}] as @p at @s run function player:class/healer/join
+    execute unless data storage ui: items[{Slot:22b,components:{"minecraft:custom_data":{ui:{type:"blank"}}}}] as @p at @s run function player:class/leave
 
 # update menu
     execute if score @s ui_page matches 0 on vehicle run function ui:class_changer/page/init

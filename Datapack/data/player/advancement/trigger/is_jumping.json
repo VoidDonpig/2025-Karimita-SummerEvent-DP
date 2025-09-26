@@ -1,0 +1,20 @@
+{
+	"criteria": {
+		"criteria": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"type_specific": {
+						"type": "minecraft:player",
+						"input": {
+							"jump": true
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "player:trigger/is_jumping"
+	}
+}

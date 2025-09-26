@@ -4,5 +4,8 @@
 #
 # @within player:tick
 
+# add jumping score
+    scoreboard players add @s is_jumping 1
+
 # shadow step
-    execute if predicate player:team/class.assassin if entity @s[tag=!jumping] run function player:class/assassin/ability/shadow_step/check
+    execute if predicate player:team/class.assassin run function player:class/assassin/ability/shadow_step/check

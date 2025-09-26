@@ -23,7 +23,7 @@
 {Slot:19b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:20b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:21b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
-{Slot:22b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
+{Slot:22b,id:"minecraft:barrier",components:{"minecraft:item_name":{"text": "無職になる（非推奨）","bold": true,"color":red},"minecraft:custom_data":{ui:{type:"blank"}}}},\
 {Slot:23b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:24b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\
 {Slot:25b,id:"minecraft:black_stained_glass_pane",components:{"minecraft:item_name":'{"text": ""}',"minecraft:custom_data":{ui:{type:"none"}},"minecraft:tooltip_display":{hide_tooltip:true}}},\

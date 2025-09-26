@@ -41,6 +41,7 @@
     scoreboard objectives add health_update_timer dummy
     scoreboard objectives add player.motion dummy
     scoreboard objectives add player.class dummy
+    scoreboard objectives add is_jumping dummy
 
     # status
         scoreboard objectives add health health {"text": "❤","color": "red"}
