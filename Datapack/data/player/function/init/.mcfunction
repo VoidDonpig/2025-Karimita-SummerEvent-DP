@@ -22,6 +22,7 @@
     execute store result storage player: __temp__.player.id int 1 run scoreboard players get @s player.id
     function player:init/team with storage player: __temp__.player
     data remove storage player: __temp__
+    function player:cosmetic/prefix/reset
 
 # teleport to hub
     execute in world:hub run tp @s 0 63 0

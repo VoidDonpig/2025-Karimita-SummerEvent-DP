@@ -5,4 +5,4 @@
 # @within player:cosmetic/*
 
 # apply
-    $team modify player.team.$(id) prefix ["",$(prefix)," "]
+    $team modify player.team.$(id) prefix $(prefix)
