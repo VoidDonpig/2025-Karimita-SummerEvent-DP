@@ -2,7 +2,7 @@
 #
 # update compass
 #
-# @within world:dungeon/*/enter/
+# @within player:trigger/changed_dimension/
 
 # get inventory
     data modify storage asset: Inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{custom_item_id:"dungeon_compass"}}}]

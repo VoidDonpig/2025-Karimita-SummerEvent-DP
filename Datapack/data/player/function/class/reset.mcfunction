@@ -8,7 +8,6 @@
     scoreboard players reset @s powerful_slash_cooltime
     scoreboard players reset @s stone_castle_cooltime
     scoreboard players reset @s indominatable_spirit_timer
-    scoreboard players reset @s bloodlust_attack_damage
     scoreboard players reset @s bloodlust_count
     scoreboard players reset @s bloodlust_timer
     scoreboard players reset @s vicacious_ferocity_timer

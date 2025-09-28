@@ -12,8 +12,8 @@
     execute if entity @s[tag=!admin,predicate=!world:adventure_dimension] run gamemode survival
 
 # death event
-    execute if score @s death matches 1.. run function player:trigger/died/
-    execute if entity @s[advancements={player:trigger/died=true}] run function player:trigger/died/
+    execute if entity @e[type=player,scores={death=1..},distance=..0.00000001,limit=1] run function player:trigger/died/
+    execute if entity @e[type=player,advancements={player:trigger/died=true},distance=..0.00000001,limit=1] run function player:trigger/died/
 
 # remove shortbow cooltime
     execute if score @s shortbow_cooltime matches 1.. run scoreboard players remove @s shortbow_cooltime 1
@@ -22,6 +22,7 @@
 # trigger
     function player:trigger/slot_changed/check
     execute if entity @s[advancements={player:trigger/is_jumping=true}] run function player:trigger/is_jumping
+    execute if entity @s[advancements={player:trigger/changed_dimension=true}] run function player:trigger/changed_dimension/
 
     tag @s add arrow_shot
     execute unless score @s bow_used = @s bow_used unless score @s crossbow_used = @s crossbow_used run tag @s remove arrow_shot

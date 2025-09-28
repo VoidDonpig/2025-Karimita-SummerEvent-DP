@@ -22,11 +22,3 @@
 
 # reset
     tag @s remove health_updated
-
-# dungeon torch
-    # activate
-        execute if predicate world:is_in_dungeon if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_torch"}] run item modify entity @s weapon.mainhand asset:item/dungeon_torch/add
-        execute if predicate world:is_in_dungeon if items entity @s weapon.offhand *[custom_data~{custom_item_id:"dungeon_torch"}] run item modify entity @s weapon.offhand asset:item/dungeon_torch/add
-    # deactivate
-        execute unless predicate world:is_in_dungeon if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_torch_activated"}] run item modify entity @s weapon.mainhand asset:item/dungeon_torch/remove
-        execute unless predicate world:is_in_dungeon if items entity @s weapon.offhand *[custom_data~{custom_item_id:"dungeon_torch_activated"}] run item modify entity @s weapon.offhand asset:item/dungeon_torch/remove

@@ -1,0 +1,21 @@
+#> asset:item/dungeon_compass/deactivate/offhand
+#
+# offhand
+#
+# @within asset:item/dungeon_compass/deactivate/
+
+# copy item
+    data modify storage asset: dungeon_compass set from entity @s equipment.offhand
+
+# updates shulker box
+    execute in world:admin_area run data modify block 0 0 0 Items[] set from storage asset: dungeon_compass
+
+# set name
+    execute in world:admin_area run item modify block 0 0 0 container.0 asset:item/dungeon_compass/deactivate
+
+# give item
+    execute in world:admin_area run loot replace entity @s weapon.offhand mine 0 0 0 debug_stick
+
+# remove the item
+    data remove storage asset: dungeon_compass
+    execute in world:admin_area run data remove block 0 0 0 Items
