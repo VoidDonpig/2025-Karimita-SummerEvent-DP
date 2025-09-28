@@ -18,7 +18,7 @@
     scoreboard players operation $archer_arrow_damage_increase temporary /= $2 constant
     scoreboard players set $wizard_max_mana temporary 5
     scoreboard players operation $wizard_max_mana temporary *= @s class.wizard.level
-    scoreboard players set $wizard_ability_damage temporary 1
+    scoreboard players set $wizard_ability_damage temporary 2
     scoreboard players operation $wizard_ability_damage temporary *= @s class.wizard.level
     scoreboard players set $healer_max_mana temporary 1
     scoreboard players operation $healer_max_mana temporary *= @s class.healer.level

@@ -22,9 +22,6 @@
 # increase speed
     execute anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=!already_init] run function player:status/increase_arrow_speed/
 
-# init animation
-    #execute anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=!already_init] run data modify entity @s Rotation set from entity @p[tag=arrow_shot]
-
 # init complete
     execute anchored eyes positioned ^ ^ ^ as @e[type=#minecraft:arrows,distance=..2,tag=!already_init] run tag @s add already_init
 

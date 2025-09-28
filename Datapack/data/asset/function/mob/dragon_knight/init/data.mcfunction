@@ -41,6 +41,7 @@
     data modify storage mob:init data.have_always_action set value 1b
     data modify storage mob:init data.have_death_event set value 1b
     data modify storage mob:init data.have_hurt_event set value 1b
+    data modify storage mob:init data.prevent_drowned set value 1b
 
 # define loot
     data modify storage mob:init data.loot.combat_exp set value 200

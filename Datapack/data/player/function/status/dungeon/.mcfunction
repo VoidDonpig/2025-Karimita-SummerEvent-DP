@@ -6,7 +6,7 @@
 
 # increase
     # max health
-        scoreboard players set $dungeon_max_health temporary 4
+        scoreboard players set $dungeon_max_health temporary 6
         scoreboard players operation $dungeon_max_health temporary *= @s expertise.dungeon.level
         execute store result storage player: __temp__.max_health float 0.01 run scoreboard players get $dungeon_max_health temporary
         scoreboard players reset $dungeon_max_health temporary
@@ -24,11 +24,12 @@
         scoreboard players reset $dungeon_ability_damage temporary
     # arrow damage increase
         scoreboard players set $dungeon_arrow_damage_increase temporary 4
+        execute if predicate player:team/class.archer run scoreboard players set $dungeon_arrow_damage_increase temporary 4
         scoreboard players operation $dungeon_arrow_damage_increase temporary *= @s expertise.dungeon.level
         scoreboard players operation @s arrow_damage_increase += $dungeon_arrow_damage_increase temporary
         scoreboard players reset $dungeon_arrow_damage_increase temporary
     # max mana
-        scoreboard players set $dungeon_max_mana temporary 4
+        scoreboard players set $dungeon_max_mana temporary 8
         scoreboard players operation $dungeon_max_mana temporary *= @s expertise.dungeon.level
         scoreboard players operation $dungeon_max_mana temporary *= @s max_mana
         scoreboard players operation $dungeon_max_mana temporary /= $100 constant

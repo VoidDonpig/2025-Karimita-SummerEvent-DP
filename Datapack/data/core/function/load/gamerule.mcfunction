@@ -8,10 +8,11 @@
     #gamerule pvp false
     gamerule universalAnger true
     gamerule disableElytraMovementCheck true
-    gamerule disablePlayerMovementCheck
+    gamerule disablePlayerMovementCheck true
     gamerule keepInventory true
-    gamerule doImmediateRespawn false
+    gamerule doImmediateRespawn true
     gamerule forgiveDeadPlayers true
+    gamerule universalAnger true
     gamerule spawnChunkRadius 0
     gamerule spawnRadius 0
     gamerule maxCommandChainLength 2147483647

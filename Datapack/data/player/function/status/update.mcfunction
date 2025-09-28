@@ -70,6 +70,7 @@
 
 # active passive
     execute if predicate player:team/class.knight run function player:class/knight/passive
+    attribute @s attack_damage modifier remove player:class.archer.decrease_attack_damage
     execute if predicate player:team/class.archer run function player:class/archer/passive
     execute if predicate player:team/class.assassin run function player:class/assassin/passive
     execute if predicate player:team/class.wizard run function player:class/wizard/passive
@@ -79,7 +80,10 @@
     function player:status/permanent
 
 # bloodlust
-    execute if predicate player:team/class.assassin run scoreboard players operation @s attack_damage += @s bloodlust_attack_damage
+    # reset
+        attribute @s attack_damage modifier remove player:class.assassin.bloodlust_strength
+    # apply
+        execute if predicate player:team/class.assassin run function player:class/assassin/ability/bloodlust/calc
 
 # dungeon status increase
     # reset
@@ -87,14 +91,6 @@
         attribute @s attack_damage modifier remove player:dungeon.attack_damage
     # apply
         execute if predicate world:is_in_dungeon run function player:status/dungeon/
-
-# cap
-    # base
-        scoreboard players set @s max_cap.attack_range 1500
-        scoreboard players set @s max_cap.ferocity 500
-    # capped status
-        scoreboard players operation @s attack_range < @s max_cap.attack_range
-        scoreboard players operation @s ferocity < @s max_cap.ferocity
         
 # apply attributes
     function player:status/max_health/update/

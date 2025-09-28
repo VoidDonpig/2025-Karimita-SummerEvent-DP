@@ -10,7 +10,7 @@
     playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 2 2 0
 
 # summon
-    summon minecraft:wither_skeleton ~ ~ ~ {Tags:["wither_combatant"],data:{mob:{id:wither_combatant}}}
+    summon minecraft:wither_skeleton ~ ~ ~ {Tags:["wither_combatant","special_mob"],data:{mob:{id:wither_combatant}}}
 
 # kill summoner
     kill @s

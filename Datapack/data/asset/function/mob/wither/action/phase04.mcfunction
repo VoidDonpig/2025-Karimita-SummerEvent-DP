@@ -40,7 +40,7 @@
 
 # wither aspiration
     tag @s add this
-    execute unless score @s ai_timer.2 matches 600..700 as @a[distance=..32] run function asset:mob/wither/action/wither_aspiration/
+    execute if predicate lib:periodic/40 unless score @s ai_timer.2 matches 600..700 as @a[distance=..32] at @s run function asset:mob/wither/action/wither_aspiration/
     tag @s remove this
 
 # rapid wither skull

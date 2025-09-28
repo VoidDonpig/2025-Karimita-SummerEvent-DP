@@ -4,9 +4,6 @@
 #
 # @handles #minecraft:load
 
-# for first time loading
-    execute unless data storage core: {loaded:1b} run function core:load/first_time
-
 # change gamerule
     function core:load/gamerule
 
@@ -30,6 +27,9 @@
 
 # set custom recipe
     function core:load/recipe
+
+# for first time loading
+    execute unless data storage core: {loaded:1b} run function core:load/first_time
 
 # send message if this function was loaded
     tellraw @a[tag=admin] {"text": "\"core:load/\" was loaded successfully.","color":"light_purple"}

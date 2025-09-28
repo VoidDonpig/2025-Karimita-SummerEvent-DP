@@ -31,9 +31,9 @@
     execute if score @s exp_queue.dungeon matches 1.. run function player:trigger/gained_exp.dungeon/
     execute if score @s gold_queue matches 1.. run function player:trigger/gained_gold/
 
-    execute if predicate player:is_afk run function player:trigger/afk/check
-    scoreboard players reset @s[tag=!player.is_afk] afk_timer
-    tag @s[tag=player.is_afk] remove player.is_afk
+    execute if predicate lib:periodic/40 if predicate player:is_afk run function player:trigger/afk/check
+    execute if predicate lib:periodic/40 run scoreboard players reset @s[tag=!player.is_afk] afk_timer
+    execute if predicate lib:periodic/40 run tag @s[tag=player.is_afk] remove player.is_afk
 
 # full set bonus
     execute if predicate asset:armor/full/palladion_armor run function asset:item/palladion_armor/

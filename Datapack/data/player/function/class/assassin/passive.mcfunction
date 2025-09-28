@@ -6,8 +6,8 @@
 
 # calculation
     scoreboard players set $max_health temporary 10
-    scoreboard players set $attack_damage temporary 4
-    execute if predicate asset:weapon/melee/daggers run scoreboard players set $attack_damage temporary 5
+    scoreboard players set $attack_damage temporary 3
+    execute if predicate asset:weapon/melee/daggers run scoreboard players set $attack_damage temporary 6
     scoreboard players set $movement_speed temporary 1
     scoreboard players set $attack_speed temporary 1
     scoreboard players set $ferocity temporary 1
@@ -21,8 +21,8 @@
     scoreboard players operation $safe_fall_distance temporary *= @s class.assassin.level
 
 # dagger master
-    execute if predicate asset:weapon/melee/daggers run scoreboard players add @s attack_range 150
-    execute if predicate asset:weapon/melee/daggers run scoreboard players set $attack_range temporary 5
+    execute if predicate asset:weapon/melee/daggers run scoreboard players add @s attack_range 200
+    execute if predicate asset:weapon/melee/daggers run scoreboard players set $attack_range temporary 6
     execute if predicate asset:weapon/melee/daggers run scoreboard players operation $attack_range temporary *= @s class.assassin.level
 
 # apply

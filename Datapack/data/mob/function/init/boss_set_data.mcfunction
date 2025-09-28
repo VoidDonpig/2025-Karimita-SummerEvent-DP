@@ -11,4 +11,5 @@
     attribute @s minecraft:max_health base set 1024.0
     data modify entity @s Health set value 1024.0f
     data modify entity @s AbsorptionAmount set value 2048.0f
+    tag @s add boss
     function health_display:init

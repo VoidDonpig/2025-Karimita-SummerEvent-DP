@@ -30,7 +30,8 @@
 
     execute if data storage mob:init data.AbsorptionAmount run data modify entity @s AbsorptionAmount set from storage mob:init data.AbsorptionAmount
 
-    execute if data storage mob:init data.have_always_action run data modify entity @s data.mob.have_always_action set from storage mob:init data.have_always_action
+    execute if data storage mob:init data{have_always_action:1b} run tag @s add mob.have_always_action
+    execute if data storage mob:init data{prevent_drowned:1b} run tag @s add mob.prevent_drowned
     execute if data storage mob:init data.have_death_event run data modify entity @s data.mob.have_death_event set from storage mob:init data.have_death_event
     execute if data storage mob:init data.have_hurt_event run data modify entity @s data.mob.have_hurt_event set from storage mob:init data.have_hurt_event
 

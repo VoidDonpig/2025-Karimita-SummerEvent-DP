@@ -5,11 +5,14 @@
 # @within player:class/knight/ability/indomitable_spirit/check
 
 # buff
-    effect give @s absorption 90 9
+    execute unless predicate world:is_in_dungeon run effect give @s absorption 90 9
+    execute if predicate world:is_in_dungeon run effect give @s absorption 90 18
 
 # set timer
     scoreboard players set @s indominatable_spirit_timer 1800
 
 # sfx
     playsound entity.iron_golem.repair player @a ~ ~ ~ 1 1 0
+    playsound entity.blaze.hurt player @a ~ ~ ~ 1 0.5 0
     particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0 32 force @a[distance=..32]
+    particle wax_off ~ ~ ~ 0.4 0.4 0.4 0 32 force @a[distance=..32]

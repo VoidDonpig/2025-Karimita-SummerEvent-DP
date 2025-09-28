@@ -7,10 +7,10 @@
 
 
 # summon arrow
-    $summon minecraft:arrow ^ ^-0.3 ^ {damage:2.0d,Tags:["multiple_shot_arrow","not_init_arrow","not_data_set"],life:1200s,weapon:$(weapon),LeftOwner:0b}
+    $summon minecraft:arrow ^ ^ ^ {damage:2.0d,Tags:["multiple_shot_arrow","not_init_arrow","not_data_set"],life:1200s,weapon:$(weapon),LeftOwner:0b}
     data modify entity @n[tag=not_init_arrow,tag=multiple_shot_arrow] Owner set from entity @s UUID
-    execute in world:admin_area positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^-0.02 ^ ^2.6
-    execute as @n[tag=not_init_arrow,tag=multiple_shot_arrow] run data modify entity @s Motion set from entity 83a-51-1-0-0 Pos
+    execute in world:admin_area positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^-0.1 ^ ^3.0
+    data modify entity @n[tag=not_init_arrow,tag=multiple_shot_arrow] Motion set from entity 83a-51-1-0-0 Pos
     tag @n[tag=not_init_arrow,tag=multiple_shot_arrow] remove not_init_arrow
     
     tag @s add left_shot

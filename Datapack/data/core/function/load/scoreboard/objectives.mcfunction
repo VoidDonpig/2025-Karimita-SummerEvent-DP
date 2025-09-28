@@ -109,7 +109,6 @@
         scoreboard objectives add healing_circle_timer dummy
         scoreboard objectives add bloodlust_timer dummy
         scoreboard objectives add bloodlust_count dummy
-        scoreboard objectives add bloodlust_attack_damage dummy
         scoreboard objectives add vicacious_ferocity_timer dummy
         scoreboard objectives add vicacious_ferocity_cooltime dummy
         scoreboard objectives add shadow_step_cooltime dummy

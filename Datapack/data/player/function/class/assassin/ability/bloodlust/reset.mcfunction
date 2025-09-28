@@ -7,7 +7,7 @@
 # reset
     scoreboard players reset @s bloodlust_count
     scoreboard players reset @s bloodlust_timer
-    scoreboard players reset @s bloodlust_attack_damage
+    attribute @s attack_damage modifier remove player:class.assassin.bloodlust_strength
 
 # sfx
     playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 1.0 1.6 0.0

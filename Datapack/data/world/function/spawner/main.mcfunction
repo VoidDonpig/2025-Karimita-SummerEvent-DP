@@ -5,9 +5,9 @@
 # @within world:
 
 # sfx
-    execute if data entity @s data.asset{type:normal} run function world:spawner/particle/normal
+    execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{nbt:"{data:{asset:{type:normal}}}"}} run function world:spawner/particle/normal
 
-    execute if data entity @s data.asset{type:boss} run function world:spawner/particle/boss
+    execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{nbt:"{data:{asset:{type:boss}}}"}} run function world:spawner/particle/boss
 
 # detect player
     execute if entity @p[predicate=!player:is_player_exception,distance=..32] run function world:spawner/player_check with entity @s data.asset

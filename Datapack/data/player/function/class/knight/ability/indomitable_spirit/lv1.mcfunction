@@ -5,7 +5,8 @@
 # @within player:class/knight/ability/indomitable_spirit/check
 
 # buff
-    effect give @s absorption 90 4
+    execute unless predicate world:is_in_dungeon run effect give @s absorption 90 4
+    execute if predicate world:is_in_dungeon run effect give @s absorption 90 8
 
 # set timer
     scoreboard players set @s indominatable_spirit_timer 1800

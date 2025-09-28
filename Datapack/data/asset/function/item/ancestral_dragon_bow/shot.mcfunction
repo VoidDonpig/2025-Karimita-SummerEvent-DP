@@ -19,7 +19,7 @@
     data modify entity @n[tag=not_init_arrow,tag=ancestral_dragon_bow_arrow] Owner set from entity @s UUID
     data modify entity @n[tag=not_init_arrow,tag=ancestral_dragon_bow_arrow] weapon set from entity @p[tag=arrow_shot] SelectedItem
     execute in world:admin_area positioned 0.0 0.0 0.0 run tp 83a-51-1-0-0 ^ ^ ^3.0
-    execute as @n[tag=not_init_arrow,tag=ancestral_dragon_bow_arrow] run data modify entity @s Motion set from entity 83a-51-1-0-0 Pos
+    data modify entity @n[tag=not_init_arrow,tag=ancestral_dragon_bow_arrow] Motion set from entity 83a-51-1-0-0 Pos
     tag @n[tag=not_init_arrow,tag=ancestral_dragon_bow_arrow] remove not_init_arrow
 
 # trigger
