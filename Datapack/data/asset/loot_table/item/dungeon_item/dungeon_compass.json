@@ -12,7 +12,12 @@
                             "entity": "this",
                             "lore": [
                                 {
-                                    "text": "利き手に持つとダンジョンの出口の方向を指す。",
+                                    "text": "ダンジョンに入った時、",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "その出口の方向を指す。",
                                     "color": "gray",
                                     "italic": false
                                 },

@@ -7,6 +7,9 @@
 # tp
     $execute positioned 0 128 $(id)000 positioned as @n[type=marker,tag=dungeon_entrance] run tp @s ~ ~ ~
 
+# update dungeon item
+    function asset:item/dungeon_compass/
+
 # full regen
     effect clear @s
     effect give @s resistance 5 9 true

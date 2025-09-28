@@ -23,12 +23,6 @@
 # reset
     tag @s remove health_updated
 
-# dungeon compass
-    # activate
-        execute if predicate world:is_in_dungeon if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_compass"}] if entity @n[tag=dungeon_exit,distance=..500] run function asset:item/dungeon_compass/
-    # deactivate
-        execute unless predicate world:is_in_dungeon if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_compass_activated"}] unless entity @n[tag=dungeon_exit,distance=..500] run item modify entity @s weapon.mainhand asset:item/dungeon_compass/deactivate
-
 # dungeon torch
     # activate
         execute if predicate world:is_in_dungeon if items entity @s weapon.mainhand *[custom_data~{custom_item_id:"dungeon_torch"}] run item modify entity @s weapon.mainhand asset:item/dungeon_torch/add
