@@ -3,7 +3,7 @@
     "entity": "this",
     "lore": [
         {
-            "text": "‣ ｱﾋﾞﾘﾃｨ: ウィザーインパクト",
+            "text": "‣ ｱﾋﾞﾘﾃｨ: スターインパクト",
             "color": "white",
             "italic": false
         },
@@ -13,12 +13,17 @@
             "italic": false
         },
         {
-            "text": "強力な爆発を起こし、6ブロック",
+            "text": "10ブロック先にテレポートし、",
             "color": "gray",
             "italic": false
         },
         {
-            "text": "以内の敵に大ダメージを与える。",
+            "text": "8ブロック以内の敵に大ダメージ",
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "を与える爆発を起こす。",
             "color": "gray",
             "italic": false
         },
@@ -101,7 +106,7 @@
             "text": "‣ 最大マナ: ",
             "extra": [
                 {
-                    "text": "+500",
+                    "text": "+750",
                     "color": "green"
                 }
             ],
@@ -131,8 +136,8 @@
                     "text": "【",
                     "extra": [
                         {
-                            "text": "✪✪✪✪✪",
-                            "color": "gold",
+                            "text": "✪✪✪✪✪✪",
+                            "color": "light_purple",
                             "extra": [
                                 {
                                     "text": "】",

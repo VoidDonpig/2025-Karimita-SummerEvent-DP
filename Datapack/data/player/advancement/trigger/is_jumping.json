@@ -9,6 +9,9 @@
 						"input": {
 							"jump": true
 						}
+					},
+					"flags": {
+						"is_flying": false
 					}
 				}
 			}

@@ -1,0 +1,22 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": "{custom_item_id:\"celestial_blade\"}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "asset:item/celestial_blade/"
+    }
+  }
+  

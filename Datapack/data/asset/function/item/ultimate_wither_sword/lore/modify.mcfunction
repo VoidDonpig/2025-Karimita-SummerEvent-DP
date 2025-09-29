@@ -13,6 +13,7 @@
     execute in world:admin_area run data modify block 0 0 0 Items[] set from storage asset: ultimate_wither_sword
 
 # get damage
+    function asset:item/ultimate_wither_sword/get_needed_mana
     function asset:item/ultimate_wither_sword/get_data
     function asset:item/magic_damage_scaling
 

@@ -6,4 +6,3 @@
 
 # damage
     $damage @s $(damage) lib:magic by @p[tag=this]
-    $say $(damage)

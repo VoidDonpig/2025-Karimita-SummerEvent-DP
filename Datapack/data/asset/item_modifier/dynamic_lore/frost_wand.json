@@ -58,7 +58,10 @@
             "text": "‣ 消費マナ: ",
             "extra": [
                 {
-                    "text": "30",
+                    "score": {
+                        "name": "$needed_mana",
+                        "objective": "temporary"
+                    },
                     "color": "aqua"
                 }
             ],

@@ -13,6 +13,7 @@
     execute in world:admin_area run data modify block 0 0 0 Items[] set from storage asset: flame_wand
 
 # get damage
+    function asset:item/flame_wand/get_needed_mana
     function asset:item/flame_wand/get_data
     function asset:item/magic_damage_scaling
 

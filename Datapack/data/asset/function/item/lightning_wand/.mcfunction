@@ -7,8 +7,7 @@
 # check
     tag @s add cooltime_ok
     tag @s add mana_ok
-    scoreboard players set $needed_mana temporary 100
-    execute if predicate player:team/class.wizard run function player:class/wizard/ability/mana_saver/
+    function asset:item/frost_wand/get_needed_mana
     function player:status/cooltime/check {name:lightning_wand}
     execute if entity @s[tag=cooltime_ok] run function player:status/mana/use/check
 
