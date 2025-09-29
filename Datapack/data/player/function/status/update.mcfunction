@@ -106,5 +106,8 @@
 # remove overflow mana
     scoreboard players operation @s mana < @s max_mana
 
+# item lore update
+    function #asset:item_lore_update
+
 # remove flag tag
     tag @s remove statusupdate

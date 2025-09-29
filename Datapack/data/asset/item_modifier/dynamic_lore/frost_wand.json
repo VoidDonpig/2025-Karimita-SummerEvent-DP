@@ -1,0 +1,163 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "‣ ｱﾋﾞﾘﾃｨ: フロストショット",
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ 発動方法: 利き手で右クリック",
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "冷気を放ち、当たった敵に",
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "ダメージを与える。",
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "         ",
+            "color": "dark_gray",
+            "strikethrough": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "ｱﾋﾞﾘﾃｨ",
+                    "strikethrough": false,
+                    "extra": [
+                        {
+                            "text": "          ",
+                            "strikethrough": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "‣ ダメージ: ",
+            "extra": [
+                {
+                    "score": {
+                        "name": "$damage",
+                        "objective": "temporary"
+                    },
+                    "color": "red"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ 消費マナ: ",
+            "extra": [
+                {
+                    "text": "30",
+                    "color": "aqua"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ ",
+            "extra": [
+                {
+                    "translate": "effect.minecraft.slowness",
+                    "extra": [
+                        {
+                            "translate": "potion.potency.1",
+                            "extra": [
+                                {
+                                    "text": " (0:05)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "         ",
+            "color": "dark_gray",
+            "strikethrough": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "ｽﾃｰﾀｽ",
+                    "strikethrough": false,
+                    "extra": [
+                        {
+                            "text": "           ",
+                            "strikethrough": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "‣ 最大マナ: ",
+            "extra": [
+                {
+                    "text": "+30",
+                    "color": "green"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ クールタイム: ",
+            "extra": [
+                {
+                    "text": "2s",
+                    "color": "green"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "                         ",
+            "color": "dark_gray",
+            "strikethrough": true
+        },
+        {
+            "text": "‣ 魔法武器（不可壊）",
+            "extra": [
+                {
+                    "text": "【",
+                    "extra": [
+                        {
+                            "text": "✪✪",
+                            "color": "green",
+                            "extra": [
+                                {
+                                    "text": "✪✪✪",
+                                    "color": "dark_gray",
+                                    "extra": [
+                                        {
+                                            "text": "】",
+                                            "color": "white"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "color": "white",
+            "italic": false
+        }
+    ],
+    "mode": "replace_all"
+}

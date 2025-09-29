@@ -1,4 +1,4 @@
-#> asset:object/flost_wand_marker/
+#> asset:object/frost_wand_marker/
 #
 # asset process
 #
@@ -13,7 +13,7 @@
     execute if block ~ ~ ~ water run tag @s add watered
 
 # hit or watered
-    execute if entity @s[tag=hit] run function asset:object/flost_wand_marker/hit
+    execute if entity @s[tag=hit] run function asset:object/frost_wand_marker/hit
 
 # particle
     particle dust_color_transition{from_color:[0.251,0.702,1.000],scale:2,to_color:[0.859,0.996,1.000]} ~ ~ ~ 0.2 0.2 0.2 0 8 force

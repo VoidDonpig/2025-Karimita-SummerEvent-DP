@@ -80,22 +80,11 @@
                                     ]
                                 },
                                 {
-                                    "text": "‣ 基礎ダメージ: ",
+                                    "text": "‣ ダメージ: ",
                                     "extra": [
                                         {
                                             "text": "10",
                                             "color": "red"
-                                        }
-                                    ],
-                                    "color": "white",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "‣ ダメージ増加率: ",
-                                    "extra": [
-                                        {
-                                            "text": "0.3",
-                                            "color": "aqua"
                                         }
                                     ],
                                     "color": "white",

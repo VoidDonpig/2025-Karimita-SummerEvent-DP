@@ -1,8 +1,8 @@
-#> asset:object/flost_wand_marker/hit
+#> asset:object/frost_wand_marker/hit
 #
 # hit
 #
-# @within asset:object/flost_wand_marker/
+# @within asset:object/frost_wand_marker/
 
 # damage
     tag @s add asset.this

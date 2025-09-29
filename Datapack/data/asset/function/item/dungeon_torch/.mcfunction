@@ -7,7 +7,7 @@
 # get inventory
     data modify storage asset: Inventory append from entity @s Inventory[{components:{"minecraft:custom_data":{custom_item_id:"dungeon_torch"}}}]
     # offhand
-        execute if items entity @s weapon.offhand torch[minecraft:custom_data~{custom_item_id:"dungeon_torch"}] run function asset:item/dungeon_torch/offhand
+        execute if items entity @s weapon.offhand torch[minecraft:custom_data~{custom_item_id:"dungeon_torch"}] run item modify entity @s weapon.offhand asset:item/dungeon_torch/add
 
 # modify info
     execute if data storage asset: Inventory[] run function asset:item/dungeon_torch/modify

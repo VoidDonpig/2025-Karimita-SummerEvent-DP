@@ -11,8 +11,7 @@
     scoreboard players set @s flame_wand_cooltime 10
 
 # damage
-    scoreboard players set $damage temporary 7
-    scoreboard players set $damage_scaling temporary 30
+    function asset:item/flame_wand/get_data
 
     function asset:item/magic_damage_scaling
 

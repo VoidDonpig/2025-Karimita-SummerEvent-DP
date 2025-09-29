@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "minecraft:set_custom_data",
-                            "tag": "{custom_item:1b,custom_item_id:\"flost_wand\",type:\"weapon\",status:[{name:\"max_mana\",value:30}],slot:\"mainhand\"}"
+                            "tag": "{custom_item:1b,custom_item_id:\"frost_wand\",type:\"weapon\",status:[{name:\"max_mana\",value:30}],slot:\"mainhand\"}"
                         },
                         {
                             "function": "minecraft:set_name",
@@ -80,22 +80,11 @@
                                     ]
                                 },
                                 {
-                                    "text": "‣ 基礎ダメージ: ",
+                                    "text": "‣ ダメージ: ",
                                     "extra": [
                                         {
                                             "text": "4",
                                             "color": "red"
-                                        }
-                                    ],
-                                    "color": "white",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "‣ ダメージ増加率: ",
-                                    "extra": [
-                                        {
-                                            "text": "0.3",
-                                            "color": "aqua"
                                         }
                                     ],
                                     "color": "white",
