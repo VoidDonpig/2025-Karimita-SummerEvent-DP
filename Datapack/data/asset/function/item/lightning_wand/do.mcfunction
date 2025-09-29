@@ -11,8 +11,7 @@
     scoreboard players set @s lightning_wand_cooltime 60
 
 # damage
-    scoreboard players set $damage temporary 10
-    scoreboard players set $damage_scaling temporary 30
+    function asset:item/lightning_wand/get_data
 
     function asset:item/magic_damage_scaling
     execute store result storage asset: __temp__.damage int 1 run scoreboard players get $damage temporary

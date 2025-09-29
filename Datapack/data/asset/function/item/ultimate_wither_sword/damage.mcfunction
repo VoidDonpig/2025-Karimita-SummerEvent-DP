@@ -9,8 +9,7 @@
     particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 force @a[distance=..32]
 
 # damage
-    scoreboard players set $damage temporary 50
-    scoreboard players set $damage_scaling temporary 30
+    function asset:item/ultimate_wither_sword/get_data
 
     function asset:item/magic_damage_scaling
     

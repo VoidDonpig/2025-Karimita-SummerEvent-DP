@@ -1,6 +1,8 @@
 {
     "values": [
         "asset:item/flame_wand/lore/",
-        "asset:item/frost_wand/lore/"
+        "asset:item/frost_wand/lore/",
+        "asset:item/lightning_wand/lore/",
+        "asset:item/ultimate_wither_sword/lore/"
     ]
 }

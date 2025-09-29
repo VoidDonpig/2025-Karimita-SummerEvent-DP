@@ -1,0 +1,148 @@
+{
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+        {
+            "text": "‣ ｱﾋﾞﾘﾃｨ: ウィザーインパクト",
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ 発動方法: 利き手で右クリック",
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "強力な爆発を起こし、6ブロック",
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "以内の敵に大ダメージを与える。",
+            "color": "gray",
+            "italic": false
+        },
+        {
+            "text": "         ",
+            "color": "dark_gray",
+            "strikethrough": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "ｱﾋﾞﾘﾃｨ",
+                    "strikethrough": false,
+                    "extra": [
+                        {
+                            "text": "          ",
+                            "strikethrough": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "‣ ダメージ: ",
+            "extra": [
+                {
+                    "score": {
+                        "name": "$damage",
+                        "objective": "temporary"
+                    },
+                    "color": "red"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ 消費マナ: ",
+            "extra": [
+                {
+                    "text": "300",
+                    "color": "aqua"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "         ",
+            "color": "dark_gray",
+            "strikethrough": true,
+            "italic": false,
+            "extra": [
+                {
+                    "text": "ｽﾃｰﾀｽ",
+                    "strikethrough": false,
+                    "extra": [
+                        {
+                            "text": "           ",
+                            "strikethrough": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "text": "‣ 攻撃力: ",
+            "extra": [
+                {
+                    "text": "+12",
+                    "color": "green"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ 最大マナ: ",
+            "extra": [
+                {
+                    "text": "+500",
+                    "color": "green"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "‣ 攻撃速度: ",
+            "extra": [
+                {
+                    "text": "1.6",
+                    "color": "green"
+                }
+            ],
+            "color": "white",
+            "italic": false
+        },
+        {
+            "text": "                         ",
+            "color": "dark_gray",
+            "strikethrough": true
+        },
+        {
+            "text": "‣ 魔法武器（不可壊）",
+            "extra": [
+                {
+                    "text": "【",
+                    "extra": [
+                        {
+                            "text": "✪✪✪✪✪",
+                            "color": "gold",
+                            "extra": [
+                                {
+                                    "text": "】",
+                                    "color": "white"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "color": "white",
+            "italic": false
+        }
+    ],
+    "mode": "replace_all"
+}
