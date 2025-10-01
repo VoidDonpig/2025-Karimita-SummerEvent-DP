@@ -12,6 +12,9 @@
 # reset
     function player:class/reset
 
+# faint
+    function player:faint/
+
 # revoke
     scoreboard players reset @s death
     advancement revoke @s only player:trigger/died

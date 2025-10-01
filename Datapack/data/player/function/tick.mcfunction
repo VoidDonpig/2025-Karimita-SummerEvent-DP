@@ -11,6 +11,9 @@
     execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=world:adventure_dimension] run gamemode adventure
     execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=!world:adventure_dimension] run gamemode survival
 
+# faint
+    execute if score @s player.death_timer = @s player.death_timer run function player:faint/timer
+
 # death event
     execute if entity @e[type=player,scores={death=1..},distance=..0.00000001,limit=1] run function player:trigger/died/
     execute if entity @e[type=player,advancements={player:trigger/died=true},distance=..0.00000001,limit=1] run function player:trigger/died/
