@@ -1,13 +1,18 @@
 {
-    "type": "world:remnants_of_cataclysm",
-    "generator": {
-        "type": "minecraft:flat",
-        "settings": {
-            "biome": "world:devastated_land",
-            "lakes": false,
-            "features": false,
-            "layers": [],
-            "structure_overrides": []
-        }
-    }
+	"type": "world:remnants_of_cataclysm",
+	"generator": {
+		"type": "minecraft:flat",
+		"settings": {
+			"biome": "world:devastated_land",
+			"lakes": false,
+			"features": false,
+			"layers": [
+				{
+					"height": 256,
+					"block": "minecraft:stone"
+				}
+			],
+			"structure_overrides": []
+		}
+	}
 }

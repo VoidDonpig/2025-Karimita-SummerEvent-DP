@@ -14,6 +14,9 @@
     effect give @s saturation 5 14 true
     effect give @s blindness 5 1 true
 
+# update dungeon item
+    function asset:item/activate_dungeon_item
+
 # sfx
     title @s times 40 40 20
     title @s title [{"text":"Remnants of Cataclysm","bold":true}]

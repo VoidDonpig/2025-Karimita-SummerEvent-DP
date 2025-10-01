@@ -5,5 +5,5 @@
 # @context player
 
 # set
-    function player:cosmetic/reset
-    scoreboard players set @s cosmetic 2
+    function player:cosmetic/particle/reset
+    scoreboard players set @s cosmetic_particle 2

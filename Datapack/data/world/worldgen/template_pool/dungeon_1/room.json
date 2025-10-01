@@ -3,7 +3,7 @@
     "fallback": "world:dungeon_1/fallback",
     "elements": [
         {
-            "weight": 2,
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -12,7 +12,7 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -21,7 +21,7 @@
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -30,7 +30,7 @@
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -39,7 +39,7 @@
             }
         },
         {
-            "weight": 4,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -48,7 +48,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -57,7 +57,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -66,7 +66,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -75,7 +75,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -84,7 +84,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -93,7 +93,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -102,7 +102,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -111,7 +111,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -120,7 +120,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -129,7 +129,7 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -142,21 +142,12 @@
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
-                "location": "world:dungeon_1/path_cross_2",
-                "processors": "empty"
-            }
-        },
-        {
-            "weight": 1,
-            "element": {
-                "element_type": "single_pool_element",
-                "projection": "rigid",
                 "location": "world:dungeon_1/path_ladder_1",
                 "processors": "empty"
             }
         },
         {
-            "weight": 4,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -192,7 +183,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -201,7 +192,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -210,7 +201,7 @@
             }
         },
         {
-            "weight": 5,
+            "weight": 6,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -219,7 +210,7 @@
             }
         },
         {
-            "weight": 5,
+            "weight": 6,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -228,7 +219,7 @@
             }
         },
         {
-            "weight": 2,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -237,7 +228,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 4,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -246,7 +237,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 3,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -255,7 +246,7 @@
             }
         },
         {
-            "weight": 3,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -264,7 +255,7 @@
             }
         },
         {
-            "weight": 3,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -282,7 +273,7 @@
             }
         },
         {
-            "weight": 1,
+            "weight": 2,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",
@@ -291,7 +282,7 @@
             }
         },
         {
-            "weight": 3,
+            "weight": 5,
             "element": {
                 "element_type": "single_pool_element",
                 "projection": "rigid",

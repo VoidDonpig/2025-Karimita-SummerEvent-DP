@@ -17,9 +17,6 @@
 # afk
     execute if entity @a[predicate=world:is_in_afk] as @a[predicate=world:is_in_afk] run function world:afk/
 
-# motion armor stand
-    kill @e[tag=motion_armor_stand]
-
 # experience orb
     execute as @e[type=experience_orb,tag=!already_init] run data modify entity @s Age set value 4800
     tag @e[type=experience_orb,tag=!already_init] add already_init

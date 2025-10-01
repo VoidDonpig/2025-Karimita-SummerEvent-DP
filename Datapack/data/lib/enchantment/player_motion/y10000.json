@@ -98,6 +98,12 @@
 						}
 					}
 				]
+			},
+			{
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "lib:player_motion/kill"
+				}
 			}
 		]
 	}

@@ -9,9 +9,6 @@
     effect give @s instant_health 80 14 true
     effect give @s saturation 80 14 true
 
-# dungeon update
-    advancement grant @s only player:trigger/changed_dimension
-
 # reset
     function player:class/reset
 

@@ -1,9 +1,9 @@
-#> player:cosmetic/reset
+#> player:cosmetic/particle/reset
 #
 # reset
 #
-# @context cosmetic
+# @context cosmetic particle
 
 # reset
-    scoreboard players reset @s cosmetic
-    scoreboard players reset @s cosmetic_timer
+    scoreboard players reset @s cosmetic_particle
+    scoreboard players reset @s cosmetic_particle_timer
