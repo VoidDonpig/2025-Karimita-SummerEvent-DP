@@ -13,7 +13,7 @@
     function player:class/reset
 
 # faint
-    function player:faint/
+    execute if predicate world:is_in_dungeon run function player:faint/
 
 # revoke
     scoreboard players reset @s death

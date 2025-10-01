@@ -6,6 +6,7 @@
 
 # tp
     $execute positioned 0 128 $(id)000 positioned as @n[type=marker,tag=dungeon_entrance] run tp @s ~ ~ ~
+    $execute positioned 0 128 $(id)000 run spawnpoint @s ~ ~ ~
 
 # full regen
     effect clear @s
