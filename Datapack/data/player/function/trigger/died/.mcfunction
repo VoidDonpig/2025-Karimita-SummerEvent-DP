@@ -15,6 +15,9 @@
 # faint
     execute if predicate world:is_in_dungeon run function player:faint/
 
+# statusupdate
+    tag @s add statusupdate
+
 # revoke
     scoreboard players reset @s death
     advancement revoke @s only player:trigger/died

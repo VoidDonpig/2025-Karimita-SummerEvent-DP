@@ -15,5 +15,8 @@
     execute if predicate world:is_in_dungeon in world:hub run spawnpoint @s 0 63 0
     execute if predicate world:is_in_dungeon in world:hub run tp @s 0 63 0
 
+# statusupdate
+    tag @s add statusupdate
+
 # reset
     scoreboard players reset @s player.rejoined

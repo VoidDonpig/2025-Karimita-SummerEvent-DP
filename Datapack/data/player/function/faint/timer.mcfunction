@@ -44,6 +44,8 @@
     execute if score @s player.death_timer matches 0 run playsound entity.player.death player @a[distance=..32] ~ ~ ~ 1 1 0
     execute in world:hub run tp @s[scores={player.death_timer=0}] 0 63 0
     execute if score @s player.death_timer matches 0 run kill @e[type=mannequin,tag=faint_mannequin.this]
+    # statusupdate
+    execute if score @s player.death_timer matches 0 run tag @s add statusupdate
 
 # reset
     tag @e[type=mannequin,tag=faint_mannequin.this] remove this
