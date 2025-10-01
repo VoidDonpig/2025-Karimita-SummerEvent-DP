@@ -28,7 +28,7 @@
     execute in world:hub run tp @s 0 63 0
 
 # set spawnpoint
-    execute in world:hub run spawnpoint @s 0 63 0 0
+    execute in world:hub run spawnpoint @s 0 63 0 0 0
 
 # welcome message
     tellraw @s ["",{"text":"-----------------------------------------------------",strikethrough:true},"\n",\

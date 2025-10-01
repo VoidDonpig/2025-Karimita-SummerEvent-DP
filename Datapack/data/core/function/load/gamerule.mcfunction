@@ -5,7 +5,7 @@
 # @within core:load/
 
 # change gamemode
-    #gamerule pvp false
+    gamerule pvp false
     gamerule universalAnger true
     gamerule disableElytraMovementCheck true
     gamerule disablePlayerMovementCheck true
@@ -13,7 +13,6 @@
     gamerule doImmediateRespawn true
     gamerule forgiveDeadPlayers true
     gamerule universalAnger true
-    gamerule spawnChunkRadius 0
     gamerule spawnRadius 0
     gamerule maxCommandChainLength 2147483647
     gamerule maxCommandForkCount 2147483647
