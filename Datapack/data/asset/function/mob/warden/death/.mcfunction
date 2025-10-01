@@ -10,7 +10,7 @@
     execute if score @s death_timer.1 matches 1 run data modify entity @s Invulnerable set value 1b
     execute if score @s death_timer.1 matches 1 run data modify entity @s Silent set value 1b
     execute if score @s death_timer.1 matches 1 run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~1.5 ~ 0.0 0.0 0.0 0 1 force @a
-    execute if score @s death_timer.1 matches 20..60 run particle flash ~ ~1.5 ~ 0.2 0.2 0.2 0 1 force @a
+    execute if score @s death_timer.1 matches 20..60 run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~1.5 ~ 0.2 0.2 0.2 0 1 force @a
     execute if score @s death_timer.1 matches 20..60 run playsound block.sculk_shrieker.shriek hostile @a ~ ~ ~ 1 2 0
     execute if score @s death_timer.1 matches 20..60 run playsound entity.allay.death hostile @a ~ ~ ~ 0.5 0.5 0
     execute if score @s death_timer.1 matches 1..60 run particle dust{color:[0.055,0.455,0.502],scale:1} ~ ~1.5 ~ 0.8 0.8 0.8 0 32 force @a

@@ -8,8 +8,8 @@
     execute unless score @s player.id = @s player.id run function player:init/
 
 # set gamemode
-    execute if entity @s[tag=!admin,predicate=world:adventure_dimension] run gamemode adventure
-    execute if entity @s[tag=!admin,predicate=!world:adventure_dimension] run gamemode survival
+    execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=world:adventure_dimension] run gamemode adventure
+    execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=!world:adventure_dimension] run gamemode survival
 
 # death event
     execute if entity @e[type=player,scores={death=1..},distance=..0.00000001,limit=1] run function player:trigger/died/

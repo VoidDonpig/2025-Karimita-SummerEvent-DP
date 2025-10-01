@@ -32,4 +32,4 @@
     execute unless data storage core: {loaded:1b} run function core:load/first_time
 
 # send message if this function was loaded
-    tellraw @a[tag=admin] {"text": "\"core:load/\" was loaded successfully.","color":"light_purple"}
+    tellraw @a[tag=mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e] {"text": "\"core:load/\" was loaded successfully.","color":"light_purple"}
