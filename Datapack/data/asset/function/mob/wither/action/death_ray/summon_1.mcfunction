@@ -11,5 +11,5 @@
 # sfx
     playsound item.trident.return hostile @a ^-0.75 ^2.7975 ^ 2 1 1
     playsound item.trident.return hostile @a ^0.75 ^2.7975 ^ 2 1 1
-    particle flash ^-0.75 ^2.7975 ^ 0.0 0.0 0.0 0 1 force @a
-    particle flash ^0.75 ^2.7975 ^ 0.0 0.0 0.0 0 1 force @a
+    particle flash{color:[1.0,1.0,1.0,1.0]} ^-0.75 ^2.7975 ^ 0.0 0.0 0.0 0 1 force @a
+    particle flash{color:[1.0,1.0,1.0,1.0]} ^0.75 ^2.7975 ^ 0.0 0.0 0.0 0 1 force @a
