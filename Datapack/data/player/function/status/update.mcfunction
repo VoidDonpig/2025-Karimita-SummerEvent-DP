@@ -109,5 +109,9 @@
 # item lore update
     function #asset:item_lore_update
 
+# dungeon item update
+    execute unless predicate world:is_in_dungeon run function asset:item/deactivate_dungeon_item
+    execute if predicate world:is_in_dungeon run function asset:item/activate_dungeon_item
+
 # remove flag tag
     tag @s remove statusupdate

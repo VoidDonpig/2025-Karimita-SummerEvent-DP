@@ -5,7 +5,7 @@
 # @within player:faint/revive
 
 # revive
-    kill @n[type=mannequin,tag=faint_mannequin.this]
+    execute as @n[type=mannequin,tag=faint_mannequin.this] run function lib:vanish/
     gamemode survival @s
 
 # reset

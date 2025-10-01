@@ -9,7 +9,7 @@
     execute as @a[scores={player.death_timer=1..}] if score @s player.id = @s player.id run tag @n[tag=this] add player_existed
     tag @s remove this
 
-    kill @s[tag=!player_existed]
+    execute if entity @s[tag=!player_existed] run function lib:vanish/
 
 # reset
     tag @s remove player_existed

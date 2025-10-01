@@ -4,17 +4,20 @@
 #
 # @within player:tick
 
+# fix bug
+    execute unless predicate lib:vehicle run tp @s ~ ~ ~
+
 # manage timer
     scoreboard players remove @s player.death_timer 1
 
 # add tag
     tag @s add player.this
     execute as @e[type=mannequin,tag=player.faint_mannequin] if score @s player.id = @p[tag=player.this] player.id run tag @s add faint_mannequin.this
-    tag @s remove player.this
 
 # spectate
     gamemode spectator
-    tp @s @n[type=mannequin,tag=faint_mannequin.this]
+    execute as @n[type=mannequin,tag=faint_mannequin.this] on passengers on passengers on passengers run ride @p[tag=player.this] mount @s
+    tag @s remove player.this
 
 # calculate sec dec
     scoreboard players operation $sec temporary = @s player.death_timer
@@ -43,9 +46,7 @@
     gamemode survival @s[scores={player.death_timer=0}]
     execute if score @s player.death_timer matches 0 run playsound entity.player.death player @a[distance=..32] ~ ~ ~ 1 1 0
     execute in world:hub run tp @s[scores={player.death_timer=0}] 0 63 0
-    execute if score @s player.death_timer matches 0 run kill @e[type=mannequin,tag=faint_mannequin.this]
-    # statusupdate
-    execute if score @s player.death_timer matches 0 run tag @s add statusupdate
+    execute if score @s player.death_timer matches 0 as @n[type=mannequin,tag=faint_mannequin.this] run function lib:vanish/
 
 # reset
     tag @e[type=mannequin,tag=faint_mannequin.this] remove this

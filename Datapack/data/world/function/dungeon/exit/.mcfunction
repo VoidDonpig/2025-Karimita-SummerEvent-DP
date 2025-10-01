@@ -13,6 +13,3 @@
     execute in world:hub run spawnpoint @s 0 63 0
     execute in world:hub run tp @s 0 63 0 0 0
     execute in world:hub run playsound block.beacon.power_select master @s 0 63 0 0.2 1.1
-
-# update dungeon item
-    function asset:item/deactivate_dungeon_item

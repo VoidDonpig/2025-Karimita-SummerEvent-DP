@@ -14,9 +14,6 @@
     execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=world:adventure_dimension] run gamemode adventure
     execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=!world:adventure_dimension] run gamemode survival
 
-# faint
-    execute if score @s player.death_timer = @s player.death_timer run function player:faint/timer
-
 # death event
     execute if entity @e[type=player,scores={death=1..},distance=..0.00000001,limit=1] run function player:trigger/died/
     execute if entity @e[type=player,advancements={player:trigger/died=true},distance=..0.00000001,limit=1] run function player:trigger/died/
@@ -41,6 +38,9 @@
     execute if predicate lib:periodic/40 if predicate player:is_afk run function player:trigger/afk/check
     execute if predicate lib:periodic/40 run scoreboard players reset @s[tag=!player.is_afk] afk_timer
     execute if predicate lib:periodic/40 run tag @s[tag=player.is_afk] remove player.is_afk
+
+# faint
+    execute if score @s player.death_timer = @s player.death_timer run function player:faint/timer
 
 # full set bonus
     execute if predicate asset:armor/full/palladion_armor run function asset:item/palladion_armor/
