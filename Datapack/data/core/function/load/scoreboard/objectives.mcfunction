@@ -44,6 +44,7 @@
     scoreboard objectives add player.death_timer dummy
     scoreboard objectives add player.revive_timer dummy
     scoreboard objectives add player.rejoined custom:leave_game
+    scoreboard objectives add player.modified_health dummy
     # status
         scoreboard objectives add health health {"text": "❤","color": "red"}
         scoreboard objectives add max_health dummy

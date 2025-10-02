@@ -1,23 +1,24 @@
 {
-  "pack": {
-    "description": [
-      {
-        "text": "Karimita-Summer Server Datapack",
-        "color": "yellow",
-        "bold": true
-      },
-      {
-        "text": "Made by ",
-        "extra": [
-          {
-            "text": "VoidDonpig",
-            "color": "dark_purple",
-            "bold": true
-          }
-        ],
-        "color": "gray"
-      }
-    ],
-    "pack_format": 88
-  }
+	"pack": {
+		"description": [
+			{
+				"text": "Karimita-Summer Server Datapack",
+				"color": "yellow",
+				"bold": true
+			},
+			{
+				"text": "Made by ",
+				"extra": [
+					{
+						"text": "VoidDonpig",
+						"color": "dark_purple",
+						"bold": true
+					}
+				],
+				"color": "gray"
+			}
+		],
+		"min_format": 88,
+		"max_format": 88
+	}
 }
