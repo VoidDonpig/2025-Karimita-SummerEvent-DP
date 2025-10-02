@@ -5,8 +5,9 @@
 # @within player:faint/revive
 
 # revive
-    execute as @n[type=mannequin,tag=faint_mannequin.this] run function lib:vanish/
     gamemode survival @s
+    ride @s dismount
+    execute as @n[type=mannequin,tag=faint_mannequin.this] run function lib:vanish/
 
 # reset
     scoreboard players reset @s player.revive_timer
