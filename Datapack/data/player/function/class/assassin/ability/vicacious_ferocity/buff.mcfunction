@@ -5,7 +5,10 @@
 # @within player:class/assassin/ability/vicacious_ferocity/mana_check
 
 # damage
-    damage @s 8 out_of_world
+    execute store result storage player: __temp__.damage float 0.01 run scoreboard players get $needed_health temporary
+    data modify storage player: __temp__.damage set string storage player: __temp__.damage 0 -1
+    function player:class/assassin/ability/vicacious_ferocity/damage with storage player: __temp__
+    data remove storage player: __temp__
 
 # add cooltime
     scoreboard players set @s vicacious_ferocity_cooltime 100

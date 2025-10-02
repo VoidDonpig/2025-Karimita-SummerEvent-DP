@@ -15,9 +15,19 @@
     execute if score @s class.assassin.level matches 40.. run scoreboard players set @s bloodlust_timer 300
 
 # heal
-    effect give @s[scores={class.assassin.level=1..19}] regeneration 1 2 false
-    effect give @s[scores={class.assassin.level=20..39}] regeneration 1 3 false
-    effect give @s[scores={class.assassin.level=40..}] regeneration 1 4 false
+    execute unless score @s player.modified_health = @s player.modified_health store result score @s player.modified_health run data get entity @s Health 100
+    execute store result score $heal_amount temporary run attribute @s max_health get 100
+    scoreboard players operation $multiply temporary = @s class.assassin.level
+    scoreboard players operation $multiply temporary *= $5 constant
+    scoreboard players add $multiply temporary 250
+    scoreboard players operation $heal_amount temporary *= $multiply temporary
+    scoreboard players operation $heal_amount temporary /= $10000 constant
+    scoreboard players operation @s player.modified_health += $heal_amount temporary
 
 # add flag tag
     tag @s add statusupdate
+
+# reset
+    scoreboard players reset $player.modified_health
+    scoreboard players reset $heal_amount temporary
+    scoreboard players reset $multiply temporary

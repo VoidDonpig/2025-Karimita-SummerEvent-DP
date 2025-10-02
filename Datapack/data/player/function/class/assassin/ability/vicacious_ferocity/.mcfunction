@@ -5,7 +5,12 @@
 # @within player:class/assassin/
 
 # charge
-    execute if predicate player:is_sneaking if predicate asset:weapon/melee/daggers unless score @s vicacious_ferocity_cooltime matches 1.. run function player:class/assassin/ability/vicacious_ferocity/health_check
+    execute if predicate player:is_sneaking run tag @s add player.vicacious_ferocity.add_sneaking_tag
+    tag @s[tag=player.vicacious_ferocity.add_sneaking_tag,scores={vicacious_ferocity_timer=1..}] remove player.vicacious_ferocity.add_sneaking_tag
+    execute if predicate player:is_sneaking unless entity @s[tag=player.vicacious_ferocity.sneaking] if predicate asset:weapon/melee/daggers unless score @s vicacious_ferocity_cooltime matches 1.. run function player:class/assassin/ability/vicacious_ferocity/health_check
+    execute unless entity @s[tag=player.vicacious_ferocity.add_sneaking_tag] run tag @s remove player.vicacious_ferocity.sneaking
+    execute if entity @s[tag=player.vicacious_ferocity.add_sneaking_tag] run tag @s add player.vicacious_ferocity.sneaking
+    tag @s[tag=player.vicacious_ferocity.add_sneaking_tag] remove player.vicacious_ferocity.add_sneaking_tag
 
 # timer
     execute if score @s vicacious_ferocity_cooltime matches 1.. run scoreboard players remove @s vicacious_ferocity_cooltime 1

@@ -16,7 +16,9 @@
     scoreboard players operation $int temporary /= $10 constant
 
     scoreboard players operation $float temporary = @s player.revive_timer
-    scoreboard players operation $float temporary %= $1000 constant
+    scoreboard players operation $remove_int temporary = $int temporary
+    scoreboard players operation $remove_int temporary *= $10 constant
+    scoreboard players operation $float temporary -= $remove_int temporary
 
 # update armor stand
     data modify entity 83a-51-1-0-2 text set value ["",{"score":{"objective":"temporary","name":"$int"},color:green},{"text":".",color:green},{"score":{"objective":"temporary","name":"$float"},color:green},{"text":"%",color:green}]
@@ -34,3 +36,4 @@
 # reset
     scoreboard players reset $int temporary
     scoreboard players reset $float temporary
+    scoreboard players reset $remove_int temporary
