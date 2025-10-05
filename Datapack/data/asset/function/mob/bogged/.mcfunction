@@ -58,7 +58,7 @@
 
 # curse of deossification
     # add score
-        execute if score $difficulty_level world matches 5 if entity @s[tag=mode.melee] unless score @s ai_timer.5 matches 60.. run scoreboard players add @s ai_timer.5 1
+        execute if score $difficulty_level world matches 5.. if entity @s[tag=mode.melee] unless score @s ai_timer.5 matches 60.. run scoreboard players add @s ai_timer.5 1
     # caution
         execute if score @s ai_timer.5 matches 60 run function asset:mob/bogged/action/curse_of_deossification/caution
     # keep adding score

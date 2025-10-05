@@ -6,6 +6,5 @@
 
 # revoke
     advancement revoke @s only player:trigger/changed_dimension
-
 # statusupdate
     tag @s add statusupdate

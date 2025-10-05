@@ -1,5 +1,7 @@
 {
   "values": [
-    "minecraft:drown"
+    "minecraft:drown",
+    "minecraft:lightning_bolt",
+    "#is_explosion"
   ]
 }

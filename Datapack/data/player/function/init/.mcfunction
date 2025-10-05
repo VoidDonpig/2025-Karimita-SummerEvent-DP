@@ -24,6 +24,9 @@
     data remove storage player: __temp__
     function player:cosmetic/prefix/reset
 
+# set storage
+    function player:storage/create/
+
 # teleport to hub
     execute in world:hub run tp @s 0 63 0
 

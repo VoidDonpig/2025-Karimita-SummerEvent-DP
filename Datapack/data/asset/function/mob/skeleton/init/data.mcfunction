@@ -15,7 +15,7 @@
     #data modify storage mob:init data.equipment.legs set value {"id":"diamond_leggings"}
     #data modify storage mob:init data.equipment.feet set value {"id":"diamond_boots"}
     execute if score $difficulty_level world matches 2..4 run data modify storage mob:init data.equipment.mainhand set value {"id":"bow",components:{enchantments:{"minecraft:power":1}}}
-    execute if score $difficulty_level world matches 5 run data modify storage mob:init data.equipment.mainhand set value {"id":"bow",components:{enchantments:{"minecraft:power":2}}}
+    execute if score $difficulty_level world matches 5.. run data modify storage mob:init data.equipment.mainhand set value {"id":"bow",components:{enchantments:{"minecraft:power":2}}}
     #data modify storage mob:init data.equipment.offhand set value {"id":"shield"}
 
     #data modify storage mob:init data.DeathLootTable set value "entities/allay"

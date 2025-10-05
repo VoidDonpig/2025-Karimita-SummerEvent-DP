@@ -36,11 +36,11 @@
     # manage timer
         execute if score $difficulty_level world matches 2.. unless entity @s[tag=leap_attack.doing] unless score @s ai_timer.3 matches 80.. unless score @s ai_counter.1 matches 1.. run scoreboard players add @s ai_timer.3 1
     # caution
-        execute if score @s ai_timer.3 matches 80 run function asset:mob/zombie_villager/action/curse_of_zombie_villagers/caution
+        execute if score @s ai_timer.3 matches 80 run function asset:mob/zombie_villager/action/curse_of_zombies/caution
     # keep adding score when charging
         execute if score @s ai_timer.3 matches 80.. unless entity @s[tag=leap_attack.doing] run scoreboard players add @s ai_timer.3 1
     # run
-        execute if score @s ai_timer.3 matches 100 run function asset:mob/zombie_villager/action/curse_of_zombie_villagers/
+        execute if score @s ai_timer.3 matches 100 run function asset:mob/zombie_villager/action/curse_of_zombies/
     # add count score
         execute if score $difficulty_level world matches 2 if score @s ai_timer.3 matches 100 run scoreboard players add @s ai_counter.1 100
         execute if score $difficulty_level world matches 3.. if score @s ai_timer.3 matches 100 run scoreboard players add @s ai_counter.1 1

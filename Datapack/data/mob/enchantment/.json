@@ -58,43 +58,6 @@
             }
           ]
         }
-      },
-      {
-        "requirements": {
-          "condition": "minecraft:all_of",
-          "terms": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "wither"
-              }
-            },
-            {
-              "condition": "minecraft:damage_source_properties",
-              "predicate": {
-                "tags": [
-                  {
-                    "id": "lib:is_explosion",
-                    "expected": true
-                  }
-                ]
-              }
-            },
-            {
-              "condition": "minecraft:damage_source_properties",
-              "predicate": {
-                "tags": [
-                  {
-                    "id": "bypasses_invulnerability",
-                    "expected": false
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        "effect": {}
       }
     ],
     "minecraft:tick": [

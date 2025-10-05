@@ -24,7 +24,7 @@
 # marciless fang
     execute if score $difficulty_level world matches 1..3 if predicate lib:periodic/40 positioned as @n[tag=target] run function asset:mob/evoker/action/merciless_fang/
     execute if score $difficulty_level world matches 4 if predicate lib:periodic/20 positioned as @n[tag=target] run function asset:mob/evoker/action/merciless_fang/
-    execute if score $difficulty_level world matches 5 if predicate lib:periodic/10 positioned as @n[tag=target] run function asset:mob/evoker/action/merciless_fang/
+    execute if score $difficulty_level world matches 5.. if predicate lib:periodic/10 positioned as @n[tag=target] run function asset:mob/evoker/action/merciless_fang/
 
 # defensive fang
     # manage timer

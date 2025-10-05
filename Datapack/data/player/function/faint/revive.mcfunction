@@ -29,6 +29,8 @@
 # title
     title @s[scores={player.death_timer=1..}] times 0 4 0
     title @s[scores={player.death_timer=1..}] title ["",{"text":"蘇生中",color:"green"}]
+    title @s[scores={player.death_timer=1..}] subtitle ["",{"score":{"objective":"temporary","name":"$int"},color:green},{"text":".",color:green},{"score":{"objective":"temporary","name":"$float"},color:green},{"text":"%",color:green}]
+
 
 # wake up
     execute if score @s player.revive_timer matches 1000.. run function player:faint/wakeup

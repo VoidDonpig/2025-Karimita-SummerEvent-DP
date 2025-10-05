@@ -11,4 +11,4 @@
 # grab bow
     execute if score $difficulty_level world matches 0..1 run item replace entity @s weapon.mainhand with bow[enchantments={power:1}]
     execute if score $difficulty_level world matches 2..4 run item replace entity @s weapon.mainhand with bow[enchantments={power:2}]
-    execute if score $difficulty_level world matches 5 run item replace entity @s weapon.mainhand with bow[enchantments={power:3}]
+    execute if score $difficulty_level world matches 5.. run item replace entity @s weapon.mainhand with bow[enchantments={power:3}]

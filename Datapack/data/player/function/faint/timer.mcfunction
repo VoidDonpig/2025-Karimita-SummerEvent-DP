@@ -4,9 +4,6 @@
 #
 # @within player:tick
 
-# fix bug
-    execute unless predicate lib:vehicle run tp @s ~ ~ ~
-
 # manage timer
     scoreboard players remove @s player.death_timer 1
 
@@ -43,10 +40,9 @@
     execute unless entity @p[distance=..1.6,predicate=player:is_sneaking] run scoreboard players reset @s player.revive_timer
 
 # kill
-    gamemode survival @s[scores={player.death_timer=0}]
     execute if score @s player.death_timer matches 0 run playsound entity.player.death player @a[distance=..32] ~ ~ ~ 1 1 0
-    execute in world:hub run tp @s[scores={player.death_timer=0}] 0 63 0
-    execute if score @s player.death_timer matches 0 as @n[type=mannequin,tag=faint_mannequin.this] run function lib:vanish/
+    execute if score @s player.death_timer matches 0 run function world:dungeon/exit/
+    execute if score @s player.death_timer matches 0 as @n[type=mannequin,tag=faint_mannequin.this] run kill @s
 
 # reset
     tag @e[type=mannequin,tag=faint_mannequin.this] remove this

@@ -14,3 +14,6 @@
         execute in world:admin_area run data modify storage player: __temp__.name set from block 0 0 0 Items[0].components."minecraft:profile".name
     # summon
         function player:faint/summon with storage player: __temp__
+
+# reset
+    data remove storage player: __temp__

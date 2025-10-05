@@ -18,4 +18,4 @@
 
 # set timer
     execute if score $difficulty_level world matches 1..4 run scoreboard players set @s ai_timer.2 1200
-    execute if score $difficulty_level world matches 5 run scoreboard players set @s ai_timer.2 600
+    execute if score $difficulty_level world matches 5.. run scoreboard players set @s ai_timer.2 600

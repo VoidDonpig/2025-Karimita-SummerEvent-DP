@@ -5,8 +5,8 @@
 # @within asset:mob/bogged/
 
 # define direction of arrow
-    execute if score $difficulty_level world matches ..4 store result score $direction temporary run random value 0..2
-    execute if score $difficulty_level world matches 5 run scoreboard players set $direction temporary 3
+    execute if score $difficulty_level world matches 1..4 store result score $direction temporary run random value 0..2
+    execute if score $difficulty_level world matches 5.. run scoreboard players set $direction temporary 3
 
 # set direction ($difficulty_level=..4)
     # set reference armor stand Pos
@@ -35,12 +35,12 @@
                 execute if score $direction temporary matches 3 in world:admin_area run data modify storage asset:mob __temp__.2.motion set from entity 83a-51-1-0-0 Pos
 
 # summon arrow ($difficulty_level=..4)
-    execute if score $difficulty_level world matches ..4 run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__
+    execute if score $difficulty_level world matches 1..4 run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__
 
 # summon arrow ($difficulty_level=5)
-    execute if score $difficulty_level world matches 5 run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__.0
-    execute if score $difficulty_level world matches 5 run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__.1
-    execute if score $difficulty_level world matches 5 run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__.2
+    execute if score $difficulty_level world matches 5.. run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__.0
+    execute if score $difficulty_level world matches 5.. run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__.1
+    execute if score $difficulty_level world matches 5.. run function asset:mob/bogged/action/rapid_fire/summon_arrow with storage asset:mob __temp__.2
 
 # set data to summmoned arrow
     # tag this entity
