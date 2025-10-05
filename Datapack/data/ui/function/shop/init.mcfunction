@@ -5,7 +5,7 @@
 # @context shop
 
 tag @s remove ui_init
-scoreboard players set @s autokill_timer 2
+scoreboard players set @s autokill_timer 3
 
 # save uuid
     data modify entity @s attack.player set from entity @p[advancements={ui:looking_at/shop=true}] UUID
