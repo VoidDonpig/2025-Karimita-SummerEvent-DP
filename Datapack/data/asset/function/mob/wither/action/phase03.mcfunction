@@ -15,9 +15,9 @@
 
 # message
     execute if score @s ai_counter.1 matches ..2 run scoreboard players add @s dialogue_timer.1 1
-    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "遊戯は終わりにしよう。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 40 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "私はウィザー、全てを蹂躙する存在。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "一方的な虐殺の時間だ。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "遊戯は終わりにしよう。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 40 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "私はウィザー、全てを蹂躙する存在。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "一方的な虐殺の時間だ。","color": "red"}]
 
 # playsound
     execute if score @s dialogue_timer.1 matches 1 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0
@@ -55,9 +55,9 @@
 
 # message
     execute if score @s ai_timer.2 matches 900 store result score $random temporary run random value 0..2
-    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "諦めろ、大人しく死を受け入れるがよい。","color": "red"}]
-    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "このすばしっこい蟻めが。","color": "red"}]
-    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "早々に死ね！","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "諦めろ、大人しく死を受け入れるがよい。","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "このすばしっこい蟻めが。","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "早々に死ね！","color": "red"}]
     execute if score @s ai_timer.2 matches 900 run scoreboard players reset $random temporary
 
 # reset

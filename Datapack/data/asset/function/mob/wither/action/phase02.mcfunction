@@ -12,9 +12,9 @@
 
 # message
     execute if score @s ai_counter.1 matches ..1 run scoreboard players add @s dialogue_timer.1 1
-    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "あまり調子に乗るんじゃないぞ。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 40 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "私の力は一撃で人間を葬り去ることができる。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "それがどんなものか見せてやろう！","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "あまり調子に乗るんじゃないぞ。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 40 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "私の力は一撃で人間を葬り去ることができる。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "それがどんなものか見せてやろう！","color": "red"}]
 
 # playsound
     execute if score @s dialogue_timer.1 matches 1 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0
@@ -53,9 +53,9 @@
 # catastrophic lightning
     execute if score @s ai_timer.2 matches 400..600 run data modify entity @s Invul set value 2
     execute if score @s ai_timer.2 matches 400 store result score $random temporary run random value 0..2
-    execute if score @s ai_timer.2 matches 400 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "雷よ、奴を滅せよ！","color": "red"}]
-    execute if score @s ai_timer.2 matches 400 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "私のエネルギーはこの程度ではない。","color": "red"}]
-    execute if score @s ai_timer.2 matches 400 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "早々に諦めた方が楽に死ねるぞ。","color": "red"}]
+    execute if score @s ai_timer.2 matches 400 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "雷よ、奴を滅せよ！","color": "red"}]
+    execute if score @s ai_timer.2 matches 400 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "私のエネルギーはこの程度ではない。","color": "red"}]
+    execute if score @s ai_timer.2 matches 400 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "早々に諦めた方が楽に死ねるぞ。","color": "red"}]
     execute if score @s ai_timer.2 matches 400..600 if predicate lib:periodic/20 as @e[type=#lib:all,type=!#lib:undead,distance=..128,predicate=!player:is_player_exception] at @s run function asset:mob/wither/action/catastrophic_lightning/
 
 # curse of wither

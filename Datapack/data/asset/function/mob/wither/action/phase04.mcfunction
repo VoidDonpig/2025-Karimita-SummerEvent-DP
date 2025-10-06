@@ -15,9 +15,9 @@
 
 # message
     execute if score @s ai_counter.1 matches ..3 run scoreboard players add @s dialogue_timer.1 1
-    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "認めよう、お前は最も私に近づいた人間だ。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 60 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "だが、もう終わりだ。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "本気で相手をしてやろう！！！","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "認めよう、お前は最も私に近づいた人間だ。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 60 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "だが、もう終わりだ。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "本気で相手をしてやろう！！！","color": "red"}]
 
 # playsound
     execute if score @s dialogue_timer.1 matches 1 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0
@@ -80,12 +80,12 @@
         execute if score @s ai_timer.2 matches 700..1879 anchored eyes run playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 2 1 0
 
 # hit count
-    execute if score @s ai_counter.2 matches ..0 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "グッ...！なかなかやるな。","color": "red"}]
+    execute if score @s ai_counter.2 matches ..0 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "グッ...！なかなかやるな。","color": "red"}]
     execute if score @s ai_counter.2 matches ..0 run scoreboard players set @s ai_timer.2 1881
     execute if score @s ai_counter.2 matches ..0 run tag @s add canceled_boom
 
 # boom
-    execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "吹き飛ぶがいい！！！！！","color": "red"}]
+    execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "吹き飛ぶがいい！！！！！","color": "red"}]
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. as @e[type=#lib:all,type=!#lib:monster,distance=..128] run damage @s 2048 explosion
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run particle minecraft:explosion_emitter ~ ~ ~ 16.0 16.0 16.0 0 256 force @a
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run scoreboard players set @s ai_timer.2 1980

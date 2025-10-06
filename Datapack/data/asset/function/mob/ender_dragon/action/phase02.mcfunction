@@ -4,6 +4,10 @@
 #
 # @within asset:mob/ender_dragon/action
 
+# run special action when not done
+    execute unless entity @s[tag=asset.mob.ender_dragon.phase02.special_action_done] run function asset:mob/ender_dragon/action/phase_special_action/phase02
+    execute unless entity @s[tag=asset.mob.ender_dragon.phase02.special_action_done] run return fail
+
 # movement
     execute unless entity @s[tag=stop_moving] unless entity @s[tag=moving_to_0_0] run function asset:mob/ender_dragon/base_move_02
     execute if entity @s[tag=moving_to_0_0] run function asset:mob/ender_dragon/move_to_0_0

@@ -13,10 +13,10 @@
     execute if score @s death_timer.1 matches 1 run data modify entity @s Silent set value 1b
     execute if score @s death_timer.1 matches 1 run data modify entity @s Invulnerable set value 1b
 
-    execute if score @s death_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "があ！","color": "red"}]
-    execute if score @s death_timer.1 matches 60 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "「全ては無意味」...","color": "red"}]
-    execute if score @s death_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "今なら貴方の言葉が理解できます。","color": "red"}]
-    execute if score @s death_timer.1 matches 160 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "我が主よ... お許しください...","color": "red"}]
+    execute if score @s death_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "があ！","color": "red"}]
+    execute if score @s death_timer.1 matches 60 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "「全ては無意味」...","color": "red"}]
+    execute if score @s death_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "今なら貴方の言葉が理解できます。","color": "red"}]
+    execute if score @s death_timer.1 matches 160 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "我が主よ... お許しください...","color": "red"}]
 
     execute unless score @s death_timer.1 matches 200.. if score @s death_timer.2 matches 1 run playsound entity.wither.hurt hostile @a ~ ~ ~ 16 1 0
     execute unless score @s death_timer.1 matches 200.. run tp @s ~ ~ ~ ~45 ~

@@ -19,6 +19,6 @@
 
 # message
     execute store result score $message temporary run random value 1..2
-    execute if score $message temporary matches 1 run tellraw @s [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "さらばだ。","color": "red"}]
-    execute if score $message temporary matches 2 run tellraw @s [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "本当に愚かだな。","color": "red"}]
+    execute if score $message temporary matches 1 run tellraw @s [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "さらばだ。","color": "red"}]
+    execute if score $message temporary matches 2 run tellraw @s [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "本当に愚かだな。","color": "red"}]
     scoreboard players reset $message temporary

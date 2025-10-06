@@ -12,7 +12,7 @@
 # message
     playsound entity.wither.ambient hostile @a ~ ~ ~ 16 0.5 0
     execute store result score $message temporary run random value 1..3
-    execute if score $message temporary matches 1 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "見せてやろう...私の力を。","color": "red"}]
-    execute if score $message temporary matches 2 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "跡形もなく消し飛ばしてやろう。","color": "red"}]
-    execute if score $message temporary matches 3 run tellraw @a [{"text": "[BOSS] ウィザー: ", "color": "dark_red"},{"text": "コォォォォォ...","color": "red"}]
+    execute if score $message temporary matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "見せてやろう...私の力を。","color": "red"}]
+    execute if score $message temporary matches 2 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "跡形もなく消し飛ばしてやろう。","color": "red"}]
+    execute if score $message temporary matches 3 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "コォォォォォ...","color": "red"}]
     scoreboard players reset $message temporary
