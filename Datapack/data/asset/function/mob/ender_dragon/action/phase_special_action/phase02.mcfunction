@@ -5,8 +5,9 @@
 # @within asset:mob/ender_dragon/action/phase02
 
 # reset
-    execute unless score @s ai_counter.1 matches 1.. run scoreboard players reset @s ai_counter.1
-    execute unless score @s ai_counter.1 matches 1.. run scoreboard players reset @s ai_timer.1
+    scoreboard players reset @s[tag=!mob.ender_dragon.phase02.init] ai_counter.1
+    scoreboard players reset @s[tag=!mob.ender_dragon.phase02.init] ai_timer.1
+    tag @s add mob.ender_dragon.phase02.init
 
 # dialogue
     execute unless score @s ai_counter.1 matches 1.. run scoreboard players add @s dialogue_timer.1 1
@@ -21,7 +22,7 @@
     execute if score @s ai_counter.1 matches 1 run scoreboard players add @s ai_timer.1 1
 
 # movement
-    execute positioned 0 100 0 unless entity @s[tag=moving_to_0_0,distance=..4] run tag @s add moving_to_0_0
+    execute positioned 0 100 0 unless entity @s[tag=moving_to_0_0,distance=..4] if score @s dialogue_timer.1 matches 1.. run tag @s add moving_to_0_0
     execute if entity @s[tag=moving_to_0_0] run function asset:mob/ender_dragon/move_to_0_0
     tag @s[tag=moving_to_0_0] remove moving_to_0_0
 
@@ -35,6 +36,6 @@
         execute if score @s ai_timer.1 matches 1..200 run function asset:mob/ender_dragon/action/dimensional_slash/charging
 
 # reset
-    execute if score @s ai_timer.1 matches 200 run scoreboard players reset @s ai_timer.1
     execute if score @s ai_timer.1 matches 200 run tag @s add asset.mob.ender_dragon.phase02.special_action_done
     execute if score @s ai_timer.1 matches 200 run tag @s remove moving_to_0_0
+    execute if score @s ai_timer.1 matches 200 run scoreboard players reset @s ai_timer.1

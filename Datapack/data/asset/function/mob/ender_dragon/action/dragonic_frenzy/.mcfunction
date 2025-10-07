@@ -6,6 +6,8 @@
 
 # add tag
     particle minecraft:explosion ~ ~ ~ 2.625 2.625 2.625 4 128 force @a
+    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
+    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 8 0.5 0
     execute positioned ~-10 ~-10 ~-10 as @a[dx=19,dy=19,dz=19] run damage @s 666.6 minecraft:explosion
 

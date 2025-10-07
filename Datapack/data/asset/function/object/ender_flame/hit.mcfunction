@@ -6,6 +6,8 @@
 
 # sfx
     particle minecraft:explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
+    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
+    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
     playsound minecraft:entity.dragon_fireball.explode hostile @a ~ ~ ~ 4 1 0
 
 # damage

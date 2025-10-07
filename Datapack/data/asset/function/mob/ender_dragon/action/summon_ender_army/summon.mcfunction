@@ -6,6 +6,8 @@
 
 # sfx
     particle minecraft:explosion ~ ~ ~ 0 0 0 0 1
+    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
+    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
     particle minecraft:dust{color:[0.667,0.090,1.000],scale:1.0} ~ ~ ~ 0.0 0.0 0.0 1 32 force @a
     playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 2 2 0
 

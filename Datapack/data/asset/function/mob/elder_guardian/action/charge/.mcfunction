@@ -14,6 +14,8 @@
 
 # sfx
     particle minecraft:explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
+    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
+    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 2 1 0
     playsound minecraft:item.trident.riptide_1 hostile @a ~ ~ ~ 2 2 0
 

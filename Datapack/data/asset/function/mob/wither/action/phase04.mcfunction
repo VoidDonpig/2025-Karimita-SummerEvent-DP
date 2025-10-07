@@ -88,6 +88,8 @@
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "吹き飛ぶがいい！！！！！","color": "red"}]
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. as @e[type=#lib:all,type=!#lib:monster,distance=..128] run damage @s 2048 explosion
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run particle minecraft:explosion_emitter ~ ~ ~ 16.0 16.0 16.0 0 256 force @a
+    execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
+    execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run scoreboard players set @s ai_timer.2 1980
     execute if score @s ai_timer.2 matches 1880 if score @s ai_counter.2 matches 1.. run scoreboard players reset @s ai_counter.2
 

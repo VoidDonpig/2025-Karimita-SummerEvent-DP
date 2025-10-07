@@ -16,6 +16,8 @@
     playsound minecraft:entity.allay.death hostile @a ~ ~ ~ 16 0.6 0
     particle minecraft:explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
     particle minecraft:explosion ~ ~ ~ 0.0 0.0 0.0 16384 16 force @a
+    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
+    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
     setblock ~ ~ ~ minecraft:air
     
     scoreboard players reset @s
