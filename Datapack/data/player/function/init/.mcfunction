@@ -34,7 +34,7 @@
     execute in world:hub run spawnpoint @s 0 63 0 0 0
 
 # welcome message
-    tellraw @s ["",{"text":"-----------------------------------------------------",strikethrough:true},"\n",\
+    tellraw @s ["",{"text":"-----------------------------------------------------","strikethrough":true},"\n",\
     {"text":"Karimita Event Server in Winter 2025 にようこそ!"},"\n",\
     "\n",\
     {"text":"この世界では新たな敵や装備、職業などがあります。"},"\n",\
@@ -44,4 +44,4 @@
     {"text":"職業はいつでも変更可能です。"},"\n",\
     "\n",\
     {"text":"さあ、この世界を遊びつくしましょう！"},"\n",\
-    {"text":"------------------------------------------------------",strikethrough:true}]
+    {"text":"------------------------------------------------------","strikethrough":true}]

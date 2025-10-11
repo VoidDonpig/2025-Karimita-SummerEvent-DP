@@ -13,6 +13,7 @@
     execute if data storage mob:init data.CustomNameVisible run data modify entity @s CustomNameVisible set from storage mob:init data.CustomNameVisible
     execute if data storage mob:init data.PersistenceRequired run data modify entity @s PersistenceRequired set from storage mob:init data.PersistenceRequired
     execute if data storage mob:init data.NoAI run data modify entity @s NoAI set from storage mob:init data.NoAI
+    execute if data storage mob:init data.NoGravity run data modify entity @s NoGravity set from storage mob:init data.NoGravity
 
     execute if data storage mob:init data.armor run function mob:init/attribute/armor with storage mob:init data
     execute if data storage mob:init data.armor_toughness run function mob:init/attribute/armor_toughness with storage mob:init data
@@ -34,6 +35,10 @@
     execute if data storage mob:init data{prevent_drowned:1b} run tag @s add mob.prevent_drowned
     execute if data storage mob:init data.have_death_event run data modify entity @s data.mob.have_death_event set from storage mob:init data.have_death_event
     execute if data storage mob:init data.have_hurt_event run data modify entity @s data.mob.have_hurt_event set from storage mob:init data.have_hurt_event
+
+    execute if data storage mob:init data.profile run data modify entity @s profile set from storage mob:init data.profile
+    execute if data storage mob:init data.hide_description run data modify entity @s hide_description set from storage mob:init data.hide_description
+    execute if data storage mob:init data.immovable run data modify entity @s immovable set from storage mob:init data.immovable
 
 # set health
     execute store result entity @s Health float 1.0 run attribute @s minecraft:max_health get

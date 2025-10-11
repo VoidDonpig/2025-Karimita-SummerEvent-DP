@@ -5,7 +5,8 @@
 # @within asset:mob/revenant_priest/always
 
 # add tag
-    execute on target run tag @s add target
+    tag @p[predicate=!player:is_player_exception,distance=..128] add target
+    rotate @s facing entity @p[tag=target]
 
 # phase
     execute if score @s mob.health matches 19651.. run function asset:mob/revenant_priest/action/phase01
@@ -14,4 +15,4 @@
     execute if score @s mob.health matches ..6550 run function asset:mob/revenant_priest/action/phase04
 
 # reset
-    tag @n[tag=target] remove target
+    tag @p[tag=target] remove target

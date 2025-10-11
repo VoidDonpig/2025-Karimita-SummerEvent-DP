@@ -11,9 +11,9 @@
     #data modify storage mob:init data.active_effects set value [{id:"absorption",duration:-1,"amplifier":0,"show_particles":true}]
 
     data modify storage mob:init data.equipment.head set value {"id":"minecraft:player_head","components":{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmFmMzUzY2FlMGQyZDAwZGQwZmZjYTI5OWM2NTRhMDZjN2E1YTRlZDU0YTY1NDc3YjdiNDUyOWU1ZGMxOTQ3NiJ9fX0="}]}}}
-    data modify storage mob:init data.equipment.chest set value {"id":"diamond_chestplate",unbreakable:{}}
-    data modify storage mob:init data.equipment.legs set value {"id":"golden_leggings",unbreakable:{}}
-    data modify storage mob:init data.equipment.feet set value {"id":"leather_boots",unbreakable:{}}
+    data modify storage mob:init data.equipment.chest set value {"id":"leather_chestplate",unbreakable:{},"components":{dyed_color:8991416,"minecraft:trim":{material:"minecraft:gold",pattern:"minecraft:vex"}}}
+    data modify storage mob:init data.equipment.legs set value {"id":"leather_leggings",unbreakable:{},"components":{dyed_color:8991416,"minecraft:trim":{material:"minecraft:gold",pattern:"minecraft:vex"}}}
+    data modify storage mob:init data.equipment.feet set value {"id":"leather_boots",unbreakable:{},"components":{dyed_color:8991416,"minecraft:trim":{material:"minecraft:copper",pattern:"minecraft:snout"}}}
     data modify storage mob:init data.equipment.mainhand set value {"id":"stick","components":{"minecraft:enchantment_glint_override":true}}
     data modify storage mob:init data.equipment.offhand set value {"id":"stick","components":{"minecraft:enchantment_glint_override":true}}
 
@@ -24,6 +24,8 @@
     data modify storage mob:init data.PersistenceRequired set value 1b
 
     #data modify storage mob:init data.NoAI set value 1b
+
+    data modify storage mob:init data.NoGravity set value 1b
 
 # define attribute
     data modify storage mob:init data.health set value 26200
@@ -49,3 +51,8 @@
 
 # define boss
     data modify storage mob:init data.boss set value 1b
+
+# set mannequin
+    data modify storage mob:init data.profile set value "MHF_Herobrine"
+    data modify storage mob:init data.hide_description set value true
+    data modify storage mob:init data.immovable set value false
