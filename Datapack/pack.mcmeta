@@ -2,12 +2,12 @@
 	"pack": {
 		"description": [
 			{
-				"text": "Karimita-Summer Server Datapack",
-				"color": "yellow",
+				"text": "Resistentia ",
+				"color": "dark_gray",
 				"bold": true
 			},
 			{
-				"text": "Made by ",
+				"text": "made by ",
 				"extra": [
 					{
 						"text": "VoidDonpig",
