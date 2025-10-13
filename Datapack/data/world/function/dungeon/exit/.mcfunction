@@ -14,5 +14,5 @@
 
 # tp to home
     function world:dungeon/exit/respawn/
-    execute in world:hub run tp @s 0 63 0 0 0
+    execute in world:hub run tp @s 0 64 0 0 0
     execute in world:hub run playsound block.beacon.power_select master @s 0 63 0 0.8 1.1
