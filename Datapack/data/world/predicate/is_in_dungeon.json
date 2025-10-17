@@ -1,9 +1,7 @@
 {
-    "condition": "any_of",
-    "terms": [
-        {
-            "condition": "reference",
-            "name": "world:dungeon/is_in_remnants_of_cataclysm"
-        }
-    ]
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "nbt": "{Tags:[\"player.in_dungeon\"]}"
+    }
 }

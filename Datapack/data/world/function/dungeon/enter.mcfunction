@@ -9,7 +9,10 @@
     data modify storage player: in set from storage player: out
 
 # save respawn point
-     data modify storage player: in.dungeon.old_respawn set from entity @s respawn
+     data modify storage player: in.old_respawn set from entity @s respawn
+
+# add tag
+    tag @s add player.in_dungeon
 
 # full regen
     effect clear @s

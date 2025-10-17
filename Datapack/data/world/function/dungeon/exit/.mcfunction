@@ -12,6 +12,9 @@
 # gamemode
     gamemode adventure
 
+# remove tag
+    tag @s remove player.in_dungeon
+
 # tp to home
     function world:dungeon/exit/respawn/
     execute in world:hub run tp @s 0 64 0 0 0

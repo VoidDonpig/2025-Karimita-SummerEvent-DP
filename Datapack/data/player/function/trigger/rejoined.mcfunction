@@ -20,5 +20,8 @@
 # statusupdate
     tag @s add statusupdate
 
+# remove tag
+    tag @s remove player.in_dungeon
+
 # reset
     scoreboard players reset @s player.rejoined
