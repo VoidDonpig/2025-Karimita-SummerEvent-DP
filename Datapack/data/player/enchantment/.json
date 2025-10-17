@@ -1,0 +1,50 @@
+{
+    "description": "",
+    "supported_items": "#wool_carpets",
+    "weight": 1,
+    "max_level": 1,
+    "min_cost": {
+        "base": 255,
+        "per_level_above_first": 255
+    },
+    "max_cost": {
+        "base": 255,
+        "per_level_above_first": 255
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "body"
+    ],
+    "effects": {
+        "minecraft:damage_immunity": [
+            {
+                "effect": {},
+                "requirements": {
+                    "condition": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "tags": [
+                                    {
+                                        "id": "bypasses_invulnerability",
+                                        "expected": false
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "this",
+                            "scores": {
+                                "player.invul_timer": {
+                                    "min": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

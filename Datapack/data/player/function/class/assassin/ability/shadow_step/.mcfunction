@@ -17,6 +17,9 @@
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
     playsound minecraft:entity.ender_dragon.flap hostile @a ~ ~ ~ 1 2.0
 
+# reset motion
+    function lib:player_motion/reset
+
 # motion
     function lib:player_motion/score
 

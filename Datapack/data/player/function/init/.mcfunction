@@ -12,6 +12,10 @@
     scoreboard players display numberformat @s belowname_display blank
     scoreboard players set @s belowname 0
 
+# place body item
+    item replace entity @s armor.body with white_carpet
+    item modify entity @s armor.body {function:"set_enchantments",enchantments:{"player:":1}}
+
 # set gamemode
     gamemode adventure @s
 

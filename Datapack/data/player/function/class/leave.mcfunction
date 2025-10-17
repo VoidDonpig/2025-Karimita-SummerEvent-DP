@@ -18,3 +18,6 @@
 # sfx
     tellraw @s ["",{"text":"無職がこの世界を冒険するのは非常に危険です！","color":red,"bold":true},"\n",{text:"何かの職業に就くことを推奨します！","color":red,"bold":true}]
     playsound block.note_block.pling player @s ~ ~ ~ 1 2 1
+
+# status update
+    tag @s add statusupdate

@@ -9,11 +9,14 @@
     effect give @s instant_health 80 14 true
     effect give @s saturation 80 14 true
 
+# invul
+    scoreboard players set @s player.invul_timer 80
+
 # reset
     function player:class/reset
 
 # faint
-    execute if predicate world:is_in_dungeon run function player:faint/
+    execute if entity @s[tag=player.faint_enabled] run function player:faint/
 
 # statusupdate
     tag @s add statusupdate

@@ -5,7 +5,7 @@
 # @context wither action
 
 # goodbye
-    damage @s 66666 minecraft:lightning_bolt
+    kill @s
     tag @s remove wither_cursed
 
 # sfx

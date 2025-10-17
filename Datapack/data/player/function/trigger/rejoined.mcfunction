@@ -9,7 +9,7 @@
     scoreboard players reset @s player.revive_timer
 
 # set gamemode
-    execute unless entity @s[tag=mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e] run gamemode survival
+    execute unless entity @s[tag=resistentia.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e] run gamemode survival
 
 # tp
     execute if predicate world:is_in_dungeon in world:hub run spawnpoint @s 0 63 0

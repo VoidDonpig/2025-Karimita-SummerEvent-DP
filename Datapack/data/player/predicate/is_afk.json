@@ -5,7 +5,7 @@
 			"condition": "minecraft:entity_properties",
 			"entity": "this",
 			"predicate": {
-				"nbt": "{Tags:[\"mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e\"]}"
+				"nbt": "{Tags:[\"resistentia.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e\"]}"
 			}
 		}
 	},

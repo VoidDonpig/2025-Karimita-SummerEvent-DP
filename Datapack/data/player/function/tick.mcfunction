@@ -10,9 +10,16 @@
 # rejoin
     execute if score @s player.rejoined matches 1.. run function player:trigger/rejoined
 
+# place body item
+    execute unless items entity @s armor.body * run item replace entity @s armor.body with white_carpet
+    execute unless items entity @s armor.body *[minecraft:enchantments~[{enchantments:"player:"}]] run item modify entity @s armor.body {function:"set_enchantments",enchantments:{"player:":1}}
+
 # set gamemode
-    execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=world:adventure_dimension,gamemode=!spectator] run gamemode adventure
-    execute if entity @s[tag=!mita_winter_event.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=!world:adventure_dimension,gamemode=!spectator] run gamemode survival
+    execute if entity @s[tag=!resistentia.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=world:adventure_dimension,gamemode=!spectator] run gamemode adventure
+    execute if entity @s[tag=!resistentia.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e,predicate=!world:adventure_dimension,gamemode=!spectator] run gamemode survival
+
+# when in boss battle
+    function player:trigger/in_ender_dragon_battle/check
 
 # in dungeon tick
     execute if predicate world:is_in_dungeon run function player:in_dungeon
@@ -60,6 +67,7 @@
     execute if entity @s[tag=statusupdate] run function player:status/update
 
 # faint
+    function player:faint/check
     execute if score @s player.death_timer = @s player.death_timer run function player:faint/timer
 
 # regen mana
@@ -80,6 +88,10 @@
     execute unless entity @s[tag=add_jumping_tag] run tag @s remove jumping
     execute if entity @s[tag=add_jumping_tag] run tag @s add jumping
     tag @s remove add_jumping_tag
+
+# invul timer
+    scoreboard players remove @s[scores={player.invul_timer=1..}] player.invul_timer 1
+    scoreboard players reset @s[scores={player.invul_timer=..0}] player.invul_timer
 
 # reset
     scoreboard players reset @s bow_used

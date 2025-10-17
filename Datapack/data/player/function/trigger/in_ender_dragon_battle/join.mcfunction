@@ -1,8 +1,8 @@
-#> world:dungeon/enter
+#> player:trigger/in_ender_dragon_battle/join
 #
-# enter common process
+# join fight
 #
-# @within world:dungeon/*/enter/
+# @within player:trigger/in_ender_dragon_battle/check
 
 # get data
     function player:storage/get/
@@ -11,14 +11,8 @@
 # save respawn point
      data modify storage player: in.dungeon.old_respawn set from entity @s respawn
 
-# full regen
-    effect clear @s
-    effect give @s instant_health 1 14 true
-    effect give @s saturation 1 14 true
-    effect give @s blindness 5 1 true
-
-# invul
-    scoreboard players set @s player.invul_timer 100
+# add tag
+    tag @s add player.in_ender_dragon_battle
 
 # save
     function player:storage/save/

@@ -4,6 +4,9 @@
 #
 # @within player:tick
 
+# prevent bug
+    execute unless predicate lib:vehicle run tp @s ~ ~ ~
+
 # manage timer
     scoreboard players remove @s player.death_timer 1
 
@@ -26,9 +29,9 @@
 
 # update armor stand
     data modify entity 83a-51-1-0-2 text set value ["",{"score":{"objective":"temporary","name":"$sec"},color:yellow},{"text":".",color:yellow},{"score":{"objective":"temporary","name":"$dec"},color:yellow},{"text":"s",color:yellow}]
-    execute as @n[type=mannequin,tag=faint_mannequin.this] on passengers run data modify entity @s CustomName set from entity 83a-51-1-0-2 text
+    execute on vehicle on vehicle on vehicle run data modify entity @s CustomName set from entity 83a-51-1-0-2 text
     data modify entity 83a-51-1-0-2 text set value ["",{"text":"近づいてスニークで蘇生","color":"green","bold":true}]
-    execute as @n[type=mannequin,tag=faint_mannequin.this] on passengers on passengers on passengers run data modify entity @s CustomName set from entity 83a-51-1-0-2 text
+    execute on vehicle run data modify entity @s CustomName set from entity 83a-51-1-0-2 text
 
 # title
     title @s[scores={player.death_timer=1..}] times 0 4 0
@@ -40,9 +43,10 @@
     execute unless entity @p[distance=..1.6,predicate=player:is_sneaking] run scoreboard players reset @s player.revive_timer
 
 # kill
+    execute if score @s player.death_timer matches 0 on vehicle on vehicle on vehicle on vehicle run kill @s
     execute if score @s player.death_timer matches 0 run playsound entity.player.death player @a[distance=..32] ~ ~ ~ 1 1 0
-    execute if score @s player.death_timer matches 0 run function world:dungeon/exit/
-    execute if score @s player.death_timer matches 0 as @n[type=mannequin,tag=faint_mannequin.this] run kill @s
+    execute if score @s player.death_timer matches 0 unless predicate world:is_in_dungeon run function player:faint/respawn/
+    execute if score @s player.death_timer matches 0 if predicate world:is_in_dungeon run function world:dungeon/exit/
 
 # reset
     tag @e[type=mannequin,tag=faint_mannequin.this] remove this
