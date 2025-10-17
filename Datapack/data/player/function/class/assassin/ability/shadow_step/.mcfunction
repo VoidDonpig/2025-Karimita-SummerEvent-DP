@@ -17,6 +17,9 @@
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
     playsound minecraft:entity.ender_dragon.flap hostile @a ~ ~ ~ 1 2.0
 
+# invul
+    execute unless score @s player.invul_timer matches 2.. run scoreboard players set @s player.invul_timer 2
+
 # reset motion
     function lib:player_motion/reset
 
