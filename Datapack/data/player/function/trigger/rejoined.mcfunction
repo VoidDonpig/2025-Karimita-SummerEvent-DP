@@ -12,8 +12,10 @@
     execute unless entity @s[tag=resistentia.admin_authed_by_a675a99c-635e-414f-9dc5-b203d1c03e8e] run gamemode survival
 
 # tp
-    execute if predicate world:is_in_dungeon in world:hub run spawnpoint @s 0 63 0
-    execute if predicate world:is_in_dungeon in world:hub run tp @s 0 63 0
+    execute unless score @s player.death_timer = @s player.death_timer if predicate world:is_in_dungeon run function world:dungeon/exit/
+
+# invul
+    scoreboard players set @s player.invul_timer 200
 
 # statusupdate
     tag @s add statusupdate

@@ -10,6 +10,10 @@
 # rejoin
     execute if score @s player.rejoined matches 1.. run function player:trigger/rejoined
 
+# invul timer
+    scoreboard players remove @s[scores={player.invul_timer=1..}] player.invul_timer 1
+    scoreboard players reset @s[scores={player.invul_timer=..0}] player.invul_timer
+
 # place body item
     execute unless items entity @s armor.body * run item replace entity @s armor.body with white_carpet
     execute unless items entity @s armor.body *[minecraft:enchantments~[{enchantments:"player:"}]] run item modify entity @s armor.body {function:"set_enchantments",enchantments:{"player:":1}}
@@ -88,10 +92,6 @@
     execute unless entity @s[tag=add_jumping_tag] run tag @s remove jumping
     execute if entity @s[tag=add_jumping_tag] run tag @s add jumping
     tag @s remove add_jumping_tag
-
-# invul timer
-    scoreboard players remove @s[scores={player.invul_timer=1..}] player.invul_timer 1
-    scoreboard players reset @s[scores={player.invul_timer=..0}] player.invul_timer
 
 # reset
     scoreboard players reset @s bow_used

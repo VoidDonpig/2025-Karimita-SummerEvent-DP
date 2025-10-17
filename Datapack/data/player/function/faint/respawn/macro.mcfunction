@@ -8,7 +8,7 @@
     $execute in $(dimension) run spawnpoint @s $(x) $(y) $(z)
 
 # gamemode
-    gamemode adventure
+    gamemode survival
 
 # heal all
     scoreboard players operation @s mana = @s max_mana
