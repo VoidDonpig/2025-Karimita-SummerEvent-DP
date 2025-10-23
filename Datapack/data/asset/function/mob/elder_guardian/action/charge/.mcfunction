@@ -13,11 +13,11 @@
     execute positioned ~-1 ~-1 ~-1 as @a[dz=1,dy=1,dx=1] at @s run tp @s @n[tag=attacker]
 
 # sfx
-    particle minecraft:explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
-    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
-    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 force @a
-    playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 2 1 0
-    playsound minecraft:item.trident.riptide_1 hostile @a ~ ~ ~ 2 2 0
+    particle minecraft:explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 normal
+    particle minecraft:poof ~ ~ ~ 1.0 1.0 1.0 0.4 64 normal
+    particle minecraft:smoke ~ ~ ~ 1.0 1.0 1.0 0.4 64 normal
+    playsound minecraft:entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 2 1 0
+    playsound minecraft:item.trident.riptide_1 hostile @a[distance=..16] ~ ~ ~ 2 2 0
 
 # reset
     tag @s remove attacker

@@ -9,7 +9,7 @@
     summon marker ^1.5 ^1.5 ^ {Tags:["asset","death_ray.marker"],data:{asset:{id:death_ray}}}
 
 # sfx
-    playsound item.trident.return hostile @a ^-1.5 ^1.5 ^ 2 1 1
-    playsound item.trident.return hostile @a ^1.5 ^1.5 ^ 2 1 1
-    particle flash{color:[1.0,1.0,1.0,1.0]} ^-1.5 ^1.5 ^ 0.0 0.0 0.0 0 1 force @a
-    particle flash{color:[1.0,1.0,1.0,1.0]} ^1.5 ^1.5 ^ 0.0 0.0 0.0 0 1 force @a
+    playsound item.trident.return hostile @a[distance=..128] ^-1.5 ^1.5 ^ 8 1 1
+    playsound item.trident.return hostile @a[distance=..128] ^1.5 ^1.5 ^ 8 1 1
+    particle flash{color:[1.0,1.0,1.0,1.0]} ^-1.5 ^1.5 ^ 0.0 0.0 0.0 0 1 force
+    particle flash{color:[1.0,1.0,1.0,1.0]} ^1.5 ^1.5 ^ 0.0 0.0 0.0 0 1 force

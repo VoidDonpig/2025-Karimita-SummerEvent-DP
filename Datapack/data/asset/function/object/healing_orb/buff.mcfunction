@@ -8,4 +8,4 @@
     effect give @s[predicate=!lib:effect/regeneration_0] minecraft:regeneration 10 0 false
 
 # sfx
-     particle minecraft:happy_villager ~ ~ ~ 0.2 0.0 0.2 0 8 force @a
+     particle minecraft:happy_villager ~ ~ ~ 0.2 0.0 0.2 0 8 normal

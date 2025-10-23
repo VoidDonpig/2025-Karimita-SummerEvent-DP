@@ -71,5 +71,9 @@
     execute positioned ~-15 ~ ~-15 run function asset:object/lightning_wither_head/blast
     execute positioned ~-16 ~ ~-16 run function asset:object/lightning_wither_head/blast
 
+# sound
+    playsound minecraft:entity.lightning_bolt.impact neutral @a[distance=..32] ~ ~ ~ 2 0.5 0
+    playsound minecraft:entity.lightning_bolt.thunder neutral @a[distance=..32] ~ ~ ~ 2 2 0
+
 # kill
     kill @s

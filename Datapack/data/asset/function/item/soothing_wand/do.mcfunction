@@ -15,5 +15,5 @@
     execute if predicate player:team/class.healer run function asset:item/soothing_wand/healer/
 
 # sfx
-    execute anchored eyes run particle heart ^ ^0.3 ^ 0.0 0.0 0.0 0 1 force @a[distance=..32]
-    playsound entity.experience_orb.pickup player @a ~ ~ ~ 1 2
+    execute anchored eyes run particle heart ^ ^0.3 ^ 0.0 0.0 0.0 0 1 normal
+    playsound entity.experience_orb.pickup player @a[distance=..16] ~ ~ ~ 1 2

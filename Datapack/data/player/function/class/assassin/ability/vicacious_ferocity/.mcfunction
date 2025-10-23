@@ -19,4 +19,4 @@
     execute if score @s vicacious_ferocity_timer matches ..0 run scoreboard players reset @s vicacious_ferocity_timer
 
 # sfx
-    execute if score @s vicacious_ferocity_timer matches 1.. if predicate asset:weapon/melee/daggers run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0 2 force @a[distance=..32]
+    execute if score @s vicacious_ferocity_timer matches 1.. if predicate asset:weapon/melee/daggers run particle trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0 2 normal

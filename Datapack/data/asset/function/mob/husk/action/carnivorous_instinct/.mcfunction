@@ -5,8 +5,8 @@
 # @within asset:mob/husk/
 
 # sfx
-    execute anchored eyes positioned ^ ^ ^ run particle minecraft:trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0 8 force @a[distance=..32]
-    playsound minecraft:entity.ender_dragon.growl hostile @a ~ ~ ~ 1 2
+    execute anchored eyes positioned ^ ^ ^ run particle minecraft:trial_spawner_detection ~ ~ ~ 0.4 0.4 0.4 0 8 normal
+    playsound minecraft:entity.ender_dragon.growl hostile @a[distance=..16] ~ ~ ~ 1 2
 
 # buff
     effect give @s strength 10 0 false

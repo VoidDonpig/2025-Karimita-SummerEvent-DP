@@ -8,4 +8,4 @@
     effect give @s[predicate=!lib:effect/regeneration_1] minecraft:regeneration 10 1 false
 
 # sfx
-    particle minecraft:dust{color:[0.039,0.714,1.000],scale:1} ~ ~ ~ 0.2 0.0 0.2 0 8 force @a
+    particle minecraft:dust{color:[0.039,0.714,1.000],scale:1} ~ ~ ~ 0.2 0.0 0.2 0 8 normal

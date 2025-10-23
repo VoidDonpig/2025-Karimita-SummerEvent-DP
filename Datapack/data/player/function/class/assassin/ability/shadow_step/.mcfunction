@@ -13,9 +13,9 @@
     scoreboard players add $y player.motion 4000
 
 # sfx
-    particle minecraft:large_smoke ~ ~ ~ 0.0 0.0 0.0 0.1 16 force @a[distance=..32]
-    playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
-    playsound minecraft:entity.ender_dragon.flap hostile @a ~ ~ ~ 1 2.0
+    particle minecraft:large_smoke ~ ~ ~ 0.0 0.0 0.0 0.1 16 normal
+    playsound minecraft:entity.goat.long_jump hostile @a[distance=..16] ~ ~ ~ 1 1.2
+    playsound minecraft:entity.ender_dragon.flap hostile @a[distance=..16] ~ ~ ~ 1 2.0
 
 # invul
     execute unless score @s player.invul_timer matches 2.. run scoreboard players set @s player.invul_timer 2

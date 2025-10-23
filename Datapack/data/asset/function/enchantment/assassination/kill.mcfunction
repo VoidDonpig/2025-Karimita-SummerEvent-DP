@@ -11,7 +11,7 @@
     playsound entity.turtle.egg_break player @s ~ ~ ~ 2.0 0.5 1.0
     playsound entity.turtle.egg_break player @s ~ ~ ~ 2.0 0.5 1.0
     playsound entity.turtle.egg_break player @s ~ ~ ~ 2.0 0.5 1.0
-    particle block{block_state:"redstone_block"} ~ ~1.0 ~ 0.4 1.0 0.4 0 128 force @a[distance=..32]
+    particle block{block_state:"redstone_block"} ~ ~1.0 ~ 0.4 1.0 0.4 0 128 normal
 
 # damage
     kill @n[tag=mob.victim]

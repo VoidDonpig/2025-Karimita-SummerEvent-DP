@@ -11,7 +11,7 @@
     tp @s ^ ^ ^0.1
 
 # sfx
-    particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
+    particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0 1 normal
 
 # hit
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @a[dx=0] run damage @s 5

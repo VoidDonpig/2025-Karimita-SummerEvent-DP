@@ -23,5 +23,5 @@
     tag @n[tag=blazing_flame_fireball,tag=not_init] remove not_init
 
 # playsound
-    execute if score $difficulty_level world matches 1..4 run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 1 0
-    execute if score $difficulty_level world matches 5.. run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 0.5 0
+    execute if score $difficulty_level world matches 1..4 run playsound minecraft:entity.blaze.shoot hostile @a[distance=..16] ~ ~ ~ 2 1 0
+    execute if score $difficulty_level world matches 5.. run playsound minecraft:entity.blaze.shoot hostile @a[distance=..16] ~ ~ ~ 2 0.5 0

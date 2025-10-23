@@ -13,8 +13,8 @@
     tag @s remove this
 
 # sfx
-    particle large_smoke ~ ~ ~ 0.1 0.1 0.1 0.05 128 force @a
-    particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.1 8 force @a
+    particle large_smoke ~ ~ ~ 0.1 0.1 0.1 0.05 128 normal
+    particle soul_fire_flame ~ ~ ~ 0.1 0.1 0.1 0.1 8 normal
 
 # autokill
     scoreboard players add @s autokill_timer 1

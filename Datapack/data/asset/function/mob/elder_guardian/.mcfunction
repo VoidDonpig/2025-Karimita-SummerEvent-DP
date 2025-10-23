@@ -29,7 +29,7 @@
 
 # empowered beam
     # first sound
-        execute if score @s ai_timer.1 matches 41.. if score @s ai_timer.3 matches 1 positioned ~ ~1.0 ~ run playsound minecraft:block.respawn_anchor.charge hostile @a ~ ~ ~ 2 2 0
+        execute if score @s ai_timer.1 matches 41.. if score @s ai_timer.3 matches 1 positioned ~ ~1.0 ~ run playsound minecraft:block.respawn_anchor.charge hostile @a[distance=..16] ~ ~ ~ 2 2 0
     # charging event
         execute if score @s ai_timer.1 matches 41.. if score @s ai_timer.3 matches 1..20 positioned ~ ~1.0 ~ run function asset:mob/elder_guardian/action/empowered_beam/charging
     # beam

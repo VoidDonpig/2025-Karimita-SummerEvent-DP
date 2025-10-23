@@ -5,5 +5,5 @@
 # @within asset:mob/zombie_villager/
 
 # sfx
-    execute anchored eyes positioned ^ ^ ^ run particle infested ~ ~ ~ 0.0 0.0 0.0 1 8 force @a[distance=..32]
-    playsound entity.zombie_villager.ambient hostile @a ~ ~ ~ 1 0.75
+    execute anchored eyes positioned ^ ^ ^ run particle infested ~ ~ ~ 0.0 0.0 0.0 1 8 normal
+    playsound entity.zombie_villager.ambient hostile @a[distance=..16] ~ ~ ~ 1 0.75

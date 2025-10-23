@@ -8,8 +8,8 @@
     scoreboard players operation @s mana -= $needed_mana temporary
 
 # sfx
-    playsound entity.generic.explode player @a ~ ~ ~ 1 1 0
-    particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 force @a[distance=..32]
+    playsound entity.generic.explode player @a[distance=..16] ~ ~ ~ 1 1 0
+    particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 normal
 
 # damage
     function asset:item/ultimate_wither_sword/get_data

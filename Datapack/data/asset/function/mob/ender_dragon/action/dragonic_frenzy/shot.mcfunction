@@ -28,7 +28,7 @@
     tag @n[type=fireball,tag=dragonic_frenzy_fireball,tag=not_init] remove not_init
 
 # sfx
-    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 8 0.5 0
+    playsound minecraft:entity.blaze.shoot hostile @a[distance=..128] ~ ~ ~ 8 0.5 0
 
 # reset
     scoreboard players reset $rotation_x temporary

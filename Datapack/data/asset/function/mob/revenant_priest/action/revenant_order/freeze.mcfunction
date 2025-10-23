@@ -18,4 +18,4 @@
     title @a[distance=..64] subtitle {"text":"タイミングよく行動せよ！","color":"red"}
 
 # playsound
-    playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 2 1 0
+    playsound entity.zombie_villager.cure hostile @a[distance=..16] ~ ~ ~ 2 1 0

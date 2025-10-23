@@ -5,7 +5,7 @@
 # @within asset:
 
 # sfx
-    particle minecraft:electric_spark ~ ~ ~ 0.5 0.5 0.5 0 4 force @a
+    particle minecraft:electric_spark ~ ~ ~ 0.5 0.5 0.5 0 4 normal
     tp @s ~ ~ ~ ~10 0
     function lib:orb_movement/
     

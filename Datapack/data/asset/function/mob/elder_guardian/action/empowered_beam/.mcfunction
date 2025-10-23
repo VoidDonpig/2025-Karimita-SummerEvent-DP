@@ -8,7 +8,7 @@
     tag @s add this
 
 # sound
-    playsound minecraft:entity.warden.death hostile @a ~ ~ ~ 2 2 0
+    playsound minecraft:entity.warden.death hostile @a[distance=..16] ~ ~ ~ 2 2 0
 
 # damage
     execute anchored eyes run function asset:mob/elder_guardian/action/empowered_beam/beam

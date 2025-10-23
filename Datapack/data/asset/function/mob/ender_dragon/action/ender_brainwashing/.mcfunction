@@ -25,9 +25,9 @@
     attribute @s attack_damage base set 5
 
 # sfx
-    playsound entity.enderman.scream hostile @a ~ ~ ~ 1 0.5
-    playsound entity.ghast.hurt hostile @a ~ ~ ~ 1 0.5
-    execute anchored eyes run particle witch ^ ^ ^ 0.2 0.2 0.2 0 8 force @a[distance=..32]
+    playsound entity.enderman.scream hostile @a[distance=..16] ~ ~ ~ 1 0.5
+    playsound entity.ghast.hurt hostile @a[distance=..16] ~ ~ ~ 1 0.5
+    execute anchored eyes run particle witch ^ ^ ^ 0.2 0.2 0.2 0 8 normal
 
 # autokill
     tag @s add autokill

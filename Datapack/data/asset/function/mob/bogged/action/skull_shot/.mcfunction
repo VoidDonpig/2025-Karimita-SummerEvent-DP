@@ -5,8 +5,8 @@
 # @within asset:mob/bogged/
 
 # sfx
-    execute anchored eyes positioned ^ ^ ^ run particle minecraft:crit ~ ~ ~ 0.0 0.0 0.0 0.4 16 force @a[distance=..32]
-    playsound entity.bogged.death hostile @a ~ ~ ~ 1 1.75
+    execute anchored eyes positioned ^ ^ ^ run particle minecraft:crit ~ ~ ~ 0.0 0.0 0.0 0.4 16 normal
+    playsound entity.bogged.death hostile @a[distance=..16] ~ ~ ~ 1 1.75
 
 # summon skull
     execute anchored eyes positioned ^ ^ ^ run summon item_display ~ ~ ~ {data:{asset:{id:bogged_skull}},Tags:["skull_shot.bogged.object","autokill","asset"],transformation:[-1.0000f,0.0000f,0.0000f,0.0000f, 0.0000f,1.0000f,0.0000f,0.15625f, -0.0000f,0.0000f,-1.0000f,0.0000f, 0.0000f,0.0000f,0.0000f,1.0000f],teleport_duration:1,item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;2020027704,77483716,-1116895772,706132550],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjI3OTVjM2M2ZjM2ZDY3ZGVjZjlhMzE5NWUxMjgwNDBiZWM1MjI2YjA1NWYyYjE2ZDQ2ZmExOWE5MTgwZTAyMyJ9fX0="}]}}},CustomName:'スケルトンの頭蓋骨'}

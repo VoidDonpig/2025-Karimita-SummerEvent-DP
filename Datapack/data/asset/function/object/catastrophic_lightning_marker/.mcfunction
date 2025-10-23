@@ -8,7 +8,7 @@
     scoreboard players add @s asset_timer.1 1
 
 # sfx
-    particle smoke ~ ~10 ~ 0.4 0.4 0.4 0 16 force @a
+    particle smoke ~ ~10 ~ 0.4 4.0 0.4 0 16 normal
 
 # caution
     playsound block.note_block.pling hostile @a[distance=..3] ~ ~ ~ 1 2 1

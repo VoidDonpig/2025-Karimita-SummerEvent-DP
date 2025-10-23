@@ -5,8 +5,8 @@
 # @within asset:mob/husk/
 
 # sfx
-    execute anchored eyes positioned ^ ^ ^ run particle minecraft:crit ~ ~ ~ 0.0 0.0 0.0 0.4 4 force @a[distance=..32]
-    playsound entity.egg.throw hostile @a ~ ~ ~ 1 1
+    execute anchored eyes positioned ^ ^ ^ run particle minecraft:crit ~ ~ ~ 0.0 0.0 0.0 0.4 4 normal
+    playsound entity.egg.throw hostile @a[distance=..16] ~ ~ ~ 1 1
 
 # summon axe
     execute anchored eyes positioned ^ ^ ^ run summon item_display ~ ~ ~ {data:{asset:{id:wooden_axe}},teleport_duration:1,item:{id:"minecraft:wooden_axe",count:1},transformation:[0.0000f,-0.0000f,-1.0000f,0.0000f,-1.0000f,-0.0000f,-0.0000f,0.0000f,0.0000f,1.0000f,-0.0000f,0.0000f,0.0000f,0.0000f,0.0000f,1.0000f],Tags:["throw_axe.husk.object","autokill","asset"],CustomName:{"translate":"item.minecraft.wooden_axe"}}

@@ -6,7 +6,7 @@
 #         function player:class/healer/ability/healing_circle/circle
 
 # circle
-    $execute anchored feet run particle minecraft:happy_villager ^ ^ ^$(radius) 0.0 0.0 0.0 0 1 force @a[distance=..32]
+    $execute anchored feet run particle minecraft:happy_villager ^ ^ ^$(radius) 0.0 0.0 0.0 0 1 normal
 
 # repeat
     scoreboard players add @s repeat_time 1

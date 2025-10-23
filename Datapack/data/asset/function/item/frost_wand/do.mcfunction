@@ -24,7 +24,7 @@
     tag @n[type=marker,tag=frost_wand_marker,tag=not_init] remove not_init
 
 # playsound
-    playsound block.glass.break neutral @a ~ ~ ~ 1 1
+    playsound block.glass.break neutral @a[distance=..16] ~ ~ ~ 1 1
 
 # reset
     tag @s remove player.this

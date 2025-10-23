@@ -5,8 +5,8 @@
 # @within asset:object/skeleton_skull/
 
 # sfx
-    particle explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force @a[distance=..32]
-    playsound entity.generic.explode hostile @a ~ ~ ~ 1 1
+    particle explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 normal
+    playsound entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 1 1
 
 # damage
     execute positioned ~-2.5 ~-2.5 ~-2.5 as @e[type=!#lib:monster,dx=4,dy=4,dz=4] run damage @s 12 mob_attack at ~ ~ ~

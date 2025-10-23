@@ -17,7 +17,7 @@
     execute as @n[tag=motion] at @s run function asset:mob/wither/action/rapid_skull_shot/motion
     execute positioned ^-1.2 ^ ^ run function asset:mob/wither/action/rapid_skull_shot/summon with storage asset:mob
 
-    playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 2 1
+    playsound minecraft:entity.wither.shoot hostile @a[distance=..16] ~ ~ ~ 2 1
     
 # reset
     tag @s remove this

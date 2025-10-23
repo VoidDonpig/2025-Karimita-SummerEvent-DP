@@ -9,7 +9,7 @@
     execute as @a[distance=..14.5] run damage @s 20 mob_attack by @n[tag=this]
 
 # sfx
-    particle witch ~ ~ ~ 8 8 8 0 64 force @a
+    particle witch ~ ~ ~ 8 8 8 0 64 force
 
 # reset
     tag @s remove this

@@ -5,7 +5,7 @@
 # @within player:class/assassin/
 
 # sfx
-    particle minecraft:dust{color:[1.0,0.0,0.0],scale:1} ~ ~1.0 ~ 0.2 0.4 0.2 0 2 force @a
+    particle minecraft:dust{color:[1.0,0.0,0.0],scale:1} ~ ~1.0 ~ 0.2 0.4 0.2 0 2 normal
 
 # timer
     scoreboard players remove @s bloodlust_timer 1

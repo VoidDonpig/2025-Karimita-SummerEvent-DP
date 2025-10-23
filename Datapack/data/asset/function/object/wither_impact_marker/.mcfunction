@@ -5,6 +5,6 @@
 # @within asset:
 
 # sfx
-    particle large_smoke ~ ~0.5 ~ 0.4 0.2 0.4 0.3 16 force @a[distance=..32]
-    particle electric_spark ~ ~0.5 ~ 0.4 0.2 0.4 0.3 16 force @a[distance=..32]
-    playsound item.trident.return hostile @a ~ ~ ~ 2 1 0
+    particle large_smoke ~ ~0.5 ~ 0.4 0.2 0.4 0.3 16 normal
+    particle electric_spark ~ ~0.5 ~ 0.4 0.2 0.4 0.3 16 normal
+    playsound item.trident.return hostile @a[distance=..16] ~ ~ ~ 2 1 0

@@ -12,8 +12,8 @@
     scoreboard players reset $time temporary
 
 # sfx
-    execute anchored eyes run particle minecraft:dust{color:[0.749,0.114,0.769],scale:1} ^ ^ ^0.8 0.0 0.0 0.0 0 1 force @a
-    execute anchored eyes run particle minecraft:dust{color:[0.749,0.114,0.769],scale:1} ^ ^ ^-0.8 0.0 0.0 0.0 0 1 force @a
+    execute anchored eyes run particle minecraft:dust{color:[0.749,0.114,0.769],scale:1} ^ ^ ^0.8 0.0 0.0 0.0 0 1 normal
+    execute anchored eyes run particle minecraft:dust{color:[0.749,0.114,0.769],scale:1} ^ ^ ^-0.8 0.0 0.0 0.0 0 1 normal
     scoreboard players add @s asset_timer.1 1
     tp @s ~ ~ ~ ~10 0
     function lib:orb_movement/

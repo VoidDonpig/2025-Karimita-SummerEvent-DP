@@ -11,8 +11,8 @@
     execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:mob,dx=1.5,dy=1.5,dz=1.5] run effect give @s slowness 5 1
 
 # sfx
-    particle block{block_state:ice} ~ ~ ~ 0.4 0.4 0.4 0.1 256 force @a[distance=..32]
-    playsound block.glass.break neutral @a ~ ~ ~ 1 0.75
+    particle block{block_state:ice} ~ ~ ~ 0.4 0.4 0.4 0.1 256 normal
+    playsound block.glass.break neutral @a[distance=..16] ~ ~ ~ 1 0.75
 
 # reset
     tag @p[tag=this] remove this

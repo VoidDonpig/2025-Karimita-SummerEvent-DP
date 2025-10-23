@@ -5,5 +5,5 @@
 # @within asset:mob/ashwight/
 
 # sfx
-    particle infested ~ ~ ~ 0.0 0.0 0.0 1 8 force @a[distance=..32]
-    playsound entity.zombie.infect hostile @a ~ ~ ~ 1 2
+    particle infested ~ ~ ~ 0.0 0.0 0.0 1 8 normal
+    playsound entity.zombie.infect hostile @a[distance=..32] ~ ~ ~ 1 2

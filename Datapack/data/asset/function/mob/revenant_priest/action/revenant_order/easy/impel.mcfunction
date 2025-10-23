@@ -8,7 +8,7 @@
     $scoreboard players set @s ai_counter.1 $(timer)
 
 # playsound
-    playsound block.anvil.land hostile @a ~ ~ ~ 2 1.25 0
+    playsound block.anvil.land hostile @a[distance=..16] ~ ~ ~ 2 1.25 0
 
 # random order
     execute store result score @s ai_counter.2 run random value 0..3

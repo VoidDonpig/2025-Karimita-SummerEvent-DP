@@ -9,4 +9,4 @@
     execute at @n[tag=target] run scoreboard players set @n[tag=not_init,tag=wither_impact_marker,type=marker] autokill_timer 30
 
 # playsound
-    execute at @n[tag=target] run playsound item.trident.return hostile @a ~ ~ ~ 2 2 0
+    execute at @n[tag=target] run playsound item.trident.return hostile @a[distance=..16] ~ ~ ~ 2 2 0

@@ -11,6 +11,6 @@
     tag @s remove attacker
 
 # sfx
-    particle minecraft:flame ~ ~ ~ 1 1 1 1.6 32 force
-    particle minecraft:heart ~ ~1.8 ~ 0 0 0 0 1 force
-    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 0.5 0
+    particle minecraft:flame ~ ~ ~ 1 1 1 1.6 32 normal
+    particle minecraft:heart ~ ~1.8 ~ 0 0 0 0 1 normal
+    playsound minecraft:entity.blaze.shoot hostile @a[distance=..16] ~ ~ ~ 2 0.5 0

@@ -9,4 +9,4 @@
     data modify entity @s Invulnerable set value 0b
 
 # playsound
-    playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 2 0.5 0
+    playsound entity.evoker.cast_spell hostile @a[distance=..16] ~ ~ ~ 2 0.5 0

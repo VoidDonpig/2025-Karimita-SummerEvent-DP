@@ -8,7 +8,7 @@
     execute facing entity @n[type=ender_dragon] feet positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^5 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^2.5 ~ ~
 
 # trail
-    particle firework ~ ~ ~ 0.0 0.0 0.0 0 1 force @a[distance=..128]
+    particle firework ~ ~ ~ 0.0 0.0 0.0 0 1 normal
 
 # hit
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @n[type=ender_dragon,dx=0] run tag @s add hit

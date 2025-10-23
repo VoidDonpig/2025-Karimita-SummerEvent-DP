@@ -7,7 +7,7 @@
 # repeat
     scoreboard players add @s repeat_time 1
 
-    particle dragon_breath ^ ^ ^4 ^ ^10000000 ^ 0.0000005 0 force @a
+    particle dragon_breath ^ ^ ^4 ^ ^10000000 ^ 0.0000005 0 force
 
     execute unless score @s repeat_time matches 45.. rotated ~8 ~ run function asset:object/void_apocalypse_marker/repeat_1
 

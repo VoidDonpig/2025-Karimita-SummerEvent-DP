@@ -11,8 +11,8 @@
     execute positioned ~-0.75 ~-0.75 ~-0.75 as @e[type=#lib:mob,dx=1.5,dy=1.5,dz=1.5] run data modify entity @s Fire set value 100s
 
 # sfx
-    particle lava ~ ~ ~ 0.4 0.4 0.4 0.1 32 force @a[distance=..32]
-    playsound entity.firework_rocket.blast neutral @a ~ ~ ~ 1 0.5
+    particle lava ~ ~ ~ 0.4 0.4 0.4 0.1 32 normal
+    playsound entity.firework_rocket.blast neutral @a[distance=..16] ~ ~ ~ 1 0.5
 
 # reset
     tag @p[tag=this] remove this

@@ -16,4 +16,3 @@
 # reset
     scoreboard players reset $damage temporary
     scoreboard players reset $adding_damage
-    tellraw @s {"nbt":"Health","entity":"@s"}

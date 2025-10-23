@@ -12,4 +12,4 @@
     $summon minecraft:arrow ^ ^ ^ {Tags:["rapid_fire.stray.arrow"],Motion:$(motion),life:1200s}
 
 # playsound
-    playsound entity.arrow.shoot hostile @a ~ ~ ~ 1 1
+    playsound entity.arrow.shoot hostile @a[distance=..16] ~ ~ ~ 1 1

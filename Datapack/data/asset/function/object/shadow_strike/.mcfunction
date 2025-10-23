@@ -12,7 +12,7 @@
 
 # particle
     function asset:object/shadow_strike/particle
-    execute at @n[tag=shadow_strike.victim] run playsound minecraft:entity.zombie.break_wooden_door player @a ~ ~ ~ 0.2 2
+    execute at @n[tag=shadow_strike.victim] run playsound minecraft:entity.zombie.break_wooden_door player @a[distance=..16] ~ ~ ~ 0.2 2
 
 # damage
     execute store result storage asset: __temp__.damage int 1 run scoreboard players get @s shadow_strike_damage

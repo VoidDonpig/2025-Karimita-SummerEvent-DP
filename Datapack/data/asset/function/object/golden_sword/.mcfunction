@@ -8,7 +8,7 @@
     tag @s add this
 
 # sfx
-    particle crit ~ ~ ~ 0.0 0.0 0.0 0.2 1 force @a[distance=..32]
+    particle crit ~ ~ ~ 0.0 0.0 0.0 0.2 1 normal
 
 # damage
     execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=!#lib:monster,dx=0] run damage @s 4 minecraft:mob_attack by @n[type=item_display,tag=this]

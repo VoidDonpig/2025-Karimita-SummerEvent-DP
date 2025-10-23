@@ -15,10 +15,10 @@
     execute if score @s death_timer.1 matches 1 as @e[type=zombie,tag=dragon_knight] run function lib:vanish/
 
 # dialogue
-    execute if score @s death_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "グオォォォォォ...","color": "red"}]
-    execute if score @s death_timer.1 matches 40 run tellraw @a [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "我は間もなく滅びる...","color": "red"}]
-    execute if score @s death_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "だが、努々忘れるな、","color": "red"}]
-    execute if score @s death_timer.1 matches 160 run tellraw @a [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "全ては虚空に帰する運命なのだ。","color": "red"}]
+    execute if score @s death_timer.1 matches 1 run tellraw @a[distance=..128] [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "グオォォォォォ...","color": "red"}]
+    execute if score @s death_timer.1 matches 40 run tellraw @a[distance=..128] [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "我は間もなく滅びる...","color": "red"}]
+    execute if score @s death_timer.1 matches 100 run tellraw @a[distance=..128] [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "だが、努々忘れるな、","color": "red"}]
+    execute if score @s death_timer.1 matches 160 run tellraw @a[distance=..128] [{"text": "[BOSS] Ender Dragon: ", "color": "dark_red"},{"text": "全ては虚空に帰する運命なのだ。","color": "red"}]
 
 # sfx
     execute if score @s death_timer.1 matches 1.. run tp @s ~ ~ ~

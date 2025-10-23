@@ -16,7 +16,7 @@
     execute positioned ^ ^-0.8 ^0.8 summon minecraft:item_display run function asset:mob/elder_guardian/action/shard_of_prismarine/summon
 
 # sound
-    playsound minecraft:entity.shulker.shoot hostile @a ~ ~ ~ 2 1 0
+    playsound minecraft:entity.shulker.shoot hostile @a[distance=..16] ~ ~ ~ 2 1 0
 
 # reset
     tag @s remove this

@@ -12,4 +12,4 @@
     tag @n[tag=sorrow_aura,tag=not_init] remove not_init
 
 # sfx
-    playsound minecraft:entity.elder_guardian.hurt hostile @a ~ ~ ~ 4 0.7 0
+    playsound minecraft:entity.elder_guardian.hurt hostile @a[distance=..100] ~ ~ ~ 4 0.7 0

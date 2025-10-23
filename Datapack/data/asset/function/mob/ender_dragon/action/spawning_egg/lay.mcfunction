@@ -24,9 +24,9 @@
     particle firework ~ ~ ~ 0.2 0.2 0.2 0.2 64 force
     particle entity_effect{color:[0.0,0.0,0.0,1.0]} ~ ~ ~ 0.2 0.2 0.2 0.2 64 force
     particle explosion_emitter ~ ~ ~ 0.0 0.0 0.0 0 1 force
-    playsound entity.zombie.break_wooden_door hostile @a ~ ~ ~ 2 0.5 0
-    playsound entity.zombie_villager.converted hostile @a ~ ~ ~ 2 0.5 0
-    playsound entity.firework_rocket.large_blast hostile @a ~ ~ ~ 2 0.5 0
+    playsound entity.zombie.break_wooden_door hostile @a[distance=..128] ~ ~ ~ 8 0.5 0
+    playsound entity.zombie_villager.converted hostile @a[distance=..128] ~ ~ ~ 8 0.5 0
+    playsound entity.firework_rocket.large_blast hostile @a[distance=..128] ~ ~ ~ 8 0.5 0
 
 # init
     tag @n[type=slime,tag=not_init,tag=spawning_egg_hitbox.ender_dragon.object] remove not_init

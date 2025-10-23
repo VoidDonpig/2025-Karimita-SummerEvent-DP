@@ -15,8 +15,8 @@
     effect give @s blindness 2 1 true
 
 # particle
-    particle infested ~ ~1.0 ~ 0.4 0.4 0.4 0.2 32 force @a[distance=..32]
-    particle dust_color_transition{from_color:[0.2,0.4,0.1],scale:2,to_color:[0.2,0.2,0.2]} ~ ~10 ~ 0.2 5 0.2 1 128 force @a[distance=..32]
+    particle infested ~ ~1.0 ~ 0.4 0.4 0.4 0.2 32 normal
+    particle dust_color_transition{from_color:[0.2,0.4,0.1],scale:2,to_color:[0.2,0.2,0.2]} ~ ~10 ~ 0.2 5 0.2 1 128 normal
 
 # add tag
     tag @s add impel_failed

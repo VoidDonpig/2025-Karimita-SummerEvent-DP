@@ -17,7 +17,7 @@
 
 # sfx
     playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 0.5 1.0 0.0
-    particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.1 16 force @a
+    particle minecraft:end_rod ~ ~ ~ 0.0 0.0 0.0 0.1 16 normal
 
 # reset
     scoreboard players reset $radius temporary

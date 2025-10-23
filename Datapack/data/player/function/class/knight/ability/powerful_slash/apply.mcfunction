@@ -6,5 +6,5 @@
 
 # damage
     $damage @s $(damage) lib:bypasses_player_attack by @p[tag=player.attacker]
-    playsound minecraft:entity.player.attack.knockback hostile @a ~ ~ ~ 1.0 1.0 0.0
-    playsound minecraft:entity.player.attack.knockback hostile @a ~ ~ ~ 1.0 1.0 0.0
+    playsound minecraft:entity.player.attack.knockback hostile @a[distance=..16] ~ ~ ~ 1.0 1.0 0.0
+    playsound minecraft:entity.player.attack.knockback hostile @a[distance=..16] ~ ~ ~ 1.0 1.0 0.0

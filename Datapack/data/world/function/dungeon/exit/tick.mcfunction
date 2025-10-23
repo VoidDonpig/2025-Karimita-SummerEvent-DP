@@ -5,8 +5,8 @@
 # @within world:dungeon/exit/check
 
 # sfx
-    execute if entity @s[tag=!world.exit_opened] run playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 0.4 1.5
-    particle reverse_portal ~ ~ ~ 1 1 1 0.03 36 force
+    execute if entity @s[tag=!world.exit_opened] run playsound minecraft:block.end_portal.spawn master @a[distance=..16] ~ ~ ~ 0.4 1.5
+    particle reverse_portal ~ ~ ~ 1 1 1 0.03 36 normal
 
 # add tag
     tag @s add world.exit_opened

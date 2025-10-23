@@ -28,7 +28,7 @@
     tag @s remove this
 
 # playsound
-    playsound entity.lightning_bolt.thunder neutral @a ~ ~ ~ 1 2
+    playsound entity.lightning_bolt.thunder neutral @a[distance=..16] ~ ~ ~ 1 2
 
 # reset
     tag @s remove player.this

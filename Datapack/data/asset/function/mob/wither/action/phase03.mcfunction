@@ -15,14 +15,14 @@
 
 # message
     execute if score @s ai_counter.1 matches ..2 run scoreboard players add @s dialogue_timer.1 1
-    execute if score @s dialogue_timer.1 matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "遊戯は終わりにしよう。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 40 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "私はウィザー、全てを蹂躙する存在。","color": "red"}]
-    execute if score @s dialogue_timer.1 matches 100 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "一方的な虐殺の時間だ。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 1 run tellraw @a[distance=..128] [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "遊戯は終わりにしよう。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 40 run tellraw @a[distance=..128] [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "私はウィザー、全てを蹂躙する存在。","color": "red"}]
+    execute if score @s dialogue_timer.1 matches 100 run tellraw @a[distance=..128] [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "一方的な虐殺の時間だ。","color": "red"}]
 
 # playsound
-    execute if score @s dialogue_timer.1 matches 1 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0
-    execute if score @s dialogue_timer.1 matches 40 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0
-    execute if score @s dialogue_timer.1 matches 100 run playsound entity.wither.ambient hostile @a ~ ~ ~ 16 1 0
+    execute if score @s dialogue_timer.1 matches 1 run playsound entity.wither.ambient hostile @a[distance=..16] ~ ~ ~ 16 1 0
+    execute if score @s dialogue_timer.1 matches 40 run playsound entity.wither.ambient hostile @a[distance=..16] ~ ~ ~ 16 1 0
+    execute if score @s dialogue_timer.1 matches 100 run playsound entity.wither.ambient hostile @a[distance=..16] ~ ~ ~ 16 1 0
 
 # set phase
     execute if score @s dialogue_timer.1 matches 1 run function asset:mob/wither/action/reset
@@ -45,8 +45,8 @@
 
 # vanish underling
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run summon marker ~ ~1.5 ~ {Tags:["asset","wither_healing_soul"],data:{asset:{id:wither_healing_soul}}}
-    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run particle flame ~ ~1.0 ~ 0.5 0.5 0.5 0.2 32 force @a
-    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run playsound block.sculk_shrieker.shriek hostile @a ~ ~ ~ 2 0.5 1
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run particle flame ~ ~1.0 ~ 0.5 0.5 0.5 0.2 32 normal
+    execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run playsound block.sculk_shrieker.shriek hostile @a[distance=..16] ~ ~ ~ 2 0.5 1
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run tp @s ~ -1000 ~
     execute if score @s ai_timer.2 matches 900 as @e[type=wither,tag=wither_underling] at @s run tag @s add dead
 
@@ -55,9 +55,10 @@
 
 # message
     execute if score @s ai_timer.2 matches 900 store result score $random temporary run random value 0..2
-    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 0 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "諦めろ、大人しく死を受け入れるがよい。","color": "red"}]
-    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 1 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "このすばしっこい蟻めが。","color": "red"}]
-    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 2 run tellraw @a [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "早々に死ね！","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 0 run tellraw @a[distance=..128] [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "諦めろ、大人しく死を受け入れるがよい。","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 1 run tellraw @a[distance=..128] [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "このすばしっこい蟻めが。","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 if score $random temporary matches 2 run tellraw @a[distance=..128] [{"text": "[BOSS] Wither: ", "color": "dark_red"},{"text": "早々に死ね！","color": "red"}]
+    execute if score @s ai_timer.2 matches 900 run playsound entity.wither.ambient hostile @a[distance=..16] ~ ~ ~ 2 0.9 0
     execute if score @s ai_timer.2 matches 900 run scoreboard players reset $random temporary
 
 # reset

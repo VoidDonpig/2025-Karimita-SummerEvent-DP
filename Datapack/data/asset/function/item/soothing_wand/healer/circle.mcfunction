@@ -6,7 +6,7 @@
 #         function asset:item/soothing_wand/healer/circle
 
 # circle
-    $execute anchored feet run particle minecraft:heart ^ ^ ^$(radius) 0.0 0.0 0.0 0 1 force @a[distance=..32]
+    $execute anchored feet run particle minecraft:heart ^ ^ ^$(radius) 0.0 0.0 0.0 0 1 normal
 
 # repeat
     scoreboard players add @s repeat_time 1

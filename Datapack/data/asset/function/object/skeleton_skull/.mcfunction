@@ -5,7 +5,7 @@
 # @within asset:
 
 # sfx
-    particle crit ~ ~ ~ 0.0 0.0 0.0 0.2 1 force @a[distance=..32]
+    particle crit ~ ~ ~ 0.0 0.0 0.0 0.2 1 normal
 
 # hit
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=#lib:all,type=!#lib:monster,dx=0] run tag @s add hit

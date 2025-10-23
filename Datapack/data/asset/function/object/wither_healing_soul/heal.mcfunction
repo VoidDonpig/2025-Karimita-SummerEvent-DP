@@ -12,7 +12,7 @@
     function health_display:update
 
 # sfx
-    particle heart ~ ~2.8 ~ 0.0 0.0 0.0 0 1 force
+    particle heart ~ ~2.8 ~ 0.0 0.0 0.0 0 1 normal
 
 # kill marker
     execute as @n[tag=this] run function asset:object/wither_healing_soul/dead

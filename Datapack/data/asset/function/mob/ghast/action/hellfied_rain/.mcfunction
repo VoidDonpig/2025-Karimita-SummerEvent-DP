@@ -26,8 +26,8 @@
 
 # sfx
     particle large_smoke ~ ~-3 ~ 1.2 0.0 1.2 0 32 force
-    playsound entity.ghast.shoot hostile @a ~ ~ ~ 4 0.9 0
-    playsound entity.player.hurt_on_fire hostile @a ~ ~ ~ 4 1.4 0
+    playsound entity.ghast.shoot hostile @a[distance=..100] ~ ~ ~ 4 0.9 0
+    playsound entity.player.hurt_on_fire hostile @a[distance=..100] ~ ~ ~ 4 1.4 0
 
 # reset
     scoreboard players reset $roll temporary

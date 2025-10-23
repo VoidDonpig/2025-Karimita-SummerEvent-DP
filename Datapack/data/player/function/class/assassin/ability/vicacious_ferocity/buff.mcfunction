@@ -17,8 +17,8 @@
     scoreboard players set @s vicacious_ferocity_timer 100
 
 # sfx
-    playsound entity.ghast.scream player @a ~ ~ ~ 1 2.0 0
-    playsound entity.ghast.scream player @a ~ ~ ~ 1 1.2 0
-    playsound entity.ghast.scream player @a ~ ~ ~ 1 1.1 0
-    playsound entity.ghast.scream player @a ~ ~ ~ 1 1.0 0
-    playsound entity.zombie_villager.cure player @a ~ ~ ~ 1 2 0
+    playsound entity.ghast.scream player @a[distance=..16] ~ ~ ~ 1 2.0 0
+    playsound entity.ghast.scream player @a[distance=..16] ~ ~ ~ 1 1.2 0
+    playsound entity.ghast.scream player @a[distance=..16] ~ ~ ~ 1 1.1 0
+    playsound entity.ghast.scream player @a[distance=..16] ~ ~ ~ 1 1.0 0
+    playsound entity.zombie_villager.cure player @a[distance=..16] ~ ~ ~ 1 2 0

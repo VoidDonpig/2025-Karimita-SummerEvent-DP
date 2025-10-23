@@ -22,7 +22,7 @@
 
 # kill spawner
     execute if entity @s[tag=only_once_spawner] run scoreboard players set @s spawner_health 0
-    execute if score @s spawner_health matches ..0 run playsound block.amethyst_block.break master @a ~ ~ ~
+    execute if score @s spawner_health matches ..0 run playsound block.amethyst_block.break master @a[distance=..16] ~ ~ ~
     execute if score @s spawner_health matches ..0 run kill @s
 
 # reset

@@ -15,7 +15,7 @@
     execute summon wither_skull run function asset:mob/blaze/action/scorched_skull/set_data
     execute summon wither_skull run function asset:mob/blaze/action/scorched_skull/set_data
     
-    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 1
+    playsound minecraft:entity.blaze.shoot hostile @a[distance=..16] ~ ~ ~ 2 1
 
 # reset
     tag @s remove this

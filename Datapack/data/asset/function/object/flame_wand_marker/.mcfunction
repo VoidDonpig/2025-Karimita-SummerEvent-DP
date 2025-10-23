@@ -17,9 +17,9 @@
     execute if entity @s[tag=watered] run function asset:object/flame_wand_marker/watered
 
 # sfx
-    particle dust_color_transition{from_color:[1.0,0.804,0.169],to_color:[1.0,0.125,0.023],scale:2} ~ ~ ~ 0.2 0.2 0.2 0 32 force
-    particle flame ~ ~ ~ 0.4 0.4 0.4 0.05 9 force
-    playsound block.furnace.fire_crackle neutral @a ~ ~ ~ 1 2
+    particle dust_color_transition{from_color:[1.0,0.804,0.169],to_color:[1.0,0.125,0.023],scale:2} ~ ~ ~ 0.2 0.2 0.2 0 32 normal
+    particle flame ~ ~ ~ 0.4 0.4 0.4 0.05 9 normal
+    playsound block.furnace.fire_crackle neutral @a[distance=..16] ~ ~ ~ 1 2
 
 # timer
     scoreboard players add @s asset_timer.1 1

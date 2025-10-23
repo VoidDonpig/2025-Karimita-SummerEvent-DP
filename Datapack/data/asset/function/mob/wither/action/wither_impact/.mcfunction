@@ -8,9 +8,9 @@
     execute on vehicle run tp @s @n[type=marker,tag=wither_impact_marker]
 
 # sfx
-    execute at @s run particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 force @a[distance=..32]
-    execute at @s run playsound entity.generic.explode hostile @a ~ ~ ~ 2 0.5 0
-    execute at @s run playsound entity.wither.spawn hostile @a ~ ~ ~ 2 1 0
+    execute at @s run particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 normal
+    execute at @s run playsound entity.generic.explode hostile @a[distance=..16] ~ ~ ~ 2 0.5 0
+    execute at @s run playsound entity.wither.spawn hostile @a[distance=..16] ~ ~ ~ 2 1 0
 
 # damage
     execute at @s as @e[type=#lib:all,type=!#lib:monster,distance=..10] run damage @s 100 explosion

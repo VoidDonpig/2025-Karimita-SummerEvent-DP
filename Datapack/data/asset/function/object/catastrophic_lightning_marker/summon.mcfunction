@@ -5,11 +5,11 @@
 # @within asset:object/catastrophic_lightning_marker/
 
 # sfx
-    particle explosion ~ ~ ~ 0 0 0 0 1 force @a
-    particle explosion ~1 ~ ~1 0 0 0 0 1 force @a
-    particle explosion ~1 ~ ~-1 0 0 0 0 1 force @a
-    particle explosion ~-1 ~ ~1 0 0 0 0 1 force @a
-    particle explosion ~-1 ~ ~-1 0 0 0 0 1 force @a
+    particle explosion ~ ~ ~ 0 0 0 0 1 normal
+    particle explosion ~1 ~ ~1 0 0 0 0 1 normal
+    particle explosion ~1 ~ ~-1 0 0 0 0 1 normal
+    particle explosion ~-1 ~ ~1 0 0 0 0 1 normal
+    particle explosion ~-1 ~ ~-1 0 0 0 0 1 normal
 
 # summon lightning
     summon lightning_bolt ~ ~ ~

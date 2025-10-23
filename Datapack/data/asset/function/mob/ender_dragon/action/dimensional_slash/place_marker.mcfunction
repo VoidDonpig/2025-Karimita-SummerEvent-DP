@@ -8,7 +8,7 @@
     execute positioned over motion_blocking run summon marker ~ ~ ~ {Tags:["asset","dimensional_slash_marker"],data:{asset:{id:dimensional_slash_marker}}}
 
 # particle
-     execute positioned over motion_blocking run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
+     execute positioned over motion_blocking run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~ ~ 0.0 0.0 0.0 0 1 force
 
 # reset
     execute store result score $rng_0 temporary run random value 0..100

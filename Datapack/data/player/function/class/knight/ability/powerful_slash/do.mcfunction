@@ -15,10 +15,10 @@
     execute store result storage player: powerful_slash.range float 1.0 run attribute @s minecraft:entity_interaction_range get
 
 # slash
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.0 1.2 0.0
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.0 1.2 0.0
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.0 1.2 0.0
-    playsound minecraft:item.trident.throw player @a ~ ~ ~ 1.0 1.2 0.0
+    playsound minecraft:item.trident.throw player @a[distance=..16] ~ ~ ~ 1.0 1.2 0.0
+    playsound minecraft:item.trident.throw player @a[distance=..16] ~ ~ ~ 1.0 1.2 0.0
+    playsound minecraft:item.trident.throw player @a[distance=..16] ~ ~ ~ 1.0 1.2 0.0
+    playsound minecraft:item.trident.throw player @a[distance=..16] ~ ~ ~ 1.0 1.2 0.0
     execute unless predicate lib:is_falling positioned ~ ~1 ~ rotated ~-75 0 positioned ^ ^ ^0.76 run function player:class/knight/ability/powerful_slash/slash with storage player: powerful_slash
     execute if predicate lib:is_falling positioned ~ ~ ~ rotated ~ -75 positioned ^ ^ ^0.76 run function player:class/knight/ability/powerful_slash/slash_vertical with storage player: powerful_slash
 

@@ -8,7 +8,7 @@
     kill @n[type=marker,tag=spawning_egg.__temp__]
 
 # line particle
-    summon marker 0 66 0 {Tags:["spawning_egg.__temp__"]}
+    execute positioned 0 255 0 positioned over world_surface run summon marker ~ ~ ~ {Tags:["spawning_egg.__temp__"]}
     particle witch ^ ^ ^ 0.0 0.0 0.0 0 1 force
     particle enchant ^ ^ ^ 0.0 0.0 0.0 0 1 force
     particle enchanted_hit ^ ^ ^ 0.0 0.0 0.0 0 1 force

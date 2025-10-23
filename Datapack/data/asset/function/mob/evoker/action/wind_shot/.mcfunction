@@ -22,7 +22,7 @@
     tag @n[type=wind_charge,tag=blazing_flame_wind_charge,tag=not_init] remove not_init
 
 # playsound
-    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 1 0
+    playsound minecraft:entity.blaze.shoot hostile @a[distance=..16] ~ ~ ~ 2 1 0
 
 # set timer
     execute if score $difficulty_level world matches 1..3 run scoreboard players set @s ai_timer.1 100

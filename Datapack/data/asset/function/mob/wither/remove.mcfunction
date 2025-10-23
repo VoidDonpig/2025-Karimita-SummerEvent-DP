@@ -13,4 +13,4 @@
     function lib:vanish/
 
 # tellraw
-    tellraw @a [{"text":"萎縮するような空気が消え去った...",italic: true,"color":"gray"}]
+    tellraw @a[distance=..128] [{"text":"萎縮するような空気が消え去った...",italic: true,"color":"gray"}]

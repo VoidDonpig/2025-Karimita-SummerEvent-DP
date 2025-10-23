@@ -13,4 +13,4 @@
         execute if score @s ai_timer.1 matches 100 run function asset:mob/ashwight/action/discharge/unleash
 
 # unleashed sfx
-    execute if entity @s[tag=asset.ashwight.already_discharged] run particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.4 0.4 0.4 0 4 force @a[distance=..32]
+    execute if entity @s[tag=asset.ashwight.already_discharged] run particle minecraft:trial_spawner_detection_ominous ~ ~ ~ 0.4 0.4 0.4 0 4 normal

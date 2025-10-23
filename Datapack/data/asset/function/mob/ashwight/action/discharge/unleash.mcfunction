@@ -13,7 +13,7 @@
     effect give @s strength infinite 3 true
 
 # sfx
-    particle large_smoke ~ ~0.2 ~ 0.0 0.0 0.0 0.2 8 normal @a[distance=..32]
+    particle large_smoke ~ ~0.2 ~ 0.0 0.0 0.0 0.2 8 normal
     playsound minecraft:entity.zombie_villager.cure hostile @a[distance=..32] ~ ~ ~ 1 2
 
 # tag

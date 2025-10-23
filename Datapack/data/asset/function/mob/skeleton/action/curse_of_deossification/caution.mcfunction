@@ -5,5 +5,5 @@
 # @within asset:mob/skeleton/
 
 # sfx
-    execute anchored eyes positioned ^ ^ ^ run particle infested ~ ~ ~ 0.4 0.4 0.4 0 8 force @a[distance=..32]
-    playsound entity.evoker.cast_spell hostile @a ~ ~ ~ 1 2
+    execute anchored eyes positioned ^ ^ ^ run particle infested ~ ~ ~ 0.4 0.4 0.4 0 8 normal
+    playsound entity.evoker.cast_spell hostile @a[distance=..16] ~ ~ ~ 1 2

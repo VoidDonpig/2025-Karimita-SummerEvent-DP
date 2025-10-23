@@ -9,15 +9,15 @@
 
 # summon skull
     tag @s add this
-    execute positioned ^1.2 ^ ^ run summon armor_stand ~ ~2.4 ~ {"Tags":["motion"]}
+    execute positioned ^1.6 ^ ^ run summon armor_stand ~ ~2.4 ~ {"Tags":["motion"]}
     execute as @n[tag=motion] at @s run function asset:mob/wither/action/empowered_skull_shot/motion
-    execute positioned ^1.2 ^ ^ run function asset:mob/wither/action/empowered_skull_shot/summon with storage asset:mob
+    execute positioned ^1.6 ^ ^ run function asset:mob/wither/action/empowered_skull_shot/summon with storage asset:mob
 
-    execute positioned ^-1.2 ^ ^ run summon armor_stand ~ ~2.4 ~ {"Tags":["motion"]}
+    execute positioned ^-1.6 ^ ^ run summon armor_stand ~ ~2.4 ~ {"Tags":["motion"]}
     execute as @n[tag=motion] at @s run function asset:mob/wither/action/empowered_skull_shot/motion
-    execute positioned ^-1.2 ^ ^ run function asset:mob/wither/action/empowered_skull_shot/summon with storage asset:mob
+    execute positioned ^-1.6 ^ ^ run function asset:mob/wither/action/empowered_skull_shot/summon with storage asset:mob
 
-    playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 2 1
+    playsound minecraft:entity.wither.shoot hostile @a[distance=..16] ~ ~ ~ 2 1.5
     
 # reset
     tag @s remove this

@@ -12,6 +12,6 @@
     tag @n[type=wither,tag=damaged] remove damaged
 
 # particle 
-    execute on passengers at @s positioned ~ ~0.5 ~ run particle explosion ~ ~ ~ 0.0 0.0 0.0 0 1 force @a[distance=..32]
+    execute on passengers at @s positioned ~ ~0.5 ~ run particle explosion ~ ~ ~ 0.0 0.0 0.0 0 1 normal
 # kill
     kill @s

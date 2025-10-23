@@ -24,7 +24,7 @@
     tag @n[type=marker,tag=flame_wand_marker,tag=not_init] remove not_init
 
 # playsound
-    playsound item.firecharge.use neutral @a ~ ~ ~ 1 2
+    playsound item.firecharge.use neutral @a[distance=..16] ~ ~ ~ 1 2
 
 # reset
     tag @s remove player.this

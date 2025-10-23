@@ -5,9 +5,9 @@
 # @within asset:mob/zombie/
 
 # sfx
-    particle minecraft:white_smoke ~ ~ ~ 0.0 0.0 0.0 0.35 6 force @a[distance=..32]
-    playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
-    playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1 0.5
+    particle minecraft:white_smoke ~ ~ ~ 0.0 0.0 0.0 0.35 6 normal
+    playsound minecraft:entity.goat.long_jump hostile @a[distance=..16] ~ ~ ~ 1 1.2
+    playsound minecraft:entity.witch.throw hostile @a[distance=..16] ~ ~ ~ 1 0.5
 
 # set motion
     # xz vector

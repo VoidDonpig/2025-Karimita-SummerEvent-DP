@@ -8,10 +8,10 @@
     scoreboard players add @s repeat_time 1
 
 # sfx
-    execute if score @s repeat_time matches 1 run playsound entity.warden.sonic_boom hostile @a ~ ~ ~ 4 1 0
+    execute if score @s repeat_time matches 1 run playsound entity.warden.sonic_boom hostile @a[distance=..16] ~ ~ ~ 4 1 0
 
 # particle
-    particle sonic_boom ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
+    particle sonic_boom ~ ~ ~ 0.0 0.0 0.0 0 1 normal
 
 # damage
     tag @s add this

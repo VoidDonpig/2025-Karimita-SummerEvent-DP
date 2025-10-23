@@ -12,7 +12,7 @@
     tag @s add arrow_shot
 
 # playsound
-    playsound entity.arrow.shoot player @a ~ ~ ~ 1 1 0
+    playsound entity.arrow.shoot player @a[distance=..16] ~ ~ ~ 1 1 0
 
 # shoot arrows
     summon minecraft:arrow ^ ^ ^ {damage:2.0d,Tags:["dragon_bow_arrow","not_init_arrow"],life:1200s,LeftOwner:0b}

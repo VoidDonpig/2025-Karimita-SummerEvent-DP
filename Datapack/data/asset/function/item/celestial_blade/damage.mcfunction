@@ -5,9 +5,9 @@
 # @within asset:item/celestial_blade/do
 
 # sfx
-    playsound entity.generic.explode player @a ~ ~ ~ 1 1 0
-    playsound entity.zombie_villager.cure player @a ~ ~ ~ 1 2 0
-    particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 force @a[distance=..32]
+    playsound entity.generic.explode player @a[distance=..16] ~ ~ ~ 1 1 0
+    playsound entity.zombie_villager.cure player @a[distance=..16] ~ ~ ~ 1 2 0
+    particle explosion ~ ~ ~ 0.0 0.0 0.0 4 16 normal
 
 # damage
     function asset:item/celestial_blade/get_data
