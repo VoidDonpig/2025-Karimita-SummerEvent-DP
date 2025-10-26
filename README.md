@@ -9,3 +9,5 @@
 ## リスペクト元
 - [HamaSSH-ReAura](https://github.com/HamaSSH/RPG-Datapack)
 - [Hypixel](https://hypixel.net/)
+## クレジット
+- [Lunadayo](https://github.com/Lunadayo) (Remnants of Cataclysmの建築、[Ashwight](https://github.com/VoidDonpig/Resistentia/tree/master/Datapack/data/asset/function/mob/ashwight)、[Wight](https://github.com/VoidDonpig/Resistentia/tree/master/Datapack/data/asset/function/mob/wight)、[Wight Bow](https://github.com/VoidDonpig/Resistentia/tree/master/Datapack/data/asset/function/mob/wight_bow))
